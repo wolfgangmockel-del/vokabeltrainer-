@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1f4fb5">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<title>Grundwortschatz 2000</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: one narrow column like a stack of index cards; the Karteikasten (Leitner box) is the home screen's centrepiece. */
+:root{
+  --bg:#eef0f3; --paper:#ffffff; --ink:#1b2433; --muted:#5d6878; --line:#d5dae2;
+  --accent:#1f4fb5; --accent-ink:#ffffff; --marker:#f4d03f; --marker-ink:#2b2400;
+  --good:#1d7a45; --bad:#b3362c; --good-bg:#e3f3e9; --bad-bg:#f8e4e1;
+  --rule:#e8a3a3;
+  --f-word:"Literata",Georgia,"Times New Roman",serif;
+  --f-ui:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --r:14px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12161d; --paper:#1c222c; --ink:#e7ebf1; --muted:#9aa5b5; --line:#2f3743;
+  --accent:#7aa2ff; --accent-ink:#0b1430; --marker:#e9c53a; --marker-ink:#231c00;
+  --good:#5fd08f; --bad:#ff8a7d; --good-bg:#173226; --bad-bg:#3a1f1c; --rule:#6b3a3a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12161d; --paper:#1c222c; --ink:#e7ebf1; --muted:#9aa5b5; --line:#2f3743;
+  --accent:#7aa2ff; --accent-ink:#0b1430; --marker:#e9c53a; --marker-ink:#231c00;
+  --good:#5fd08f; --bad:#ff8a7d; --good-bg:#173226; --bad-bg:#3a1f1c; --rule:#6b3a3a; color-scheme:dark}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:16px;line-height:1.45}
+.wrap{max-width:560px;margin:0 auto;padding-inline:16px;padding-block:12px 32px;display:flex;flex-direction:column;gap:16px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+h1{font-family:var(--f-word);font-weight:600;font-size:1.35rem;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1 small{display:block;font-family:var(--f-ui);font-weight:400;font-size:.78rem;color:var(--muted);letter-spacing:.02em}
+h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0;font-weight:700}
+button,select,input{font:inherit;color:inherit}
+button{cursor:pointer;border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:10px 14px;min-height:44px}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:700}
+.chip{border-radius:999px;padding:6px 14px;min-height:36px;font-size:.9rem}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:12px}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--paper)}
+.seg button{border:0;border-radius:0;min-height:44px;padding:8px 4px;font-size:.92rem;background:transparent}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);font-weight:700}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.row>*{min-width:0}
+label.field{display:flex;flex-direction:column;gap:4px;font-size:.9rem;color:var(--muted);flex:1 1 140px}
+select,input[type=text],input[type=search]{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:8px 10px;height:46px;width:100%;box-sizing:border-box}
+/* Karteikasten */
+.box{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;align-items:end}
+.fach{display:flex;flex-direction:column;align-items:center;gap:4px}
+.fach .stack{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:6px 6px 3px 3px;height:64px;position:relative;overflow:hidden}
+.fach .fill{position:absolute;left:0;right:0;bottom:0;background:var(--accent);opacity:.85}
+.fach.neu .fill{background:var(--muted);opacity:.45}
+.fach b{font-variant-numeric:tabular-nums;font-size:.95rem}
+.fach span{font-size:.72rem;color:var(--muted);text-align:center;line-height:1.1}
+.due{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:.95rem}
+.due strong{font-variant-numeric:tabular-nums}
+.mark{background:var(--marker);color:var(--marker-ink);padding:0 .25em;border-radius:3px}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.actions button{min-height:56px;font-size:1.02rem}
+details.panel summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between}
+details.panel summary::after{content:"+";color:var(--muted)}
+details[open].panel summary::after{content:"–"}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.hint{font-size:.85rem;color:var(--muted);margin:0}
+.switch{display:flex;align-items:center;gap:10px;font-size:.95rem}
+.switch input{width:22px;height:22px;accent-color:var(--accent)}
+/* Karte */
+.card{background:var(--paper);border:1px solid var(--line);border-radius:6px;box-shadow:0 1px 0 var(--line),0 8px 24px rgba(20,30,50,.08);padding:20px 20px 24px;position:relative;min-height:200px;display:flex;flex-direction:column;gap:10px;
+  background-image:linear-gradient(var(--paper),var(--paper)),repeating-linear-gradient(transparent 0 31px,var(--line) 31px 32px);background-size:100% 52px,100% 100%;background-repeat:no-repeat,repeat;background-position:0 0,0 52px}
+.card::before{content:"";position:absolute;left:0;right:0;top:51px;border-top:2px solid var(--rule)}
+.card .meta{display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:var(--muted);height:30px}
+.lang{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.75rem}
+.word{font-family:var(--f-word);font-size:clamp(1.6rem,7vw,2.3rem);line-height:1.25;margin:14px 0 0;overflow-wrap:anywhere;text-wrap:balance}
+.answer{font-family:var(--f-word);font-size:clamp(1.2rem,5.2vw,1.6rem);line-height:1.35;color:var(--accent);overflow-wrap:anywhere}
+.answer[hidden]{display:none}
+.speak{min-height:36px;padding:4px 10px;font-size:.85rem;border-radius:999px}
+.verdict{font-weight:700;font-size:.95rem}
+.verdict.ok{color:var(--good)} .verdict.no{color:var(--bad)}
+.grade{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grade button{min-height:60px;font-weight:700;font-size:1.05rem}
+.yes{background:var(--good-bg);color:var(--good);border-color:var(--good)}
+.no{background:var(--bad-bg);color:var(--bad);border-color:var(--bad)}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.progress{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.count{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9rem}
+/* Hörmodus */
+.ring{width:120px;height:120px;margin:4px auto 0;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:8}
+.ring .bgc{stroke:var(--line)} .ring .fg{stroke:var(--marker);stroke-linecap:round;transition:stroke-dashoffset .1s linear}
+.ring .num{position:absolute;inset:0;display:grid;place-items:center;font-size:2rem;font-weight:700;font-variant-numeric:tabular-nums}
+.phase{text-align:center;color:var(--muted);font-size:.95rem;min-height:1.4em}
+.heard{text-align:center;font-size:.9rem;color:var(--muted);min-height:1.3em}
+.ctrl{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
+.list{display:flex;flex-direction:column;max-height:420px;overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+.list div{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:8px 12px;border-bottom:1px solid var(--line);font-size:.95rem}
+.list div:last-child{border-bottom:0}
+.list .en{font-family:var(--f-word)}
+.list div>*{min-width:0;overflow-wrap:anywhere}
+.done{text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.done .big{font-family:var(--f-word);font-size:1.6rem}
+.note{background:var(--bg);border-radius:10px;padding:10px 12px;font-size:.88rem;color:var(--muted)}
+.profiles{display:flex;flex-wrap:wrap;gap:8px}
+.profiles button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap" id="app">
+  <header>
+    <h1>Grundwortschatz 2000<small id="sub">Englisch · Deutsch</small></h1>
+    <button class="chip" id="whoBtn" aria-label="Lernende Person wechseln">👤 <span id="whoName">Ich</span></button>
+  </header>
+
+  <!-- HOME -->
+  <section id="home" style="display:flex;flex-direction:column;gap:16px">
+    <div class="panel" id="whoPanel" hidden>
+      <h2>Wer lernt gerade?</h2>
+      <p class="hint">Jede Person hat ihren eigenen Lernstand auf diesem Handy.</p>
+      <div class="profiles" id="profiles"></div>
+      <div class="row">
+        <input type="text" id="newName" placeholder="Neuer Name" maxlength="20" style="flex:1 1 160px" aria-label="Neuer Name">
+        <button id="addName">Hinzufügen</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Abfragerichtung</h2>
+      <div class="seg" role="group" aria-label="Abfragerichtung">
+        <button data-dir="de" aria-pressed="true">Deutsch → Englisch</button>
+        <button data-dir="en" aria-pressed="false">Englisch → Deutsch</button>
+        <button data-dir="mix" aria-pressed="false">Gemischt</button>
+      </div>
+      <div class="row">
+        <label class="field">Wörter
+          <select id="range"></select>
+        </label>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Dein Karteikasten</h2>
+      <div class="box" id="box"></div>
+      <div class="due"><span>Heute fällig: <strong class="mark" id="dueN">0</strong></span><span>Noch neu: <strong id="newN">0</strong></span></div>
+      <p class="hint" id="boxHint">Richtig beantwortete Wörter wandern ein Fach weiter und kommen später wieder (nach 1, 3, 7, 14 und 30 Tagen). Falsche gehen zurück in Fach 1.</p>
+    </div>
+
+    <div class="actions">
+      <button class="primary" id="startCards">Karten lernen</button>
+      <button class="primary" id="startListen">🔊 Hörmodus</button>
+    </div>
+    <p class="hint">Eine Portion hat 7 Wörter. Die Vorlage empfiehlt: höchstens 7 Portionen, also rund 50 Wörter am Tag.</p>
+
+    <details class="panel" id="settings">
+      <summary>Einstellungen</summary>
+      <label class="field">Bedenkzeit im Hörmodus: <strong id="pauseV" style="color:var(--ink)">5 s</strong>
+        <input type="range" id="pause" min="2" max="12" step="1" value="5">
+      </label>
+      <label class="field">Sprechtempo: <strong id="rateV" style="color:var(--ink)">0.9</strong>
+        <input type="range" id="rate" min="0.6" max="1.3" step="0.05" value="0.9">
+      </label>
+      <label class="field">Wörter pro Hör-Durchgang
+        <select id="listenSize"><option value="7">7 (eine Portion)</option><option value="21" selected>21 (drei Portionen)</option><option value="49">49 (sieben Portionen)</option></select>
+      </label>
+      <label class="field">Englische Stimme <select id="voiceEn"></select></label>
+      <label class="field">Deutsche Stimme <select id="voiceDe"></select></label>
+      <div id="micWrap" hidden>
+        <label class="switch"><input type="checkbox" id="mic"> Antwort per Mikrofon prüfen</label>
+        <p class="hint" id="micHint">Im Hörmodus hört die App während der Bedenkzeit zu und wertet deine Antwort selbst.</p>
+      </div>
+      <button id="testVoice">Stimmen testen</button>
+      <button id="resetProgress">Lernstand dieser Person zurücksetzen</button>
+      <div class="row" id="resetConfirm" hidden>
+        <span class="hint" style="flex:1 1 160px">Wirklich alles auf „neu“ setzen?</span>
+        <button class="no" id="resetYes">Ja, zurücksetzen</button><button id="resetNo">Abbrechen</button>
+      </div>
+    </details>
+
+    <details class="panel">
+      <summary>Wörterliste durchsuchen</summary>
+      <input type="search" id="search" placeholder="Suchen, z. B. Wetter oder weather" aria-label="Wörter durchsuchen">
+      <div class="list" id="list"></div>
+      <p class="hint" id="listInfo"></p>
+    </details>
+  </section>
+
+  <!-- CARDS -->
+  <section id="cards" hidden style="flex-direction:column;gap:14px">
+    <div class="topbar"><button id="cardsBack">← Zurück</button><span class="count" id="cCount"></span></div>
+    <div class="progress"><i id="cProg"></i></div>
+    <div class="card">
+      <div class="meta"><span class="lang" id="cLang"></span><button class="speak" id="cSpeak" aria-label="Vorlesen">🔊 Vorlesen</button></div>
+      <div class="word" id="cWord"></div>
+      <div class="answer" id="cAnswer" hidden></div>
+      <div class="verdict" id="cVerdict"></div>
+    </div>
+    <div id="cAsk" class="grade" style="grid-template-columns:1fr">
+      <button class="primary" id="cShow" style="min-height:60px">Lösung zeigen</button>
+    </div>
+    <button id="cMic" hidden>🎤 Antwort sprechen</button>
+    <div id="cGrade" class="grade" hidden>
+      <button class="no" id="cNo">✗ Nicht gewusst</button>
+      <button class="yes" id="cYes">✓ Gewusst</button>
+    </div>
+  </section>
+
+  <!-- LISTEN -->
+  <section id="listen" hidden style="flex-direction:column;gap:14px">
+    <div class="topbar"><button id="lBack">■ Beenden</button><span class="count" id="lCount"></span></div>
+    <div class="progress"><i id="lProg"></i></div>
+    <div class="card">
+      <div class="meta"><span class="lang" id="lLang"></span><span id="lBox"></span></div>
+      <div class="word" id="lWord"></div>
+      <div class="answer" id="lAnswer" hidden></div>
+    </div>
+    <div class="ring" aria-hidden="true"><svg viewBox="0 0 120 120"><circle class="bgc" cx="60" cy="60" r="52"/><circle class="fg" id="ringFg" cx="60" cy="60" r="52" stroke-dasharray="326.7" stroke-dashoffset="0"/></svg><div class="num" id="ringNum"></div></div>
+    <div class="phase" id="lPhase" aria-live="polite"></div>
+    <div class="heard" id="lHeard"></div>
+    <div class="grade">
+      <button class="no" id="lNo">✗ Nicht gewusst</button>
+      <button class="yes" id="lYes">✓ Gewusst</button>
+    </div>
+    <div class="ctrl">
+      <button id="lRepeat">↺ Nochmal</button>
+      <button id="lPause">⏸ Pause</button>
+      <button id="lSkip">Weiter ⏭</button>
+    </div>
+    <p class="hint">Sprich deine Antwort laut, bevor die Lösung kommt. Tippe ✓ oder ✗, damit das Wort ins richtige Fach wandert. Ohne Tippen bleibt es, wo es war.</p>
+  </section>
+
+  <!-- DONE -->
+  <section id="done" hidden>
+    <div class="panel done">
+      <div class="big" id="dTitle">Portion geschafft</div>
+      <p id="dText" style="margin:0"></p>
+      <p class="hint">Tipp aus der Vorlage: nach jeder Portion kurz etwas anderes machen, dann geht's besser rein.</p>
+      <div class="actions" style="width:100%">
+        <button id="dHome">Übersicht</button>
+        <button class="primary" id="dMore">Nächste Portion</button>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+const VOCAB = [["able","fähig"],["about","etwa; ungefähr"],["above","oben; über; obig"],["abroad","im/ins Ausland"],["absent","abwesend; fehlend"],["absolute","absolut"],["to accept","an-/hinnehmen"],["accident","Unfall"],["to accompany","begleiten"],["account","Konto; Bericht; Rechnung"],["across","quer durch/über"],["to act","handeln; aufführen"],["action","Handlung"],["active","rege; tätig; wirksam"],["activity","Tätigkeit; Betätigung"],["actor","Schauspieler"],["actress","Schauspielerin"],["actual","tatsächlich, wirklich"],["to add","hinzufügen; beitragen"],["addition","Addition; Zusatz"],["address","Anschrift; Ansprache"],["to admire","bewundern"],["admission","Eintritt"],["to admit","zugeben; zulassen"],["to advance","vorankommen"],["advantage","Vorteil"],["adventure","Abenteuer"],["to advertise","annoncieren; anzeigen"],["advertisement","Anzeige; Reklame"],["advice","Rat"],["to advise","raten"],["to afford s.th.","sich etw. leisten"],["afraid","ängstlich; besorgt"],["after","nach; nachdem; nachher"],["afternoon","Nachmittag"],["again","wieder"],["age","Lebensalter"],["ago","vor(her)"],["to agree","übereinstimmen"],["agreement","Übereinkunft; Abkommen"],["ahead","vorwärts"],["to aim at s.th.","etw. anstreben"],["aim","Ziel; Zweck"],["air","Luft"],["alive","lebend; lebendig"],["all","all; ganz; jede(r, s)"],["to allow","erlauben; gewähren"],["almost","beinahe; fast"],["along","längs; weiter"],["already","schon; bereits"],["also","auch"],["although","obwohl; obgleich"],["altogether","zusammen; mit allem"],["always","immer; stets"],["ambulance","Krankenwagen"],["among","unter; zwischen"],["amount","Betrag"],["amusement","Vergnügen; Unterhaltung"],["ancient","alt; uralt"],["animal","Tier"],["another","ein anderer; eine andere"],["to answer","be(antworten)"],["answer","Antwort"],["any","irgendein, (irgend)etwas"],["anybody/one","irgend(jemand), jeder"],["anything","(irgend)etwas; alles; nichts"],["anyway","jedenfalls; trotzdem"],["anywhere","irgendwo; überall"],["apart","abseits; auseinander"],["apartment","Wohnung"],["to appear","scheinen; erscheinen"],["appearance","Anschein; Erscheinung"],["apple","Apfel"],["application","Anwendung; Bewerbung"],["to apply","anwenden; sich bewerben"],["appointment","Ernennung; Verabredung"],["to approve","billigen; zulassen"],["area","Fläche; Gebiet; Gegend"],["to argue","diskutieren; s.streiten"],["arm","Arm; Abzweigung"],["army","Heer; Armee"],["around","ringsherum; ungefähr"],["to arrange","(an)ordnen; einrichten"],["to arrest","verhaften; auf-/anhalten"],["arrival","Ankunft"],["to arrive","ankommen"],["art","Kunst"],["article","Artikel; Gegenstand"],["as","als; wie"],["ashamed","beschämt"],["aside","beiseite"],["to ask","bitten; fragen; fordern"],["asleep","schlafend, im Schlaf"],["at","an; auf; in; über; um; zu"],["to attach","befestigen"],["to attack","angreifen"],["attack","Angriff; Anfall"],["to attempt","versuchen"],["attempt","Versuch"],["to attend","besuchen"],["attention","Aufmerksamkeit"],["to attract","anziehen; fesseln"],["attractive","attraktiv; reizvoll"],["aunt","Tante"],["autumn","Herbst"],["available","verfügbar; erhältlich"],["average","Durchschnitt; durchschnittl."],["to avoid","(ver)meiden"],["to awake","erwachen; wecken"],["awake","wach"],["aware","bewusst"],["away","weg; fort; entfernt; abwesend"],["awful","schrecklich; furchtbar"],["back","Rücken; Rückseite; zurück"],["backward/s","rückwärts; nach hinten"],["bad","schlecht; schlimm; übel"],["bag","Tasche; Tüte; Sack"],["baggage","Reisegepäck"],["to bake","backen"],["balance","Gleichgewicht; Bilanz"],["ball","Ball; Kugel"],["band","Band"],["bank","Bank; Ufer"],["bank account","Bankkonto"],["banknote","Geldschein"],["bar","Stange; Riegel; Theke; Bar"],["bare","nackt; bloß"],["barefoot","barfuß"],["bargain","Sonderangebot"],["base","Basis; Sockel"],["basin","Waschbecken; Schale"],["basket","Korb"],["bath","Badewanne"],["bathroom","Bad; Badezimmer"],["battle","Schlacht"],["to be","sein"],["beach","Strand"],["bean","Bohne"],["to bear","(er)tragen; hervorbringen"],["bear","Bär"],["beard","Bart"],["to beat","schlagen; besiegen"],["beautiful","schön"],["beauty","Schönheit"],["because","weil; wegen"],["to become","werden"],["bed","Bett"],["bee","Biene"],["beef","Rindfleisch"],["beer","Bier"],["beetle","Käfer"],["before","bevor; ehe; vor"],["beggar","Bettler"],["to begin","anfangen; beginnen"],["beginning","Anfang; Beginn"],["to behave","s. benehmen; s. verhalten"],["behaviour","Betragen; Verhalten"],["belief","Glaube; Überzeugung"],["to believe in","glauben an"],["bell","Glocke; Klingel"],["to belong to","gehören"],["belt","Gürtel"],["bench","(Sitz-)Bank"],["to bend","(sich) biegen; verbiegen"],["bend","Kurve"],["beside","neben"],["best","beste; am besten"],["to bet","wetten"],["better","besser"],["between","dazwischen; zwischen"],["beyond","jenseits; über; darüber hinaus"],["bicycle","Fahrrad"],["big","groß"],["bill","Rechnung"],["bird","Vogel"],["birth","Geburt"],["bit","Stück; Stückchen"],["to bite","beißen"],["bitter","bitter"],["black","schwarz"],["to blame","tadeln; vorwerfen"],["to bleed","bluten"],["blind","blind"],["to block","(ab-,ver-)sperren"],["blood","Blut"],["blossom","Blüte"],["blouse","Bluse"],["to blow","blasen; wehen"],["blue","blau"],["board","Brett; Tafel; Tisch"],["boat","Boot"],["body","Körper"],["to boil","kochen; sieden"],["bone","Knochen; Gräte"],["book","Buch"],["border","Grenze; Rand"],["born","geboren"],["to borrow","borgen; entleihen"],["boss","Chef(in); Boss"],["both","beide"],["bottle","Flasche"],["bottom","Boden; Grund"],["to bow","verneigen; verbeugen"],["bowl","Schüssel; Schale"],["box","Schachtel"],["boy","Junge"],["brain","Gehirn"],["branch","Zweig; Ast; Zweigstelle"],["brave","tapfer; mutig"],["bread","Brot"],["to break","brechen; zerbrechen"],["break","Pause"],["breakfast","Frühstück"],["breast","Brust"],["breath","Atem; Hauch"],["to breathe","atmen"],["bridge","Brücke"],["bright","hell; klar; heiter"],["to bring","(mit-, her-)bringen"],["broad","breit; weit"],["broken","kaputt; zerbrochen"],["brother","Bruder"],["brother-in-law","Schwager"],["brown","braun"],["brush","Bürste"],["to build","bauen"],["building","Gebäude"],["burglar","Einbrecher(in)"],["to burn","(ver)brennen"],["to burst","platzen; bersten"],["to bury","be-/vergraben"],["bus","Bus"],["bush","Busch"],["business","Geschäft; Angelegenheit"],["busy","beschäftigt; fleißig"],["but","aber; sondern"],["butcher","Fleischer; Metzger"],["butter","Butter"],["button","Knopf"],["to buy","kaufen"],["by","von; durch; an; bei"],["Bye","Tschüss!"],["café","Café"],["cake","Kuchen"],["to call","rufen"],["call","Ruf; Anruf"],["to calm","beruhigen"],["calm","ruhig; still"],["camera","Fotoapparat"],["camping","Zelten; Camping"],["can","Dose; Büchse; können"],["cap","Mütze; Deckel"],["capital","Hauptstadt; Großbuchstabe"],["car","Auto"],["car park","Parkplatz"],["card","Karte"],["to care","sich kümmern"],["care","Sorgen; Sorgfalt; Pflege"],["careful","vorsichtig"],["carpet","Teppich"],["to carry","tragen"],["case","Fall; Sache; Koffer"],["to cash","einlösen; einkassieren"],["cash","(Bar-)Geld"],["castle","Schloss"],["cat","Katze"],["to catch","(auf)fangen; fassen"],["to cause","verursachen"],["cellar","Keller"],["centimetre","Zentimeter"],["centre","Mittelpunkt; Mitte; Zentrum"],["century","Jahrhundert"],["certain","sicher; gewiss"],["chain","Kette"],["chair","Stuhl"],["chalk","Kreide"],["chance","Gelegenheit; Zufall"],["to change","wechseln; (sich) ändern"],["change","Veränderung; Wechselgeld"],["character","Charakter; Romangestalt"],["to charge","berechnen"],["charming","reizend; entzückend"],["to chat","plaudern; chatten"],["cheap","billig"],["to cheat","betrügen"],["to cheer","jubeln"],["cheerful","fröhlich; heiter"],["cheese","Käse"],["chemist","Apotheker; Chemiker; Drogist"],["cheque","Scheck"],["cherry","Kirsche"],["chest","Brust(korb)"],["chicken","Huhn"],["child","Kind"],["childhood","Kindheit"],["chill out","sich beruhigen, relaxen"],["chimney","Schornstein"],["chin","Kinn"],["chocolate","Schokolade"],["choice","Wahl; Auswahl"],["to choose","(aus)wählen; vorziehen"],["Christmas","Weihnachten"],["church","Kirche"],["cigarette","Zigarette"],["cinema","Kino"],["circle","Kreis"],["circulation","Kreislauf; Umlauf"],["citizen","Bürger"],["city","(grosse) Stadt; Stadtzentrum"],["civilization","Kultur; Zivilisation"],["to class","einordnen"],["class","Klasse; Stand"],["to clean","putzen"],["clean","sauber"],["to clear","klären; aufräumen"],["clear","klar; hell"],["clerk","(Büro-)Angestellte(r)"],["clever","klug; geschickt"],["to climb","klettern; (be)steigen"],["clock","Uhr"],["to close","zumachen; (ab)schließen"],["close","nahe"],["cloth","Stoff; Tischtuch"],["clothes","Kleider; Kleidung"],["cloud","Wolke"],["club","Verein; Knüppel"],["coal","(Stein-)Kohle"],["coast","Küste"],["coat","Mantel"],["coffee","Kaffee"],["coin","Münze"],["cold","Kälte; Erkältung; kalt"],["collar","Kragen; Halsband"],["to collect","(ein)sammeln; abholen"],["collection","Sammlung"],["college","College; Universität (US)"],["colour","Farbe"],["comb","Kamm"],["to combine","verbinden; kombinieren"],["to come","kommen"],["to comfort","trösten"],["comfortable","bequem; behaglich"],["commerce","Handel"],["commercial","kaufmännisch"],["committee","Ausschuss"],["common","gemeinsam; allgemein"],["communicate","sich verständlich machen"],["to compare","vergleichen"],["comparison","Vergleich"],["to complain","(s. be)klagen; s.beschweren"],["complaint","Beschwerde; Klage"],["to complete","vervollständigen"],["complete","vollständig; völlig"],["concentrate","sich konzentrieren"],["to concern","betreffen"],["concert","Konzert"],["condition","Bedingung; Zustand"],["confidence","Vertrauen; Selbstbewusstsein"],["confident","zuversichtlich; überzeugt"],["to confuse","verwirren; verwechseln"],["confusion","Verwirrung; Durcheinander"],["to connect","verbinden"],["connection","Zusammenhang; Verbindung"],["conscience","Gewissen"],["conscious","bewusst"],["to consider","erwägen; überlegen"],["to consist of","bestehen (aus)"],["to contain","enthalten; umfassen"],["content","Inhalt"],["continue","fortfahren; fortsetzen"],["to control","kontrollieren; beherrschen"],["control","Kontrolle; Beherrschung"],["convenient","bequem; passend; günstig"],["conversation","Unterhaltung; Gespräch"],["to convince","überzeugen"],["to cook","kochen"],["cook","Koch; Köchin"],["cooker","Herd"],["cool","kühl"],["copy","Kopie; Exemplar"],["corner","Ecke; Winkel"],["to correct","verbessern"],["correction","Korrektur; Berichtigung"],["to cost","kosten"],["cottage","Häuschen; Hütte"],["to cough","husten"],["to count","zählen"],["country","Land"],["courage","Mut"],["course","Strecke; Studiengang; Kurs"],["court","Hof; Gericht"],["cover","Decke"],["cow","Kuh"],["crash","Krach; Absturz"],["cream","Rahm; Sahne; Creme"],["crime","Verbrechen"],["criminal","Verbrecher, verbrecherisch"],["critic","Kritiker(in)"],["critical","kritisch"],["criticism","Kritik"],["cross","Kreuz; quer"],["crossing","Kreuzung"],["crowd","Menge; Gedränge"],["to crown","krönen"],["cruel","grausam"],["to cry","weinen; rufen; schreien"],["cry","Schrei"],["cup","Tasse"],["cupboard","Schrank"],["to cure","heilen"],["curious","neugierig; seltsam"],["currency","Währung"],["current","Strömung; laufend; aktuell"],["curve","Kurve"],["cushion","Kissen"],["custom","Sitte; Gewohnheit; Brauch"],["customs","Zollamt"],["to cut","schneiden; kürzen"],["daily","täglich"],["to damage","beschädigen"],["to dance","tanzen"],["danger","Gefahr"],["dangerous","gefährlich"],["dark","Dunkelheit; dunkel"],["darkness","Dunkelheit"],["date","Datum; Verabredung"],["daughter","Tochter"],["daughter-in-law","Schwiegertochter"],["day","Tag"],["dead","tot"],["dear","teuer; lieb"],["death","Tod"],["to decide","entscheiden, s. entschließen"],["decision","Entscheidung"],["deep","tief"],["degree","Grad; Stufe; Rang"],["delay","Verspätung; Verzögerung"],["to deliver","liefern"],["to demand","verlangen; fordern"],["dentist","Zahnarzt, Zahnärztin"],["to deny","abstreiten; ableugnen"],["department","Abteilung"],["departure","Abreise; Abfahrt"],["to depend on","abhängig sein, s.verlassen auf"],["to describe","beschreiben"],["description","Beschreibung"],["to deserve","verdienen"],["desire","Wunsch; Verlangen"],["to destroy","zerstören; vernichten"],["destruction","Zerstörung; Vernichtung"],["detail","Einzelheit"],["to develop","(sich) entwickeln"],["development","Entwicklung"],["devil","Teufel"],["dial","wählen"],["to dictate","diktieren"],["to die","sterben"],["difference","Unterschied; Verschiedenheit"],["different","verschieden; anders"],["difficult","schwer; schwierig"],["dinner","Abendessen"],["direct","gerade; direkt"],["direction","Richtung; Leitung"],["director","Direktor(in); Regisseur"],["dirt","Schmutz; Unrat"],["dirty","schmutzig"],["disadvantage","Nachteil"],["to disappear","verschwinden"],["to disappoint","enttäuschen"],["to discover","entdecken"],["discovery","Entdeckung"],["to discuss","erörtern; besprechen"],["discussion","Diskussion"],["disease","Krankheit"],["distance","Entfernung"],["to distribute","verteilen"],["district","Gegend; Bezirk"],["to disturb","stören"],["to divide","(ein-, auf-)teilen"],["to do","tun"],["doctor","Arzt; Ärztin; Doktor"],["dog","Hund"],["door","Tür"],["double","doppelt; Doppelgänger"],["to doubt","zweifeln"],["doubt","Zweifel"],["down","her-/hinunter; unten"],["downstairs","nach unten; unten"],["to draw","ziehen; zeichnen"],["to dream","träumen"],["dream","Traum"],["to dress","sich anziehen"],["dress","Kleid"],["to drink","trinken"],["drink","Getränk"],["to drive","fahren"],["driver","Fahrer(in)"],["dry","trocken"],["duck","Ente"],["due","fällig"],["during","während"],["dust","Staub"],["duty","Pflicht"],["each","jeder(r, s)"],["each other","einander; sich"],["ear","Ohr, Gehör"],["early","früh; bald"],["to earn","verdienen"],["earth","Erde; Welt"],["east","Osten; östlich"],["easy","leicht; sorglos; angenehm"],["to eat","essen; fressen"],["economical","sparsam; wirtschaftlich"],["edge","Kante; Rand"],["to educate","erziehen; ausbilden"],["education","Erziehung; Bildung"],["effect","Wirkung; Eindruck"],["effort","Anstrengung; Mühe"],["egg","Ei"],["either","eine(r, s) von beiden"],["election","Wahl"],["electric","elektrisch"],["electricity","Strom"],["else","sonst (noch); anders"],["embarrassed","verlegen"],["to employ","beschäftigen; verwenden"],["employee","Arbeitnehmer(in)"],["employer","Arbeitgeber(in)"],["empty","leer"],["to end","beenden"],["end","Ende; Zweck; Ziel"],["enemy","Feind"],["energy","Energie; Tatkraft"],["engine","Maschine; Motor"],["to enjoy","genießen; Freude haben an"],["enough","genug"],["to enter","be-/eintreten; einschreiben"],["entrance","Eingang; Eintritt"],["envelope","(Brief-)Umschlag"],["equal","gleich"],["error","Fehler"],["to escape","entfliehen; entkommen"],["escape","Flucht"],["especially","besonders"],["even","eben; gerade; sogar"],["evening","Abend"],["event","Ereignis; Veranstaltung"],["ever","jemals; je"],["every","jede(r, s)"],["everyone","alle, jeder"],["everything","alles"],["everywhere","überall"],["exact","genau; pünktlich"],["examination","Prüfung; Untersuchung"],["to examine","prüfen; untersuchen"],["example","Beispiel"],["excellent","ausgezeichnet; vorzüglich"],["except for","außer; abgesehen von"],["exception","Ausnahme"],["to exchange","tauschen; umtauschen"],["exciting","aufregend; spannend"],["excitement","Spannung; Begeisterung"],["excuse","Entschuldigung"],["to exercise","(aus)üben"],["exercise","Aufgabe; Bewegung"],["to exist","vorhanden sein; bestehen"],["exit","Ausgang"],["to expect","erwarten"],["expensive","teuer"],["expense","(Un-)Kosten"],["to experience","erleben; durchmachen"],["experiment","Versuch; Experiment"],["expert","Experte; Expertin"],["to explain","erklären; erläutern"],["explanation","Erklärung"],["to express","ausdrücken; äußern"],["expression","Ausdruck; Redewendung"],["extra","besonders; extra"],["eye","Auge"],["face","Gesicht"],["fact","Tatsache"],["factory","Fabrik"],["to fail","misslingen; versagen"],["fair","gerecht; blond; Jahrmarkt"],["faith","Glaube"],["to fall","fallen"],["false","falsch; unrichtig"],["familiar","vertraut"],["family","Familie"],["famous","berühmt"],["far","weit; fern"],["fashion","Mode"],["fast","schnell"],["father","Vater"],["fault","Fehler; Schuld"],["favour","Gefälligkeit; Gefallen"],["favourite","Lieblings-; Liebling"],["to fear","(be)fürchten; Angst haben"],["fear","Furcht"],["feather","(Vogel-)Feder"],["to feed","füttern; verpflegen"],["to feel","fühlen; spüren; empfinden"],["feeling","Gefühl"],["female","weiblich"],["fever","Fieber"],["few","wenig"],["field","Feld; Gebiet"],["to fight","kämpfen; sich streiten"],["fight","Streit; Kampf"],["figure","Zahl; Gestalt; Figur"],["to fill","füllen; voll stopfen"],["film","Film; Schicht; Belag"],["final","endgültig"],["to find","finden"],["finger","Finger"],["to finish","beenden; erledigen"],["fire","Feuer"],["firm","Firma; fest; hart; standhaft"],["first","erste(r, s); zuerst"],["fish","Fisch"],["to fit","passen"],["fit","geeignet; tauglich"],["to fix","befestigen; reparieren"],["flag","Fahne; Flagge"],["flame","Flamme"],["flat","Wohnung; flach"],["flavour","Geschmack; Aroma"],["flight","Flug; Flucht"],["flood","Flut"],["floor","Boden; Etage; Stockwerk"],["flour","Mehl"],["to flow","fließen; strömen"],["flower","Blume; Blüte"],["flu","Grippe"],["to fly","fliegen"],["fly","Fliege"],["fog","Nebel"],["to follow","folgen; verfolgen; beachten"],["food","Lebensmittel; Nahrung"],["foot / feet","Fuß / Füße"],["football","Fußball"],["for","für; nach; als; zu"],["to force","zwingen"],["force","Gewalt; Stärke; Macht"],["foreign","ausländisch; fremd"],["foreigner","Ausländer(in)"],["forest","Wald; Forst"],["to forget","vergessen"],["to forgive","verzeihen; vergeben"],["to form","bilden; gestalten"],["form","Form; Formular; Schulklasse"],["forward","vorwärts; voran"],["free","frei; offenherzig; umsonst"],["freedom","Freiheit"],["to freeze","(ge)frieren"],["fresh","frisch"],["friend","Freund(in)"],["friendship","Freundschaft"],["from","von; aus; vor"],["front","Vorderseite; Front"],["fruit","Obst; Früchte"],["full","voll; vollständig"],["fun","Spaß; Scherz"],["funny","komisch; lustig"],["furniture","Möbel"],["further","ferner; weiter"],["future","Zukunft"],["game","Spiel"],["garden","Garten"],["gas","Gas; Benzin (US)"],["general","allgemein"],["generous","freigiebig; großzügig"],["gentle","sanft; zärtlich; mild"],["gentleman","Herr; Gentleman"],["German","Deutsche(r); deutsch"],["to get","erreichen; erhalten"],["girl","Mädchen"],["to give","geben; schenken"],["glad","froh"],["to go","gehen; fahren"],["God","Gott"],["gold","Gold"],["good","gut"],["goods","Güter; Waren"],["to govern","regieren"],["government","Regierung"],["grammar","Grammatik"],["gram(me)","Gramm"],["grass","Gras"],["grateful","dankbar"],["grave","Grab; ernst"],["great","groß; bedeutend; großartig"],["green","grün"],["greeting","Gruß; Begrüßung"],["grey","grau"],["ground","Boden"],["group","Gruppe"],["to grow","wachsen; züchten"],["growth","Wachstum; Wuchs"],["to guard","bewachen"],["to guess","(er)raten; vermuten"],["guest","Gast"],["to guide","führen; leiten; lenken"],["hair","Haar"],["haircut","Haarschnitt"],["hairdresser","Friseur"],["half","Hälfte"],["hall","Halle; Flur"],["hammer","Hammer"],["hand","Hand"],["handle","anfassen; behandeln"],["handsome","gut aussehend (Mann)"],["to hang","(auf)hängen"],["to happen","sich ereignen; passieren"],["happy","glücklich"],["hard","hart; schwierig; heftig"],["harvest","Ernte"],["hat","Hut"],["hate","Hass"],["to have","haben; besitzen"],["head","Kopf; Chef"],["headache","Kopfschmerzen"],["health","Gesundheit"],["healthy","gesund"],["to hear","hören; erfahren"],["heart","Herz"],["to heat","heizen"],["heating","Heizung"],["heaven","Himmel"],["heavy","schwer"],["height","Höhe; Höhepunkt"],["hell","Hölle"],["to help","helfen"],["help","Hilfe"],["helpful","hilfsbereit; nützlich"],["here","hier"],["to hide","(sich) verbergen; verstecken"],["high","hoch"],["hill","Hügel"],["history","Geschichte"],["to hit","treffen; (an)schlagen"],["to hold","halten; festhalten"],["hole","Loch"],["holiday","Feiertag; Ferien; Urlaub"],["holy","heilig"],["home","Heim; Haus"],["honest","ehrlich; aufrichtig"],["to hope","hoffen"],["hope","Hoffnung"],["horse","Pferd"],["hospital","Krankenhaus"],["hot","heiß; warm"],["hotel","Hotel"],["hour","Stunde"],["house","Haus"],["how","wie"],["however","aber; jedoch; dennoch"],["human","menschlich"],["humour","Humor"],["hundred","hundert"],["hunger","Hunger"],["hungry","hungrig"],["to hunt","jagen"],["to hurry","sich beeilen"],["to hurt","verletzen; schmerzen"],["husband","(Ehe-)Mann"],["ice","Eis"],["ice-cream","(Speise-)Eis"],["idea","Idee, Vorstellung, Ahnung"],["if","wenn; falls; ob"],["ill","krank"],["illness","Krankheit"],["to imagine","sich einbilden; sich vorstellen"],["imagination","Fantasie; Einbildungskraft"],["immediately","sofort; unmittelbar"],["important","wichtig; bedeutend"],["impossible","unmöglich"],["impression","Eindruck"],["to improve","verbessern; sich bessern"],["improvement","(Ver-)Besserung; Fortschritt"],["to include","enthalten; einschließen"],["to increase","zunehmen; vergrößern"],["independence","Unabhängigkeit"],["to influence","beeinflussen"],["to inform","benachrichtigen; informieren"],["information","Auskunft; Information(en)"],["to inquire","sich erkundigen"],["inquiry","Anfrage; Erkundigung"],["inside","inner; innerhalb"],["instead of","stattdessen"],["instruction","Anweisung; Unterricht"],["instrument","Instrument"],["intelligence","Intelligenz"],["intelligent","intelligent"],["to intend","beabsichtigen"],["interest","Interesse; Zinsen"],["interesting","interessant"],["international","international"],["to interrupt","unterbrechen; stören"],["interruption","Unterbrechung"],["into","in (...hinein)"],["to introduce","einführen; vorstellen"],["to invent","erfinden"],["invention","Erfindung"],["invitation","Einladung"],["to invite","einladen; auffordern"],["iron","Eisen"],["to iron","bügeln"],["it","es"],["its","sein(e); ihr(e)"],["jacket","Jacke"],["jealous","eifersüchtig"],["job","Arbeit; Job"],["to join","sich anschließen an"],["to joke","Spaß machen"],["joke","Scherz; Witz"],["journey","Reise; Fahrt"],["joy","Freude"],["to judge","richten; beurteilen"],["judge","Richter(in)"],["to jump","springen"],["just","gerecht; genau; gerade"],["justice","Gerechtigkeit"],["to keep","(be)halten; aufbewahren"],["key","Schlüssel; Taste"],["to kick","treten"],["to kill","töten"],["kilogram(me)","Kilogramm"],["kilometre","Kilometer"],["kind","Art; Sorte; freundlich"],["to kiss","küssen"],["kiss","Kuss"],["kitchen","Küche"],["knee","Knie"],["knife","Messer"],["to knock","klopfen"],["knot","Knoten"],["to know","wissen; kennen"],["knowledge","Wissen"],["to lack","ermangeln"],["lady","Dame"],["lake","See"],["lamp","Lampe"],["to land","landen"],["land","Land; Boden"],["language","Sprache"],["large","groß; weit"],["to last","dauern"],["last","letzte(r, s); zuletzt"],["late","spät; verspätet"],["to laugh","lachen"],["laughter","Gelächter"],["law","Gesetz"],["lawyer","Rechtsanwalt"],["to lay","legen; stellen; setzen"],["lazy","faul; träge"],["to lead","führen; leiten; vorangehen"],["leader","Führer(in); Leiter(in)"],["to lean","lehnen"],["to learn","lernen; erfahren"],["least","kleinste(r, s); wenigste(r, s)"],["to leave","verlassen; hinter-; überlassen"],["left","links; linke(r, s); linke Seite"],["leg","Bein"],["to lend","(ver)leihen; borgen"],["length","Länge"],["less","weniger; geringer"],["lesson","(Lehr-)Stunde"],["to let","lassen; zulassen; vermieten"],["letter","Brief; Buchstabe"],["level","Höhe; Niveau; Ebene; eben"],["library","Bibliothek"],["to lie","liegen; lügen"],["lie","Lüge"],["life","Leben"],["to lift","(auf)heben"],["to light","be-/erleuchten; anzünden"],["light","Licht; hell"],["to like","gern haben; mögen"],["like","gleich; ähnlich; wie"],["limit","Grenze"],["line","Linie; Strecke"],["lion","Löwe"],["lip","Lippe"],["list","Liste; Verzeichnis"],["to listen","zuhören; lauschen"],["literature","Literatur"],["litre","Liter"],["little","klein; wenig; kaum"],["to live","leben; wohnen"],["live","lebendig; (Sendung) live"],["living","lebendig; Lebensunterhalt"],["loan","Leihgabe; Anleihe"],["local","örtlich"],["to lock","ab-/verschließen"],["lonely","einsam"],["long","lang; weit"],["to look","sehen; blicken"],["look","Blick"],["loose","lose; locker"],["lord","Herr"],["to lose","verlieren"],["loss","Verlust"],["lots of","eine Menge"],["to love","lieben"],["love","Liebe"],["lovely","schön; reizend"],["low","niedrig; tief"],["luck","Glück"],["lucky","Glücks-; glücklich"],["luggage","Gepäck"],["mad","verrückt; wahnsinnig"],["magazine","Zeitschrift; Magazin"],["mail","Post"],["main","Haupt-; hauptsächlich"],["to make","machen"],["male","männlich"],["man","Mann; Mensch"],["management","Führung; Verwaltung"],["many","viele"],["map","(Land-)Karte"],["to march","marschieren"],["to mark","kennzeichnen"],["market","Markt"],["marriage","Ehe; Heirat"],["to marry","heiraten"],["match","Wettkampf; Streichholz"],["material","Material; Stoff"],["matter","Sache; Angelegenheit"],["may","dürfen"],["me","mir; mich"],["meal","Mahlzeit"],["to mean","meinen; bedeuten"],["meaning","Sinn; Bedeutung"],["to measure","messen"],["measure","Maß(Einheit); Maßnahme"],["mechanic","Mechaniker(in)"],["medical","medizinisch"],["medicine","Medizin; Arznei"],["to meet","(sich) treffen; kennen lernen"],["meeting","Versammlung; Begegnung"],["to melt","schmelzen"],["member","Mitglied"],["memory","Gedächtnis; Erinnerung"],["to mention","erwähnen"],["message","Nachricht; Botschaft"],["method","Methode"],["metre","Meter"],["midnight","Mitternacht"],["middle","Mitte"],["mild","mild"],["military","Militär; militärisch"],["milk","Milch"],["to mind","Acht geben"],["mind","Verstand; Geist"],["mine","meine(e, er, es)"],["minister","Minister; Pfarrer"],["minute","Minute"],["mirror","Spiegel"],["to miss","vermissen; versäumen"],["mistake","Fehler; Irrtum"],["to mix","mischen"],["mixture","Mischung; Gemisch"],["mobile","Handy"],["model","Muster; Modell"],["modern","modern; zeitgemäß"],["moment","Augenblick"],["money","Geld"],["month","Monat"],["mood","Stimmung; Laune"],["moon","Mond"],["more","mehr"],["morning","Morgen; Vormittag"],["most","meist"],["mother","Mutter"],["motor","Motor"],["mountain","Berg"],["mouth","Mund; Mündung"],["to move","bewegen; erregen; umziehen"],["movement","Bewegung"],["Mr/Mrs (Smith)","Herr/Frau (Smith)"],["Ms (Smith)","Frau (Smith)"],["much","viel; sehr"],["to murder","ermorden"],["murder","Mord"],["murderer","Mörder"],["muscle","Muskel"],["music","Musik"],["must","müssen"],["mystery","Geheimnis"],["mysterious","geheimnisvoll; rätselhaft"],["nail","Nagel"],["narrow","eng; knapp; schmal"],["nation","Volk; Nation"],["native","Eingeborene(r)"],["natural","natürlich"],["nature","Natur; Beschaffenheit"],["near","nahe"],["necessary","notwendig; nötig"],["neck","Hals; Genick"],["to need","brauchen; benötigen"],["need","Not; Bedürfnis"],["needle","Nadel"],["to neglect","vernachlässigen"],["neighbour","Nachbar(in)"],["neither","keine(r, s) (von beiden)"],["nerve","Nerv"],["nervous","nervös; reizbar"],["nest","Nest"],["net","Netz; netto"],["never","nie; niemals"],["new","neu"],["news","Nachricht; Neuigkeit(en)"],["newspaper","Zeitung"],["next","nächste(r, s); zunächst"],["nice","nett; sympathisch"],["night","Nacht"],["nobody","niemand"],["noise","Lärm; Geräusch"],["noisy","laut; lärmend"],["none","keine(r, s); gar nicht"],["nonsense","Unsinn; Quatsch"],["nor","auch nicht"],["normal","normal"],["north","Norden; nördlich"],["nose","Nase"],["not","nicht"],["to note","beachten"],["note","Anmerkung; Notiz"],["nothing","nichts"],["to notice","(be)merken"],["notice","Notiz; Bekanntmachung"],["now","jetzt; nun; eben"],["nowhere","nirgends"],["number","Nummer; Zahl"],["nurse","Krankenschwester"],["to obey","gehorchen; befolgen"],["object","Gegenstand; Objekt"],["to observe","beobachten; wahrnehmen"],["obviously","offensichtlich"],["occasion","Gelegenheit; Anlass"],["occupation","Beruf; Beschäftigung"],["to occupy","besetzen"],["ocean","Ozean"],["of","von; über; aus; vor"],["off","fort; weg; von; entfernt"],["to offer","(an)bieten"],["office","Büro; Amt"],["official","Beamte(r), offiziell"],["often","oft; häufig"],["oil","Öl"],["old","alt"],["on","auf; in; an; über; bei; nach"],["once","einmal"],["one","eins; man"],["only","nur; einzig"],["to open","öffnen"],["open","offen"],["to operate","handhaben; operieren"],["operation","Operation; Verfahren"],["opinion","Meinung; Gutachten"],["opportunity","Gelegenheit; Chance"],["opposite","Gegenteil; entgegengesetzt"],["or","oder"],["to order","befehlen; bestellen"],["order","Ordnung; Befehl; Auftrag"],["ordinary","gewöhnlich; alltäglich"],["organ","Orgel; Organ"],["to organize","organisieren; ordnen"],["organization","Organisation"],["origin","Ursprung"],["original","Original; ursprünglich"],["other","andere(r, s)"],["otherwise","sonst"],["our","unser, unsere"],["ours","unserer, unsere, unseres"],["out","aus; hinaus; auswärts"],["outdoors","im Freien"],["outside","Äußere(s); außer; draußen"],["over","über; hinüber; über"],["to owe","schulden; verdanken"],["to own","besitzen"],["owner","Besitzer(in); Inhaber(in)"],["packet","Paket"],["page","Seite; Blatt"],["pain","Schmerz"],["painful","schmerzhaft"],["to paint","(an)streichen; malen"],["pair","Paar"],["palace","Palast"],["pale","blass; bleich"],["pan","Pfanne"],["paper","Papier; Zeitung; Schriftstück"],["parcel","Paket"],["parents","Eltern"],["park","Park"],["part","Teil"],["part-time","Teilzeit"],["particular","besondere(r, s)"],["party","Partei; Party"],["to pass","vorbeigehen; vergehen"],["passenger","Passagier"],["passport","Pass"],["past","Vergangenheit; vergangen"],["path","Pfad; Weg"],["patience","Geduld"],["patient","Patient(in); geduldig"],["to pause","pausieren; verweilen"],["to pay","(be)zahlen"],["pay","Lohn"],["peace","Frieden; Ruhe"],["pen","Kugelschreiber; Feder"],["pencil","Bleistift"],["people","Leute; Volk"],["perfect","perfekt; vollkommen"],["to perform","ausführen; spielen; vortragen"],["performance","Vorstellung; Leistung"],["perhaps","vielleicht"],["permission","Genehmigung; Erlaubnis"],["to permit","erlauben"],["person","Person"],["personal","persönlich"],["petrol","Benzin"],["to phone","telefonieren"],["phone","Telefon"],["to photo(graph)","fotografieren"],["photo(graph)","Foto(grafie); Aufnahme"],["to pick","pflücken; auswählen"],["picture","Bild; Foto"],["piece","Stück"],["pin","Stecknadel"],["pipe","Pfeife; Rohr"],["to place","setzen; stellen; legen"],["place","Platz; Ort"],["plain","eben; einfach; eindeutig"],["to plan","planen"],["plan","Plan; Entwurf"],["plane","Flugzeug"],["to plant","pflanzen"],["plastic","Plastik; aus Plastik"],["to play","spielen"],["play","Spiel; Theaterstück"],["player","Spieler(in)"],["to please","gefallen; erfreuen"],["please","bitte"],["pleasure","Vergnügen"],["plenty of","viel"],["pocket","Tasche"],["poetry","Dichtung"],["to point","zeigen"],["point","Spitze; Punkt"],["poison","Gift"],["police","Polizei"],["polite","höflich"],["politics","Politik"],["pool","Teich; Schwimmbad"],["popular","beliebt; volkstümlich"],["population","Bevölkerung"],["position","Lage; Stellung; Standpunkt"],["possession","Besitz"],["possibility","Möglichkeit"],["possible","möglich"],["post","Post"],["post office","Postamt"],["pot","Topf; Kanne"],["potato","Kartoffel"],["pound","Pfund"],["to pour","gießen; einschenken"],["powder","Puder; Pulver"],["powerful","mächtig"],["practical","praktisch; brauchbar"],["to practise","üben; trainieren; betreiben"],["to praise","loben"],["to pray","beten"],["precious","kostbar"],["to prefer","vorziehen"],["prejudice","Vorurteil"],["to prepare","vorbereiten; zubereiten"],["presence","Gegenwart; Anwesenheit"],["present","Geschenk; gegenwärtig"],["president","Vorsitzende(r); Präsident(in)"],["to press","drücken; pressen; drängen"],["pressure","Druck"],["pretend","vorgeben; heucheln"],["pretty","hübsch; ziemlich"],["to prevent","abhalten; vorbeugen"],["price","Preis"],["pride","Stolz; Hochmut"],["to print","drucken"],["prison","Gefängnis (Am. auch: jail)"],["prisoner","Gefangene(r)"],["private","privat; persönlich"],["prize","(Sieges-)Preis"],["probable","wahrscheinlich"],["problem","Problem; Sorge"],["to produce","erzeugen; vorzeigen"],["product","Produkt; Erzeugnis"],["production","Produktion"],["professor","Professor(in)"],["profit","Profit; Gewinn"],["program(me)","Programm"],["progress","Fortschritt"],["to promise","versprechen"],["promise","Versprechen"],["pronunciation","Aussprache"],["proof","Beweis"],["property","Eigentum; Eigenschaft"],["to protect","(be)schützen"],["protection","Schutz"],["proud","stolz; hochmütig"],["to prove","beweisen"],["public","Publikum; öffentlich"],["pub","Kneipe; Wirtshaus"],["to pull","ziehen; reißen"],["to punish","(be)strafen"],["punishment","Strafe; Bestrafung"],["pupil","Schüler"],["purpose","Zweck; Absicht"],["push","stoßen; schieben"],["to put","setzen; stellen; legen"],["quality","Qualität; Eigenschaft"],["quantity","Quantität; Menge"],["quarter","Viertel; Gegend"],["question","Frage"],["queue","(Menschen-)Schlange"],["quick","schnell"],["quiet","Ruhe; ruhig; still"],["quite","ganz; ziemlich"],["race","(Wett-)Rennen; Rasse"],["radio","Radio; Rundfunk"],["railway","Eisenbahn"],["to rain","regnen"],["rain","Regen"],["rather","eher; lieber; ziemlich"],["raw","roh; rau"],["to reach","erreichen"],["to read","lesen"],["ready","fertig; bereit"],["real","wirklich; tatsächlich; echt"],["reality","Wirklichkeit"],["to realize","begreifen; verwirklichen"],["reason","Grund; Ursache; Vernunft"],["to receive","empfangen; erhalten"],["recent","jüngst"],["reception","Empfang; Aufnahme"],["to recommend","empfehlen"],["record","Rekord; Schallplatte"],["recorder","Kassettenrekorder"],["red","rot"],["to reduce","herabsetzen; verringern"],["to refuse","abschlagen; verweigern"],["refusal","Ablehnung; Absage"],["to regret","bedauern; bereuen"],["regular","regelmäßig; normal"],["relation","Verwandte(r); Beziehung"],["relationship","Verwandtschaft; Beziehung"],["relief","Erleichterung; Hilfe"],["religion","Religion"],["to remain","(ver)bleiben; übrig bleiben"],["to remark","bemerken"],["remark","Bemerkung"],["to remember","sich erinnern an"],["to remind","erinnern; mahnen"],["to remove","wegschaffen; beseitigen"],["to rent","(ver)mieten"],["rent","Miete; Mietzins"],["to repair","ausbessern; reparieren"],["to reply","antworten"],["to report","berichten; sich melden"],["report","Bericht"],["request","Bitte; Gesuch"],["to reserve","reservieren; zurückhalten"],["to resist","widerstehen"],["resistance","Widerstand"],["to respect","achten; respektieren"],["respect","Achtung; Respekt; Hinsicht"],["responsible","verantwortlich; zuständig"],["to rest","sich ausruhen"],["rest","Rest; Ruhe"],["restaurant","Restaurant; Gaststätte"],["result","Ergebnis; Resultat"],["to retire","in den Ruhestand treten"],["to return","zurückkehren; zurückschicken"],["review","Nachprüfung; Kritik"],["reward","Belohnung"],["rich","reich"],["to ride","reiten; fahren"],["right","Recht; recht; richtig"],["to ring","läuten; klingeln"],["ring","Ring"],["risk","Wagnis; Risiko"],["river","Fluss"],["road","(Land-)Straße; Weg"],["to rock","schwanken; schaukeln"],["rock","Fels"],["to roll","rollen; drehen"],["roll","Rolle; Brötchen"],["roof","Dach"],["room","Zimmer; Raum"],["rough","rau; groß; roh"],["round","rund; ringsherum"],["royal","königlich"],["rubber","Gummi"],["rude","unhöflich"],["to ruin","ruinieren; verderben"],["to rule","(be)herrschen"],["rule","Regel"],["to run","rennen; laufen; fließen"],["to rush","drängen; rasen"],["rush hour","Hauptverkehrszeit"],["sacrifice","Opfer"],["sad","traurig; betrübt"],["safe","Geldschrank; sicher"],["safety","Sicherheit"],["to sail","segeln"],["saint","Heilige(r)"],["salad","Salat"],["salary","Gehalt"],["sale","Verkauf"],["salt","Salz"],["same","der-/die-/dasselbe"],["sand","Sand"],["satisfaction","Befriedigung; Zufriedenheit"],["to save","retten; sparen; speichern"],["savings","Ersparnisse"],["to saw","sägen"],["to say","sagen"],["scene","Szene; Schauplatz; Bühne"],["school","Schule"],["science","(Natur-)Wissenschaft"],["scientific","wissenschaftlich"],["scientist","Wissenschaftler(in)"],["scissors","Schere"],["to scratch","(zer)kratzen"],["screen","Leinwand; Bildschirm"],["sea","Meer"],["to search","suchen; forschen"],["season","Jahreszeit"],["seat","Sitz; Platz"],["second","Sekunde; zweite(r, s)"],["secret","Geheimnis; geheim; verborgen"],["secretary","Sekretär(in)"],["to see","sehen"],["seed","Same(n); Saat"],["to seem","scheinen"],["seldom","selten"],["self","Ich; Selbst"],["selfish","egoistisch; selbstsüchtig"],["to sell","verkaufen"],["to send","senden; schicken"],["to sense","empfinden; wahrnehmen"],["sense","Sinn; Verstand; Gefühl"],["sentence","Satz; Urteil"],["separate","getrennt; abgesondert"],["serious","ernst(haft)"],["to serve","(be)dienen; servieren"],["to set","setzen; stellen; legen"],["several","mehrere; verschiedene"],["to sew","nähen"],["shadow","Schatten"],["to shake","schütteln; zittern"],["shame","Schamgefühl; Schande"],["shape","Gestalt; Form"],["to share","teilen"],["sharp","scharf; schrill; pünktlich"],["to shave","(sich) rasieren"],["sheep","Schaf(e)"],["sheet","Blatt (Papier); Bettlaken"],["shell","Muschel; Schale; Granate"],["to shine","scheinen; glänzen"],["shine","Schein"],["ship","Schiff"],["shirt","Hemd"],["shock","Schlag; Schock"],["shoe","Schuh"],["to shoot","schießen"],["shop","Laden"],["shore","Ufer"],["short","kurz; klein"],["shorts","Shorts; kurze Hose"],["shot","Schuss"],["shoulder","Schulter"],["to shout","schreien; rufen"],["shout","Schrei"],["to show","zeigen"],["shower","Dusche; Regenschauer"],["to shut","ver(schließen); zumachen"],["shy","schüchtern"],["sick","krank"],["side","Seite"],["sight","Sehkraft; Sehenswürdigkeit"],["to sign","unterzeichnen"],["sign","Zeichen; Schild"],["to signal","signalisieren"],["signature","Unterschrift"],["silence","Schweigen"],["silent","still; schweigsam"],["silk","Seide"],["silly","albern; dumm"],["silver","Silber"],["similar","ähnlich"],["simple","einfach; einfältig"],["since","seitdem; seit"],["to sing","singen"],["single","einzeln; einzig; ledig"],["to sink","sinken"],["sink","Spülbecken"],["sister","Schwester"],["to sit","sitzen"],["situation","Lage; Situation"],["size","Größe"],["skill","Geschicklichkeit; Fertigkeit"],["skilful","geschickt; gewandt"],["skin","Haut"],["skirt","Rock"],["sky","Himmel"],["to sleep","schlafen"],["sleeve","Ärmel"],["slight","gering; klein"],["slim","schlank"],["to slip","schlüpfen; ausrutschen; gleiten"],["slow","langsam"],["small","klein"],["to smell","riechen"],["to smile","lächeln"],["smoke","Rauch"],["smooth","glatt, eben, sämig"],["snake","Schlange"],["snow","Schnee"],["so","so; also; daher"],["soap","Seife"],["social","sozial; gesellig"],["society","Gesellschaft; Verein"],["sock","Socke"],["soft","weich"],["soldier","Soldat"],["solid","fest; solide; zuverlässig"],["to solve","lösen"],["some","manche; irgendein/-etwas"],["somebody","(irgend)jemand"],["something","(irgend)etwas"],["sometimes","manchmal"],["somewhere","irgendwo"],["son","Sohn"],["song","Gesang; Lied"],["soon","bald; früh"],["sorry","betrübt; traurig; erbärmlich"],["sort","Sorte; Gattung"],["soul","Seele"],["to sound","klingen"],["sound","Ton; gesund; vernünftig"],["soup","Suppe"],["sour","sauer"],["source","Quelle; Ursprung"],["south","Süden; südlich"],["space","Raum; Zeitraum"],["to speak","sprechen"],["speech","Sprache; Rede"],["special","besondere(r, s)"],["speed","Geschwindigkeit; rasch fahren"],["to spell","buchstabieren"],["to spend","ausgeben; verbringen"],["spirit","Geist; Seele; Gespenst"],["to split","spalten"],["to spoil","verderben; verwöhnen"],["spoon","Löffel"],["sport","Sport"],["spot","Platz; Fleck"],["to spread","ausbreiten; verteilen"],["spring","Frühling; Quelle"],["square","Viereck; Platz; quadratisch"],["stage","Bühne; Stadium"],["stairs","Treppe"],["stamp","Briefmarke; Stempel"],["to stand","stehen; ausstehen"],["star","Stern"],["start","Anfang"],["state","Staat; Zustand"],["station","Bahnhof; Station"],["to stay","bleiben; sich aufhalten"],["stay","Aufenthalt"],["to steal","stehlen"],["steam","Dampf"],["steel","Stahl"],["to step","treten"],["step","Schritt; Stufe"],["to stick","stecken"],["stick","Stock"],["stiff","steif; schwierig"],["still","still; ruhig; noch; dennoch"],["stock","Vorrat; Lager; Aktie"],["stomach","Magen"],["stone","Stein"],["to stop","anhalten; aufhören"],["store","Vorrat; Lager"],["storm","Sturm"],["story","Geschichte"],["straight","gerade; unmittelbar"],["strange","fremd; merkwürdig"],["stranger","Fremde(r)"],["stream","Strom; Fluss"],["street","Straße"],["strength","Kraft; Stärke"],["to stretch","(sich) ausdehnen"],["to strike","streiken; schlagen"],["strike","Streik"],["string","Schnur; Saite"],["strong","stark; kräftig"],["struggle","Kampf"],["student","Student(in)"],["to study","studieren; lernen"],["study","Studie; Arbeitszimmer"],["stupid","dumm; blöd"],["subject","Gegenstand; Studienfach"],["suburb","Vorort"],["to succeed","Erfolg haben; folgen"],["success","Erfolg"],["successful","erfolgreich"],["such","solche(r, s)"],["sudden","plötzlich"],["to suffer","leiden"],["sugar","Zucker"],["to suggest","vorschlagen; andeuten"],["suggestion","Vorschlag; Andeutung"],["to suit","anpassen; stehen (Kleidung)"],["suit","Anzug"],["summer","Sommer"],["sun","Sonne"],["sunny","sonnig; heiter"],["sunshine","Sonnenschein"],["super","super; fantastisch"],["to supply","liefern; versorgen"],["to support","(unter)stützen; ernähren"],["to suppose","voraussetzen; vermuten"],["sure","sicher; gewiss; zuverlässig"],["surprise","Überraschung"],["to surround","umgeben; einschließen"],["suspicious","argwöhnisch; misstrauisch"],["to swear","schwören; fluchen"],["sweat","Schweiß"],["to sweep","fegen; kehren"],["sweet","süß"],["to swim","schwimmen"],["switch","Schalter"],["sympathy","Mitgefühl; Mitleid"],["system","System; Methode"],["table","Tisch; Tabelle"],["to take","(weg-, ein-)nehmen; ergreifen"],["to talk","reden; sprechen"],["talk","Gespräch"],["tall","groß"],["tape","Band; Tonband"],["task","Aufgabe"],["to taste","schmecken; kosten"],["taste","Geschmack"],["taxi","Taxi"],["tea","Tee"],["teacher","Lehrer(in)"],["to tear","zerreißen; zerren"],["tear","Träne"],["telephone","Telefon; telefonieren"],["television","Fernsehen; Fernseher"],["to tell","erzählen; berichten; sagen"],["temperature","Temperatur"],["tender","zart; zärtlich; empfindlich"],["tent","Zelt"],["term","Semester; Fachausdruck"],["terrible","schrecklich; furchtbar"],["to test","prüfen"],["test","Untersuchung; Prüfung; Test"],["text","Text"],["than","als"],["to thank","danken"],["thanks","Dank"],["that","der-/die-/dasjenige; dass"],["theatre","Theater"],["their","ihr"],["them","sie (pl); ihnen"],["then","dann; folglich; damals"],["there","da; dort; dorthin"],["therefore","deshalb"],["these","diese"],["they","sie (pl)"],["thief","Dieb"],["thin","dünn"],["thing","Ding; Sache"],["to think","denken; meinen; glauben"],["thirst","Durst"],["this","diese (r, s)"],["thorough","gründlich; sorgfältig; genau"],["those","jene (r, s)"],["though","obwohl; obgleich"],["thought","Gedanke"],["thousand","tausend"],["to threaten","(be-, an)drohen"],["throat","Hals; Kehle"],["through","durch"],["to throw","werfen"],["thunder","Donner; donnern"],["thunderstorm","Gewitter"],["tidy","ordentlich; gepflegt"],["to tie","binden"],["tie","Krawatte"],["tight","dicht; fest; eng"],["till","bis"],["time","Zeit; Takt; Mal; Tempo"],["tin","Zinn; Dose; Büchse"],["tired","müde"],["title","Titel"],["to","zu; an; auf; zu"],["today","heute"],["toe","Zehe"],["together","zusammen; zugleich"],["toilet","Toilette"],["tomorrow","morgen"],["ton","Tonne"],["tongue","Zunge; Sprache"],["tonight","heute Abend; heute Nacht"],["too","auch; zu; allzu; überdies"],["tooth","Zahn"],["top","Gipfel; Spitze"],["total","Gesamtbetrag; ganz"],["to touch","berühren; rühren"],["touch","Berührung"],["tough","zäh; hartnäckig; schwierig"],["tour","Tour; Fahrt; Reise"],["tourist","Tourist(in)"],["towards","gegen"],["towel","Handtuch"],["tower","Turm"],["toy","Spielzeug"],["trade","Handel; Geschäft"],["traffic","Verkehr"],["to train","trainieren"],["train","Zug"],["training","Training; Ausbildung"],["to translate","übersetzen"],["translation","Übersetzung"],["to travel","reisen"],["treasure","Schatz"],["to treat","behandeln"],["treatment","Behandlung; Verfahren"],["tree","Baum"],["trick","List; Kniff"],["trip","Reise; Fahrt"],["trouble","Unruhe; Schwierigkeit"],["trousers","(lange) Hose"],["true","wahr; echt"],["to trust","vertrauen"],["trust","Vertrauen"],["to try","versuchen; sich bemühen"],["truth","Wahrheit"],["tube","Rohr; Tube; U-Bahn (UK)"],["tune","Melodie; Lied"],["to turn","drehen; (um)wenden"],["twice","zweimal; doppelt"],["type","Art; Typ"],["tyre","Reifen"],["ugly","hässlich, widerlich"],["umbrella","Regenschirm"],["unable","unfähig"],["uncle","Onkel"],["unconscious","unbewusst; bewusstlos"],["under","unter; unten; darunter"],["underground","U-Bahn (UK); unterirdisch"],["underneath","unter; darunter"],["to understand","verstehen; begreifen"],["unemployed","arbeitslos"],["unhappy","unglücklich"],["union","Gewerkschaft; Verbindung"],["to unite","(sich) vereinigen"],["university","Universität"],["unknown","unbekannt"],["until","bis; bis dass; erst wenn"],["unusual","ungewöhnlich"],["up","auf; hinauf; aufwärts; oben"],["upper","obere(r, s); höhere(r, s)"],["upstairs","oben; obere(r, s)"],["up-to-date","modern"],["urgent","dringend"],["us","uns"],["to use","gebrauchen; benutzen"],["use","Gebrauch; Anwendung"],["used","gebraucht; benutzt"],["useful","nützlich"],["useless","nutzlos"],["user","Benutzer"],["usual","gewöhnlich; üblich"],["valuable","wertvoll"],["value","Wert"],["variety","Vielfalt; Auswahl; Art"],["various","verschieden; mannigfaltig"],["vegetables","Gemüse"],["very","sehr; wirklich"],["victory","Sieg"],["view","Blick; Aussicht; Auffassung"],["village","Dorf"],["violent","gewaltig; gewalttätig"],["to visit","besuchen"],["visitor","Besucher(in); Gast"],["voice","Stimme; äußern"],["to vote","stimmen für; wählen"],["to wait","warten"],["to wake","wecken, erwachen"],["to walk","(spazieren) gehen"],["wall","Wand; Mauer"],["wallet","Brieftasche; Geldbörse"],["to want","wünschen; wollen"],["war","Krieg"],["warm","warm"],["warning","Warnung"],["to wash","(sich) waschen"],["to waste","verschwenden"],["waste","Abfall; Verschwendung"],["to watch","beobachten; aufpassen"],["watch","(Armband-)Uhr"],["water","Wasser"],["wave","Welle; Woge"],["way","Art und Weise; Weg"],["weak","schwach"],["weakness","Schwäche"],["wealth","Reichtum; Wohlstand"],["wealthy","reich"],["weapon","Waffe"],["to wear","tragen; anhaben"],["weather","Wetter; Witterung"],["week","Woche"],["weekly","wöchentlich"],["to weigh","wiegen; abwägen"],["weight","Gewicht; Bedeutung"],["welcome","willkommen"],["well","Brunnen; also; gesund"],["west","Westen; westlich"],["wet","nass; feucht"],["what","was? wie? Wofür? Das, was"],["whatever","was auch immer"],["wheel","Rad"],["when","wann; wenn; als; während"],["where","wo?"],["wherever","wo auch immer"],["whether","ob"],["which","welche(r, s); der; die; das"],["while","Weile; Zeit; während; solange"],["to whisper","flüstern"],["to whistle","pfeifen"],["white","weiß"],["who","welche(r, s); der; die, das; wer?"],["whole","ganz"],["wide","weit; breit"],["width","Breite; Weite"],["wife","(Ehe-)Frau"],["wild","wild; ausgelassen; stürmisch"],["to win","gewinnen; erlangen"],["wind","Wind"],["window","Fenster"],["wine","Wein"],["wing","Flügel"],["winter","Winter"],["to wipe","(ab)wischen; abtrocknen"],["wise","weise; verständig"],["to wish","wünschen"],["wish","Wunsch"],["within","drin; im Innern; innerhalb"],["without","ohne"],["witness","Zeuge"],["wolf","Wolf"],["woman","Frau"],["wonder","Wunder; Verwunderung"],["wonderful","wunderbar"],["wood","Wald; Holz"],["wool","Wolle"],["word","Wort"],["to work","arbeiten"],["workshop","Werkstatt"],["world","Welt; Erde"],["to worry","sich sorgen"],["worse","schlechter; schlimmer"],["worst","schlechteste(r, s)"],["worth","Wert; wert"],["worthless","wertlos"],["wound","Wunde"],["to wrap","einpacken; einwickeln"],["to write","schreiben"],["writer","Schriftsteller"],["wrong","Unrecht; falsch"],["Xmas / christmas","Weihnacht"],["X-ray","röntgen"],["year","Jahr"],["yellow","gelb"],["yesterday","gestern"],["yet","schon; sogar"],["young","jung"],["yourself","dich; dir; euch"],["youth","Jugend"],["zero","Null"],["zone","Zone"]];
+(function(){
+"use strict";
+const $=id=>document.getElementById(id);
+const DAY=86400000;
+const today=()=>{const d=new Date();return Math.floor((d.getTime()-d.getTimezoneOffset()*60000)/DAY)};
+const INTERVAL=[0,1,3,7,14,30];
+const PORTION=7;
+const words=VOCAB.map((v,i)=>({i,en:v[0],de:v[1],key:v[0]+"|"+v[1],letter:letterOf(v[0])}));
+function letterOf(en){const s=en.replace(/^to\s+/i,"").replace(/^[^a-zA-Z]+/,"");const c=(s[0]||"#").toUpperCase();return /[A-Z]/.test(c)?c:"#"}
+
+/* ---------- storage ---------- */
+const SKEY="gws2000.v1";
+let store=null;
+function load(){try{store=JSON.parse(localStorage.getItem(SKEY)||"null")}catch(e){store=null}
+  if(!store||!store.profiles){store={current:"Ich",profiles:{"Ich":newProfile()}}}
+  if(!store.profiles[store.current])store.current=Object.keys(store.profiles)[0];}
+function newProfile(){return{state:{de:{},en:{}},settings:{dir:"de",range:"all",pause:5,rate:0.9,listenSize:21,voiceEn:"",voiceDe:"",mic:false}}}
+function save(){try{localStorage.setItem(SKEY,JSON.stringify(store))}catch(e){}}
+const P=()=>store.profiles[store.current];
+const S=()=>P().settings;
+load();
+
+/* ---------- selection ---------- */
+function pool(){const r=S().range;
+  if(r==="all")return words;
+  if(r.startsWith("L:"))return words.filter(w=>w.letter===r.slice(2));
+  if(r.startsWith("B:")){const n=+r.slice(2);return words.slice(n*100,n*100+100)}
+  return words}
+function stOf(dir,w){return P().state[dir][w.key]}
+function dirsFor(){return S().dir==="mix"?["de","en"]:[S().dir]}
+function stats(){const p=pool(),t=today(),dirs=dirsFor();const f=[0,0,0,0,0,0];let due=0,neu=0;
+  for(const w of p)for(const d of dirs){const s=stOf(d,w);if(!s){f[0]++;neu++}else{f[s.b]++;if(s.d<=t)due++}}
+  return{f,due,neu,total:p.length*dirs.length}}
+function buildQueue(n){const p=pool(),t=today(),dirs=dirsFor();const due=[],fresh=[];
+  for(const w of p)for(const d of dirs){const s=stOf(d,w);if(!s)fresh.push({w,d});else if(s.d<=t)due.push({w,d,s})}
+  due.sort((a,b)=>a.s.d-b.s.d||a.s.b-b.s.b);
+  shuffle(due);due.sort((a,b)=>a.s.b-b.s.b);
+  let q=due.slice(0,n);
+  if(S().dir==="mix"){/* avoid same word in both directions in one portion */const seen=new Set(q.map(x=>x.w.key));
+    for(const x of fresh){if(q.length>=n)break;if(!seen.has(x.w.key)){q.push(x);seen.add(x.w.key)}}}
+  else for(const x of fresh){if(q.length>=n)break;q.push(x)}
+  return shuffle(q.map(x=>({w:x.w,d:x.d})))}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function grade(item,ok){const st=P().state[item.d];const s=st[item.w.key]||{b:0,d:0};
+  if(ok){s.b=Math.min(5,s.b+1);s.d=today()+INTERVAL[s.b]}else{s.b=1;s.d=today()}
+  st[item.w.key]=s;save()}
+
+/* ---------- speech ---------- */
+const synth=window.speechSynthesis||null;let voices=[];
+function loadVoices(){if(!synth)return;voices=synth.getVoices();fillVoices()}
+if(synth){loadVoices();try{synth.addEventListener("voiceschanged",loadVoices)}catch(e){synth.onvoiceschanged=loadVoices}}
+function fillVoices(){for(const [id,lang] of [["voiceEn","en"],["voiceDe","de"]]){const sel=$(id);const cur=S()[id];
+  const vs=voices.filter(v=>v.lang&&v.lang.toLowerCase().startsWith(lang));
+  sel.innerHTML="";const o=document.createElement("option");o.value="";o.textContent=vs.length?"Automatisch":"Standardstimme des Handys";sel.appendChild(o);
+  for(const v of vs){const op=document.createElement("option");op.value=v.voiceURI;op.textContent=v.name+" ("+v.lang+")";if(v.voiceURI===cur)op.selected=true;sel.appendChild(op)}}}
+function pickVoice(lang){const pref=S()[lang==="en"?"voiceEn":"voiceDe"];
+  let v=voices.find(v=>v.voiceURI===pref);if(v)return v;
+  const want=lang==="en"?["en-GB","en_GB","en-US","en_US"]:["de-DE","de_DE","de-AT","de-CH"];
+  for(const w of want){v=voices.find(x=>x.lang===w&&/google/i.test(x.name))||voices.find(x=>x.lang===w);if(v)return v}
+  return voices.find(x=>x.lang&&x.lang.toLowerCase().startsWith(lang))||null}
+function spokenEN(s){return s.replace(/\bs\.\s?th\.?/g,"something").replace(/\bs\.\s?o\.?/g,"somebody").replace(/\bsb\./g,"somebody").replace(/\bsth\./g,"something")
+  .replace(/(\w)\/(\w)/g,"$1, $2").replace(/[()]/g,"").replace(/;/g,",")}
+function spokenDE(s){return s.replace(/\betw\./g,"etwas").replace(/\bjmdm\./g,"jemandem").replace(/\bjmdn\./g,"jemanden").replace(/\bjmd\./g,"jemand")
+  .replace(/\bs\.\s?(?=[a-zäöü])/g,"sich ").replace(/\(r,\s?s\)/g,"").replace(/\((\w+)-\)(\w)/g,(m,a,b)=>a+b.toLowerCase())
+  .replace(/-\/(\w)/g,"nehmen, $1").replace(/(\w)\/(\w)/g,"$1, $2").replace(/[()]/g,"").replace(/;/g,",").replace(/\bz\.\s?B\./g,"zum Beispiel")}
+function speak(text,lang){return new Promise(res=>{
+  if(!synth){res();return}
+  const u=new SpeechSynthesisUtterance(lang==="en"?spokenEN(text):spokenDE(text));
+  u.lang=lang==="en"?"en-GB":"de-DE";const v=pickVoice(lang);if(v){u.voice=v;u.lang=v.lang}
+  u.rate=+S().rate||0.9;
+  let done=false;const fin=()=>{if(!done){done=true;clearTimeout(to);res()}};
+  const to=setTimeout(fin,2500+text.length*160/(u.rate||1));
+  u.onend=fin;u.onerror=fin;
+  try{synth.cancel();synth.speak(u)}catch(e){fin()}})}
+
+/* ---------- recognition ---------- */
+const SR=window.SpeechRecognition||window.webkitSpeechRecognition||null;
+let micBlocked=false;
+function norm(s){return s.toLowerCase().replace(/[.,!?;:"“”„']/g," ").replace(/\s+/g," ").trim()}
+function alternatives(ans,lang){const out=new Set();
+  for(let part of ans.split(/[;,]|\s\/\s/)){part=part.trim();if(!part)continue;
+    const variants=[part.replace(/[()]/g,""),part.replace(/\([^)]*\)/g,"")];
+    for(let v of variants){v=norm(v).replace(/\bs th\b|\bs o\b|\betw\b|\bjmd\w*\b/g,"").trim();
+      if(lang==="en")v=v.replace(/^to /,"");else v=v.replace(/^(sich|der|die|das|ein|eine|einen) /,"");
+      v=v.replace(/-/g,"").trim();if(v.length>1)out.add(v);
+      for(const w of v.split("/"))if(w.length>1)out.add(w.trim())}}
+  return [...out]}
+function lev(a,b){const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let p=Array.from({length:n+1},(_,i)=>i);
+  for(let i=1;i<=m;i++){const c=[i];for(let j=1;j<=n;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c}return p[n]}
+function matches(heardList,ans,lang){const alts=alternatives(ans,lang);
+  for(let h of heardList){h=norm(h).replace(/-/g,"");const hs=[h,h.replace(/^(to|sich|der|die|das|ein|eine|the|a|an) /,"")];
+    for(const a of alts)for(const x of hs){if(x===a||(" "+x+" ").includes(" "+a+" "))return true;
+      const tol=a.length>7?2:a.length>3?1:0;if(lev(x,a)<=tol)return true}}
+  return false}
+function listen(lang,ms){return new Promise(res=>{
+  if(!SR||micBlocked){res(null);return}
+  let r;try{r=new SR()}catch(e){res(null);return}
+  r.lang=lang==="en"?"en-GB":"de-DE";r.interimResults=true;r.maxAlternatives=5;r.continuous=false;
+  const heard=[];let fin=false;
+  const end=()=>{if(fin)return;fin=true;clearTimeout(t);try{r.abort()}catch(e){}res(heard)};
+  const t=setTimeout(end,ms);
+  r.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++)for(let k=0;k<e.results[i].length;k++)heard.push(e.results[i][k].transcript);
+    $("lHeard").textContent=heard.length?"Gehört: „"+heard[heard.length-1]+"“":"";
+    if(e.results[e.results.length-1].isFinal)end()};
+  r.onerror=e=>{if(e.error==="not-allowed"||e.error==="service-not-allowed"){micBlocked=true;showMicBlocked()}end()};
+  r.onend=end;
+  try{r.start()}catch(e){end()}})}
+function showMicBlocked(){$("micHint").textContent="Das Mikrofon ist hier gesperrt. Öffne die App direkt in Chrome, dann klappt die Spracherkennung. Bis dahin: Antwort laut sagen und ✓ oder ✗ tippen.";S().mic=false;$("mic").checked=false;save()}
+
+/* ---------- views ---------- */
+const views=["home","cards","listen","done"];
+function show(v){for(const x of views){$(x).hidden=x!==v;if(x===v&&x!=="done")$(x).style.display="flex"}window.scrollTo(0,0)}
+function renderHome(){const s=S();
+  $("whoName").textContent=store.current;
+  document.querySelectorAll(".seg button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.dir===s.dir)));
+  const sel=$("range");if(!sel.options.length)fillRange();sel.value=s.range;if(sel.value!==s.range){s.range="all";sel.value="all"}
+  const st=stats();const max=Math.max(1,...st.f);
+  const names=["Neu","Fach 1","Fach 2","Fach 3","Fach 4","Fach 5"];
+  $("box").innerHTML=st.f.map((n,i)=>`<div class="fach${i?"":" neu"}"><div class="stack"><div class="fill" style="height:${Math.round(n/max*100)}%"></div></div><b>${n}</b><span>${names[i]}</span></div>`).join("");
+  $("dueN").textContent=st.due;$("newN").textContent=st.neu;
+  $("pause").value=s.pause;$("pauseV").textContent=s.pause+" s";$("rate").value=s.rate;$("rateV").textContent=(+s.rate).toFixed(2);
+  $("listenSize").value=String(s.listenSize);
+  $("micWrap").hidden=!SR;$("mic").checked=!!s.mic&&!micBlocked;
+  $("sub").textContent=words.length+" Wörter · Englisch ⇄ Deutsch";
+  renderProfiles();fillVoices()}
+function fillRange(){const sel=$("range");const add=(v,t)=>{const o=document.createElement("option");o.value=v;o.textContent=t;sel.appendChild(o)};
+  add("all","Alle "+words.length+" Wörter");
+  const letters=[...new Set(words.map(w=>w.letter))].sort();
+  const g1=document.createElement("optgroup");g1.label="Nach Anfangsbuchstabe";
+  for(const L of letters){const o=document.createElement("option");o.value="L:"+L;o.textContent=L+" ("+words.filter(w=>w.letter===L).length+")";g1.appendChild(o)}
+  sel.appendChild(g1);
+  const g2=document.createElement("optgroup");g2.label="In 100er-Blöcken";
+  for(let b=0;b*100<words.length;b++){const o=document.createElement("option");o.value="B:"+b;const a=words[b*100],z=words[Math.min(words.length-1,b*100+99)];
+    o.textContent=`${b*100+1}–${Math.min(words.length,b*100+100)} (${a.en} … ${z.en})`;g2.appendChild(o)}
+  sel.appendChild(g2)}
+function renderProfiles(){const box=$("profiles");box.innerHTML="";
+  for(const n of Object.keys(store.profiles)){const b=document.createElement("button");b.className="chip";b.textContent=n;b.setAttribute("aria-pressed",String(n===store.current));
+    b.onclick=()=>{store.current=n;save();renderHome()};box.appendChild(b)}}
+
+/* ---------- cards mode ---------- */
+let queue=[],qi=0,portionOk=0,portionSeen=0,mode="cards",retry=new Set();
+function startCards(){mode="cards";queue=buildQueue(PORTION);qi=0;portionOk=0;portionSeen=0;retry=new Set();
+  if(!queue.length){finish(true);return}show("cards");showCard()}
+function cur(){return queue[qi]}
+function promptOf(it){return it.d==="de"?{q:it.w.de,ql:"de",a:it.w.en,al:"en"}:{q:it.w.en,ql:"en",a:it.w.de,al:"de"}}
+function showCard(){const it=cur(),p=promptOf(it);
+  $("cLang").textContent=p.ql==="de"?"Deutsch → Englisch":"Englisch → Deutsch";
+  $("cWord").textContent=p.q;$("cAnswer").textContent=p.a;$("cAnswer").hidden=true;$("cVerdict").textContent="";$("cVerdict").className="verdict";
+  $("cAsk").hidden=false;$("cGrade").hidden=true;$("cMic").hidden=!(SR&&S().mic&&!micBlocked);
+  $("cCount").textContent=`Karte ${Math.min(qi+1,queue.length)} von ${queue.length}`;$("cProg").style.width=(qi/queue.length*100)+"%";
+  speak(p.q,p.ql)}
+function reveal(){const p=promptOf(cur());$("cAnswer").hidden=false;$("cAsk").hidden=true;$("cGrade").hidden=false;$("cMic").hidden=true;speak(p.a,p.al)}
+function cardGrade(ok){const it=cur();grade(it,ok);
+  if(!retry.has(it.w.key+it.d)){portionSeen++;if(ok)portionOk++}
+  if(!ok){retry.add(it.w.key+it.d);queue.push(it)}
+  qi++;if(qi>=queue.length)finish(false);else showCard()}
+async function cardMic(){const p=promptOf(cur());$("cMic").textContent="🎤 Ich höre zu …";$("cMic").disabled=true;
+  const heard=await listen(p.al,7000);$("cMic").textContent="🎤 Antwort sprechen";$("cMic").disabled=false;
+  if(heard===null){$("cMic").hidden=true;return}
+  const ok=matches(heard,p.a,p.al);
+  $("cVerdict").textContent=heard.length?(ok?"✓ Richtig: „":"✗ Gehört: „")+heard[heard.length-1]+"“":"Nichts gehört.";
+  $("cVerdict").className="verdict "+(ok?"ok":"no");reveal()}
+
+/* ---------- listen mode ---------- */
+let lRun=0,lPaused=false,lGraded=null,lCount=0,lOk=0,wake=null;
+async function startListen(){mode="listen";queue=buildQueue(+S().listenSize||21);qi=0;lCount=0;lOk=0;
+  if(!queue.length){finish(true);return}
+  show("listen");try{wake=await navigator.wakeLock?.request("screen")}catch(e){wake=null}
+  runListen()}
+function stopListen(){lRun++;lPaused=false;$("lPause").textContent="⏸ Pause";try{synth&&synth.cancel()}catch(e){}try{wake&&wake.release()}catch(e){}wake=null}
+const sleep=(ms,id)=>new Promise(r=>{const t0=Date.now();const iv=setInterval(()=>{if(id!==lRun||Date.now()-t0>=ms){clearInterval(iv);r()}},50)});
+function setRing(frac,num){$("ringFg").style.strokeDashoffset=String(326.7*(1-frac));$("ringNum").textContent=num}
+async function runListen(){const id=++lRun;
+  while(id===lRun&&qi<queue.length){
+    const it=cur(),p=promptOf(it);lGraded=null;
+    $("lLang").textContent=p.ql==="de"?"Deutsch → Englisch":"Englisch → Deutsch";
+    const s=stOf(it.d,it.w);$("lBox").textContent=s?"Fach "+s.b:"neu";
+    $("lWord").textContent=p.q;$("lAnswer").textContent=p.a;$("lAnswer").hidden=true;$("lHeard").textContent="";
+    $("lCount").textContent=`Wort ${qi+1} von ${queue.length}`;$("lProg").style.width=(qi/queue.length*100)+"%";
+    setRing(1,"");$("lPhase").textContent="Frage …";
+    await speak(p.q,p.ql);if(id!==lRun)return;
+    const pause=(+S().pause||5)*1000;$("lPhase").textContent=S().mic&&SR&&!micBlocked?"Sprich jetzt deine Antwort …":"Jetzt antworten …";
+    let heardP=null;if(S().mic&&SR&&!micBlocked)heardP=listen(p.al,pause);
+    const t0=Date.now();
+    while(id===lRun){const el=Date.now()-t0;if(el>=pause)break;setRing(1-el/pause,Math.ceil((pause-el)/1000));await sleep(100,id)}
+    if(id!==lRun)return;setRing(0,"");
+    let verdict=null;if(heardP){const h=await heardP;if(id!==lRun)return;if(h){verdict=matches(h,p.a,p.al);
+      $("lHeard").textContent=h.length?(verdict?"✓ Richtig: „":"✗ Gehört: „")+h[h.length-1]+"“":"✗ Nichts gehört"}}
+    $("lAnswer").hidden=false;$("lPhase").textContent="Lösung";
+    await speak(p.a,p.al);if(id!==lRun)return;
+    if(verdict!==null&&lGraded===null){lGraded=verdict;grade(it,verdict);lCount++;if(verdict)lOk++}
+    await sleep(1600,id);if(id!==lRun)return;
+    while(lPaused&&id===lRun)await sleep(200,id);
+    if(id!==lRun)return;
+    qi++}
+  if(id===lRun){stopListen();finish(false)}}
+function listenGrade(ok){const it=cur();if(!it)return;if(lGraded===ok)return;
+  if(lGraded===null){lCount++;if(ok)lOk++}else{if(ok)lOk++;else lOk--}
+  lGraded=ok;grade(it,ok);$("lAnswer").hidden=false;
+  $("lPhase").textContent=ok?"✓ als gewusst markiert":"✗ kommt bald wieder"}
+
+/* ---------- done ---------- */
+function finish(empty){show("done");$("done").hidden=false;
+  if(empty){$("dTitle").textContent="Alles erledigt";$("dText").textContent="In dieser Auswahl ist heute nichts mehr fällig. Wähle andere Wörter oder komm morgen wieder.";$("dMore").hidden=true;return}
+  $("dMore").hidden=false;
+  if(mode==="cards"){$("dTitle").textContent="Portion geschafft";$("dText").textContent=`${portionOk} von ${portionSeen} Wörtern auf Anhieb gewusst.`;$("dMore").textContent="Nächste Portion"}
+  else{$("dTitle").textContent="Hör-Durchgang fertig";$("dText").textContent=lCount?`${lOk} von ${lCount} bewerteten Wörtern gewusst.`:`${queue.length} Wörter gehört.`;$("dMore").textContent="Noch ein Durchgang"}}
+
+/* ---------- word list ---------- */
+function renderList(){const q=norm($("search").value||"");const res=[];
+  for(const w of words){if(!q||norm(w.en).includes(q)||norm(w.de).includes(q)){res.push(w);if(res.length>=200)break}}
+  const box=$("list");box.innerHTML="";
+  for(const w of res){const d=document.createElement("div");const a=document.createElement("span");a.className="en";a.textContent=w.en;const b=document.createElement("span");b.textContent=w.de;d.append(a,b);
+    d.onclick=()=>speak(w.en,"en").then(()=>speak(w.de,"de"));box.appendChild(d)}
+  $("listInfo").textContent=(res.length>=200?"Die ersten 200 Treffer. ":"")+"Tippe auf eine Zeile, um sie anzuhören."}
+
+/* ---------- wiring ---------- */
+document.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{S().dir=b.dataset.dir;save();renderHome()});
+$("range").onchange=e=>{S().range=e.target.value;save();renderHome()};
+$("startCards").onclick=startCards;$("startListen").onclick=startListen;
+$("cShow").onclick=reveal;$("cYes").onclick=()=>cardGrade(true);$("cNo").onclick=()=>cardGrade(false);
+$("cSpeak").onclick=()=>{const p=promptOf(cur());if($("cAnswer").hidden)speak(p.q,p.ql);else speak(p.q,p.ql).then(()=>speak(p.a,p.al))};
+$("cMic").onclick=cardMic;
+$("cardsBack").onclick=()=>{try{synth&&synth.cancel()}catch(e){}show("home");renderHome()};
+$("lBack").onclick=()=>{stopListen();show("home");renderHome()};
+$("lYes").onclick=()=>listenGrade(true);$("lNo").onclick=()=>listenGrade(false);
+$("lPause").onclick=()=>{lPaused=!lPaused;$("lPause").textContent=lPaused?"▶ Weiter":"⏸ Pause";if(lPaused)$("lPhase").textContent="Pausiert – nach diesem Wort geht's weiter, wenn du ▶ tippst"};
+$("lSkip").onclick=()=>{if(qi<queue.length){lRun++;try{synth&&synth.cancel()}catch(e){}qi++;lPaused=false;$("lPause").textContent="⏸ Pause";if(qi>=queue.length){stopListen();finish(false)}else runListen()}};
+$("lRepeat").onclick=()=>{lRun++;try{synth&&synth.cancel()}catch(e){}lPaused=false;$("lPause").textContent="⏸ Pause";runListen()};
+$("dHome").onclick=()=>{show("home");renderHome()};
+$("dMore").onclick=()=>mode==="cards"?startCards():startListen();
+$("pause").oninput=e=>{S().pause=+e.target.value;$("pauseV").textContent=e.target.value+" s";save()};
+$("rate").oninput=e=>{S().rate=+e.target.value;$("rateV").textContent=(+e.target.value).toFixed(2);save()};
+$("listenSize").onchange=e=>{S().listenSize=+e.target.value;save()};
+$("voiceEn").onchange=e=>{S().voiceEn=e.target.value;save()};
+$("voiceDe").onchange=e=>{S().voiceDe=e.target.value;save()};
+$("mic").onchange=e=>{S().mic=e.target.checked;save();if(e.target.checked)listen("de",1500)};
+$("testVoice").onclick=()=>speak("Good morning, how are you?","en").then(()=>speak("Guten Morgen, wie geht es dir?","de"));
+$("resetProgress").onclick=()=>{$("resetConfirm").hidden=false};
+$("resetNo").onclick=()=>{$("resetConfirm").hidden=true};
+$("resetYes").onclick=()=>{P().state={de:{},en:{}};save();$("resetConfirm").hidden=true;renderHome()};
+$("whoBtn").onclick=()=>{$("whoPanel").hidden=!$("whoPanel").hidden};
+$("addName").onclick=()=>{const n=$("newName").value.trim().slice(0,20);if(!n)return;if(!store.profiles[n])store.profiles[n]=newProfile();store.current=n;$("newName").value="";save();renderHome()};
+$("search").oninput=renderList;
+document.addEventListener("visibilitychange",async()=>{if(document.visibilityState==="visible"&&!$("listen").hidden&&!wake){try{wake=await navigator.wakeLock?.request("screen")}catch(e){}}});
+show("home");renderHome();renderList();
+})();
+</script>
+
+<script>if("serviceWorker" in navigator){navigator.serviceWorker.register("sw.js").catch(()=>{})}</script>
+</body>
+</html>
