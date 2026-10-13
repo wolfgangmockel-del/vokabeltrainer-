@@ -10,7 +10,7 @@
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}</style>
 </head>
 <body>
-<title>Vokabeltrainer</title>
+<title>Grundwortschatz 2000</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,600&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
@@ -137,7 +137,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
     </div>
 
     <div class="panel">
-      <h2>Sprache</h2>
+      <h2 id="langHead">Sprache</h2>
       <div class="seg" id="langSeg" role="group" aria-label="Sprache"></div>
       <h2>Abfragerichtung</h2>
       <div class="seg" id="dirSeg" role="group" aria-label="Abfragerichtung">
@@ -154,7 +154,7 @@ input[type=range]{width:100%;accent-color:var(--accent)}
       <h2>Dein Karteikasten</h2>
       <div class="box" id="box"></div>
       <div class="due"><span>Heute fällig: <strong class="mark" id="dueN">0</strong></span><span>Noch neu: <strong id="newN">0</strong></span></div>
-      <p class="hint">Richtig beantwortete Wörter wandern ein Fach weiter und kommen später wieder (nach 1, 3, 7, 14 und 30 Tagen). Falsche gehen zurück in Fach 1. Jede Sprache hat ihren eigenen Karteikasten.</p>
+      <p class="hint">Richtig beantwortete Wörter wandern ein Fach weiter und kommen später wieder (nach 1, 3, 7, 14 und 30 Tagen). Falsche gehen zurück in Fach 1.</p>
     </div>
 
     <div class="actions">
@@ -402,8 +402,8 @@ function renderHome(){const s=S(),lang=LANG(),d=LANGS[lang];
   $("whoName").textContent=store.current;
   $("title").firstChild.textContent=d.title;
   $("sub").textContent=L(lang).length+" Einträge · "+d.name+" ⇄ Deutsch";
-  document.title=d.title+" · Vokabeltrainer";
-  const ls=$("langSeg");if(!ls.children.length)for(const c of LCODES){const b=document.createElement("button");b.dataset.lang=c;b.textContent=LANGS[c].name;
+  document.title=d.title;
+  const ls=$("langSeg");ls.hidden=$("langHead").hidden=LCODES.length<2;if(!ls.children.length)for(const c of LCODES){const b=document.createElement("button");b.dataset.lang=c;b.textContent=LANGS[c].name;
     b.onclick=()=>{S().lang=c;save();$("range").innerHTML="";$("search").value="";renderHome();renderList()};ls.appendChild(b)}
   ls.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===lang)));
   $("dirSeg").querySelectorAll("button").forEach(b=>{b.setAttribute("aria-pressed",String(b.dataset.dir===DIR()));if(b.dataset.dir!=="mix")b.textContent=dirLabel(b.dataset.dir)});
@@ -415,7 +415,7 @@ function renderHome(){const s=S(),lang=LANG(),d=LANGS[lang];
   $("pause").value=s.pause;$("pauseV").textContent=s.pause+" s";$("rate").value=s.rate;$("rateV").textContent=(+s.rate).toFixed(2);
   $("listenSize").value=String(s.listenSize);
   $("micWrap").hidden=!SR;$("mic").checked=!!s.mic&&!micBlocked;
-  $("resetProgress").textContent="Lernstand "+d.name+" zurücksetzen";
+  $("resetProgress").textContent="Lernstand zurücksetzen";
   $("search").placeholder="Suchen, Deutsch oder "+d.name;
   renderProfiles();fillVoices()}
 function fillRange(){const sel=$("range"),d=LANGS[LANG()],ws=L(LANG());

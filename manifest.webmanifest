@@ -1,6 +1,6 @@
 {
-  "name": "Vokabeltrainer",
-  "short_name": "Vokabeln",
+  "name": "Grundwortschatz 2000",
+  "short_name": "Englisch",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
