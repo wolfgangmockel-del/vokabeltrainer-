@@ -1,0 +1,1501 @@
+Spanisch;Deutsch;Teil;Nr;Kapitel
+sí;ja;1;1;Grundwortschatz und Höflichkeit
+no;nein;1;2;Grundwortschatz und Höflichkeit
+quizás;vielleicht;1;3;Grundwortschatz und Höflichkeit
+bien;gut;1;4;Grundwortschatz und Höflichkeit
+mal;schlecht;1;5;Grundwortschatz und Höflichkeit
+gracias;danke;1;6;Grundwortschatz und Höflichkeit
+por favor;bitte;1;7;Grundwortschatz und Höflichkeit
+de nada;gern geschehen;1;8;Grundwortschatz und Höflichkeit
+perdón;Entschuldigung;1;9;Grundwortschatz und Höflichkeit
+disculpe;entschuldigen Sie;1;10;Grundwortschatz und Höflichkeit
+hola;hallo;1;11;Grundwortschatz und Höflichkeit
+buenos días;"Guten Morgen; Guten Tag";1;12;Grundwortschatz und Höflichkeit
+buenas tardes;"Guten Tag; Guten Abend";1;13;Grundwortschatz und Höflichkeit
+buenas noches;"Guten Abend; Gute Nacht";1;14;Grundwortschatz und Höflichkeit
+adiós;Auf Wiedersehen;1;15;Grundwortschatz und Höflichkeit
+hasta luego;bis später;1;16;Grundwortschatz und Höflichkeit
+hasta mañana;bis morgen;1;17;Grundwortschatz und Höflichkeit
+hasta pronto;bis bald;1;18;Grundwortschatz und Höflichkeit
+bienvenido;willkommen (männlich);1;19;Grundwortschatz und Höflichkeit
+bienvenida;willkommen (weiblich);1;20;Grundwortschatz und Höflichkeit
+lo siento;es tut mir leid;1;21;Grundwortschatz und Höflichkeit
+no pasa nada;macht nichts;1;22;Grundwortschatz und Höflichkeit
+por supuesto;natürlich;1;23;Grundwortschatz und Höflichkeit
+claro;"klar; natürlich";1;24;Grundwortschatz und Höflichkeit
+de acuerdo;einverstanden;1;25;Grundwortschatz und Höflichkeit
+vale;okay (besonders Spanien);1;26;Grundwortschatz und Höflichkeit
+exactamente;genau;1;27;Grundwortschatz und Höflichkeit
+correcto;richtig;1;28;Grundwortschatz und Höflichkeit
+incorrecto;falsch;1;29;Grundwortschatz und Höflichkeit
+importante;wichtig;1;30;Grundwortschatz und Höflichkeit
+posible;möglich;1;31;Grundwortschatz und Höflichkeit
+imposible;unmöglich;1;32;Grundwortschatz und Höflichkeit
+solo;"nur; allein";1;33;Grundwortschatz und Höflichkeit
+también;auch;1;34;Grundwortschatz und Höflichkeit
+juntos;zusammen;1;35;Grundwortschatz und Höflichkeit
+enseguida;sofort;1;36;Grundwortschatz und Höflichkeit
+despacio;langsam;1;37;Grundwortschatz und Höflichkeit
+rápido;schnell;1;38;Grundwortschatz und Höflichkeit
+otra vez;noch einmal;1;39;Grundwortschatz und Höflichkeit
+siempre;immer;1;40;Grundwortschatz und Höflichkeit
+nunca;nie;1;41;Grundwortschatz und Höflichkeit
+a menudo;oft;1;42;Grundwortschatz und Höflichkeit
+a veces;manchmal;1;43;Grundwortschatz und Höflichkeit
+rara vez;selten;1;44;Grundwortschatz und Höflichkeit
+hoy;heute;1;45;Grundwortschatz und Höflichkeit
+mañana;morgen;1;46;Grundwortschatz und Höflichkeit
+ayer;gestern;1;47;Grundwortschatz und Höflichkeit
+ahora;jetzt;1;48;Grundwortschatz und Höflichkeit
+más tarde;später;1;49;Grundwortschatz und Höflichkeit
+temprano;früh;1;50;Grundwortschatz und Höflichkeit
+persona;Person;1;51;Menschen und Familie
+hombre;Mann;1;52;Menschen und Familie
+mujer;Frau;1;53;Menschen und Familie
+niño;"Junge; Kind";1;54;Menschen und Familie
+niña;Mädchen;1;55;Menschen und Familie
+bebé;Baby;1;56;Menschen und Familie
+familia;Familie;1;57;Menschen und Familie
+madre;Mutter;1;58;Menschen und Familie
+mamá;Mama;1;59;Menschen und Familie
+padre;Vater;1;60;Menschen und Familie
+papá;Papa;1;61;Menschen und Familie
+padres;Eltern;1;62;Menschen und Familie
+hijo;Sohn;1;63;Menschen und Familie
+hija;Tochter;1;64;Menschen und Familie
+hermano;Bruder;1;65;Menschen und Familie
+hermana;Schwester;1;66;Menschen und Familie
+abuela;Großmutter;1;67;Menschen und Familie
+abuelo;Großvater;1;68;Menschen und Familie
+nieto;Enkel;1;69;Menschen und Familie
+nieta;Enkelin;1;70;Menschen und Familie
+marido;Ehemann;1;71;Menschen und Familie
+esposa;Ehefrau;1;72;Menschen und Familie
+pareja;"Partner/in; Paar";1;73;Menschen und Familie
+novio;"Freund; Verlobter";1;74;Menschen und Familie
+novia;"Freundin; Verlobte";1;75;Menschen und Familie
+amigo;Freund;1;76;Menschen und Familie
+amiga;Freundin;1;77;Menschen und Familie
+vecino;Nachbar;1;78;Menschen und Familie
+vecina;Nachbarin;1;79;Menschen und Familie
+primo;Cousin;1;80;Menschen und Familie
+prima;Cousine;1;81;Menschen und Familie
+tío;Onkel;1;82;Menschen und Familie
+tía;Tante;1;83;Menschen und Familie
+sobrino;Neffe;1;84;Menschen und Familie
+sobrina;Nichte;1;85;Menschen und Familie
+pariente;Verwandter;1;86;Menschen und Familie
+invitado;Gast;1;87;Menschen und Familie
+anfitrión;Gastgeber;1;88;Menschen und Familie
+gente;Leute;1;89;Menschen und Familie
+nombre;"Vorname; Name";1;90;Menschen und Familie
+apellido;Nachname;1;91;Menschen und Familie
+edad;Alter;1;92;Menschen und Familie
+años;Jahre;1;93;Menschen und Familie
+dirección;Adresse;1;94;Menschen und Familie
+estado civil;Familienstand;1;95;Menschen und Familie
+casado;verheiratet (männlich);1;96;Menschen und Familie
+casada;verheiratet (weiblich);1;97;Menschen und Familie
+soltero;ledig (männlich);1;98;Menschen und Familie
+soltera;ledig (weiblich);1;99;Menschen und Familie
+divorciado;geschieden (männlich);1;100;Menschen und Familie
+alto;groß (Körpergröße);1;101;Personen beschreiben
+bajo;"klein (Körpergröße); niedrig";1;102;Personen beschreiben
+delgado;schlank;1;103;Personen beschreiben
+gordo;dick;1;104;Personen beschreiben
+fuerte;stark;1;105;Personen beschreiben
+débil;schwach;1;106;Personen beschreiben
+joven;jung;1;107;Personen beschreiben
+viejo;alt;1;108;Personen beschreiben
+bonito;hübsch;1;109;Personen beschreiben
+guapo;gut aussehend;1;110;Personen beschreiben
+feo;hässlich;1;111;Personen beschreiben
+simpático;sympathisch;1;112;Personen beschreiben
+amable;freundlich;1;113;Personen beschreiben
+antipático;unsympathisch;1;114;Personen beschreiben
+educado;"höflich; gebildet";1;115;Personen beschreiben
+sincero;ehrlich;1;116;Personen beschreiben
+honesto;"anständig; ehrlich";1;117;Personen beschreiben
+trabajador;fleißig;1;118;Personen beschreiben
+perezoso;faul;1;119;Personen beschreiben
+inteligente;intelligent;1;120;Personen beschreiben
+tonto;dumm;1;121;Personen beschreiben
+divertido;"lustig; unterhaltsam";1;122;Personen beschreiben
+serio;ernst;1;123;Personen beschreiben
+feliz;glücklich;1;124;Personen beschreiben
+triste;traurig;1;125;Personen beschreiben
+enfadado;verärgert;1;126;Personen beschreiben
+tranquilo;ruhig;1;127;Personen beschreiben
+nervioso;nervös;1;128;Personen beschreiben
+cansado;müde;1;129;Personen beschreiben
+ocupado;beschäftigt;1;130;Personen beschreiben
+libre;"frei; verfügbar";1;131;Personen beschreiben
+interesante;interessant;1;132;Personen beschreiben
+aburrido;langweilig;1;133;Personen beschreiben
+valiente;mutig;1;134;Personen beschreiben
+tímido;schüchtern;1;135;Personen beschreiben
+abierto;offen;1;136;Personen beschreiben
+cerrado;geschlossen;1;137;Personen beschreiben
+sociable;gesellig;1;138;Personen beschreiben
+silencioso;leise;1;139;Personen beschreiben
+ruidoso;laut;1;140;Personen beschreiben
+paciente;geduldig;1;141;Personen beschreiben
+impaciente;ungeduldig;1;142;Personen beschreiben
+adulto;erwachsen;1;143;Personen beschreiben
+conocido;bekannt;1;144;Personen beschreiben
+desconocido;unbekannt;1;145;Personen beschreiben
+amable con todos;zu allen freundlich;1;146;Personen beschreiben
+de buen humor;gut gelaunt;1;147;Personen beschreiben
+de mal humor;schlecht gelaunt;1;148;Personen beschreiben
+responsable;verantwortungsbewusst;1;149;Personen beschreiben
+creativo;kreativ;1;150;Personen beschreiben
+cero;null;1;151;Zahlen, Mengen und Ordnung
+uno;eins;1;152;Zahlen, Mengen und Ordnung
+dos;zwei;1;153;Zahlen, Mengen und Ordnung
+tres;drei;1;154;Zahlen, Mengen und Ordnung
+cuatro;vier;1;155;Zahlen, Mengen und Ordnung
+cinco;fünf;1;156;Zahlen, Mengen und Ordnung
+seis;sechs;1;157;Zahlen, Mengen und Ordnung
+siete;sieben;1;158;Zahlen, Mengen und Ordnung
+ocho;acht;1;159;Zahlen, Mengen und Ordnung
+nueve;neun;1;160;Zahlen, Mengen und Ordnung
+diez;zehn;1;161;Zahlen, Mengen und Ordnung
+once;elf;1;162;Zahlen, Mengen und Ordnung
+doce;zwölf;1;163;Zahlen, Mengen und Ordnung
+trece;dreizehn;1;164;Zahlen, Mengen und Ordnung
+catorce;vierzehn;1;165;Zahlen, Mengen und Ordnung
+quince;fünfzehn;1;166;Zahlen, Mengen und Ordnung
+dieciséis;sechzehn;1;167;Zahlen, Mengen und Ordnung
+diecisiete;siebzehn;1;168;Zahlen, Mengen und Ordnung
+dieciocho;achtzehn;1;169;Zahlen, Mengen und Ordnung
+diecinueve;neunzehn;1;170;Zahlen, Mengen und Ordnung
+veinte;zwanzig;1;171;Zahlen, Mengen und Ordnung
+treinta;dreißig;1;172;Zahlen, Mengen und Ordnung
+cuarenta;vierzig;1;173;Zahlen, Mengen und Ordnung
+cincuenta;fünfzig;1;174;Zahlen, Mengen und Ordnung
+sesenta;sechzig;1;175;Zahlen, Mengen und Ordnung
+setenta;siebzig;1;176;Zahlen, Mengen und Ordnung
+ochenta;achtzig;1;177;Zahlen, Mengen und Ordnung
+noventa;neunzig;1;178;Zahlen, Mengen und Ordnung
+cien;hundert;1;179;Zahlen, Mengen und Ordnung
+mil;tausend;1;180;Zahlen, Mengen und Ordnung
+millón;Million;1;181;Zahlen, Mengen und Ordnung
+primero;erste/r;1;182;Zahlen, Mengen und Ordnung
+segundo;zweite/r;1;183;Zahlen, Mengen und Ordnung
+tercero;dritte/r;1;184;Zahlen, Mengen und Ordnung
+cuarto;vierte/r;1;185;Zahlen, Mengen und Ordnung
+último;letzte/r;1;186;Zahlen, Mengen und Ordnung
+siguiente;nächste/r;1;187;Zahlen, Mengen und Ordnung
+varios;mehrere;1;188;Zahlen, Mengen und Ordnung
+mucho;viel;1;189;Zahlen, Mengen und Ordnung
+poco;wenig;1;190;Zahlen, Mengen und Ordnung
+más;mehr;1;191;Zahlen, Mengen und Ordnung
+menos;weniger;1;192;Zahlen, Mengen und Ordnung
+todo;alles;1;193;Zahlen, Mengen und Ordnung
+nada;nichts;1;194;Zahlen, Mengen und Ordnung
+cada;jeder;1;195;Zahlen, Mengen und Ordnung
+alguno;"einige; irgendeiner";1;196;Zahlen, Mengen und Ordnung
+otro;andere/r;1;197;Zahlen, Mengen und Ordnung
+mitad;Hälfte;1;198;Zahlen, Mengen und Ordnung
+par;Paar;1;199;Zahlen, Mengen und Ordnung
+pieza;Stück;1;200;Zahlen, Mengen und Ordnung
+tiempo;"Zeit; Wetter";1;201;Zeit und Kalender
+hora;"Stunde; Uhrzeit";1;202;Zeit und Kalender
+minuto;Minute;1;203;Zeit und Kalender
+día;Tag;1;204;Zeit und Kalender
+semana;Woche;1;205;Zeit und Kalender
+mes;Monat;1;206;Zeit und Kalender
+año;Jahr;1;207;Zeit und Kalender
+fin de semana;Wochenende;1;208;Zeit und Kalender
+día laborable;Werktag;1;209;Zeit und Kalender
+lunes;Montag;1;210;Zeit und Kalender
+martes;Dienstag;1;211;Zeit und Kalender
+miércoles;Mittwoch;1;212;Zeit und Kalender
+jueves;Donnerstag;1;213;Zeit und Kalender
+viernes;Freitag;1;214;Zeit und Kalender
+sábado;Samstag;1;215;Zeit und Kalender
+domingo;Sonntag;1;216;Zeit und Kalender
+enero;Januar;1;217;Zeit und Kalender
+febrero;Februar;1;218;Zeit und Kalender
+marzo;März;1;219;Zeit und Kalender
+abril;April;1;220;Zeit und Kalender
+mayo;Mai;1;221;Zeit und Kalender
+junio;Juni;1;222;Zeit und Kalender
+julio;Juli;1;223;Zeit und Kalender
+agosto;August;1;224;Zeit und Kalender
+septiembre;September;1;225;Zeit und Kalender
+octubre;Oktober;1;226;Zeit und Kalender
+noviembre;November;1;227;Zeit und Kalender
+diciembre;Dezember;1;228;Zeit und Kalender
+mediodía;Mittag;1;229;Zeit und Kalender
+tarde;"Nachmittag; Abend";1;230;Zeit und Kalender
+noche;Nacht;1;231;Zeit und Kalender
+medianoche;Mitternacht;1;232;Zeit und Kalender
+fecha;Datum;1;233;Zeit und Kalender
+cumpleaños;Geburtstag;1;234;Zeit und Kalender
+festivo;Feiertag;1;235;Zeit und Kalender
+vacaciones;"Urlaub; Ferien";1;236;Zeit und Kalender
+descanso;"Pause; Erholung";1;237;Zeit und Kalender
+pasado;Vergangenheit;1;238;Zeit und Kalender
+presente;Gegenwart;1;239;Zeit und Kalender
+futuro;Zukunft;1;240;Zeit und Kalender
+principio;Anfang;1;241;Zeit und Kalender
+final;Ende;1;242;Zeit und Kalender
+duración;Dauer;1;243;Zeit und Kalender
+momento;Moment;1;244;Zeit und Kalender
+pronto;bald;1;245;Zeit und Kalender
+recientemente;kürzlich;1;246;Zeit und Kalender
+para siempre;für immer;1;247;Zeit und Kalender
+a tiempo;pünktlich;1;248;Zeit und Kalender
+casa;Haus;1;249;Zuhause und Wohnen
+piso;Wohnung (Spanien);1;250;Zuhause und Wohnen
+apartamento;Apartment;1;251;Zuhause und Wohnen
+edificio;Gebäude;1;252;Zuhause und Wohnen
+habitación;Zimmer;1;253;Zuhause und Wohnen
+dormitorio;Schlafzimmer;1;254;Zuhause und Wohnen
+salón;Wohnzimmer;1;255;Zuhause und Wohnen
+cocina;Küche;1;256;Zuhause und Wohnen
+baño;Badezimmer;1;257;Zuhause und Wohnen
+pasillo;Flur;1;258;Zuhause und Wohnen
+balcón;Balkon;1;259;Zuhause und Wohnen
+terraza;Terrasse;1;260;Zuhause und Wohnen
+jardín;Garten;1;261;Zuhause und Wohnen
+patio;Innenhof;1;262;Zuhause und Wohnen
+garaje;Garage;1;263;Zuhause und Wohnen
+sótano;Keller;1;264;Zuhause und Wohnen
+ático;Dachgeschosswohnung;1;265;Zuhause und Wohnen
+techo;"Decke; Dach";1;266;Zuhause und Wohnen
+pared;Wand;1;267;Zuhause und Wohnen
+suelo;Boden;1;268;Zuhause und Wohnen
+puerta;Tür;1;269;Zuhause und Wohnen
+ventana;Fenster;1;270;Zuhause und Wohnen
+llave;Schlüssel;1;271;Zuhause und Wohnen
+cerradura;Schloss;1;272;Zuhause und Wohnen
+escalera;Treppe;1;273;Zuhause und Wohnen
+ascensor;Aufzug;1;274;Zuhause und Wohnen
+muebles;Möbel;1;275;Zuhause und Wohnen
+mesa;Tisch;1;276;Zuhause und Wohnen
+silla;Stuhl;1;277;Zuhause und Wohnen
+sofá;Sofa;1;278;Zuhause und Wohnen
+cama;Bett;1;279;Zuhause und Wohnen
+colchón;Matratze;1;280;Zuhause und Wohnen
+armario;Schrank;1;281;Zuhause und Wohnen
+estantería;Regal;1;282;Zuhause und Wohnen
+cajón;Schublade;1;283;Zuhause und Wohnen
+luz;Licht;1;284;Zuhause und Wohnen
+lámpara;Lampe;1;285;Zuhause und Wohnen
+enchufe;Steckdose;1;286;Zuhause und Wohnen
+interruptor;Schalter;1;287;Zuhause und Wohnen
+calefacción;Heizung;1;288;Zuhause und Wohnen
+aire acondicionado;Klimaanlage;1;289;Zuhause und Wohnen
+nevera;Kühlschrank (Spanien);1;290;Zuhause und Wohnen
+congelador;Gefrierschrank;1;291;Zuhause und Wohnen
+horno;Backofen;1;292;Zuhause und Wohnen
+cocina de gas;Gasherd;1;293;Zuhause und Wohnen
+lavadora;Waschmaschine;1;294;Zuhause und Wohnen
+secadora;Trockner;1;295;Zuhause und Wohnen
+aspiradora;Staubsauger;1;296;Zuhause und Wohnen
+basura;Müll;1;297;Zuhause und Wohnen
+alquiler;Miete;1;298;Zuhause und Wohnen
+plato;"Teller; Gericht";1;299;Küche und Haushalt
+cuenco;Schüssel;1;300;Küche und Haushalt
+vaso;Glas;1;301;Küche und Haushalt
+taza;Tasse;1;302;Küche und Haushalt
+botella;Flasche;1;303;Küche und Haushalt
+jarra;Krug;1;304;Küche und Haushalt
+cuchara;Löffel;1;305;Küche und Haushalt
+tenedor;Gabel;1;306;Küche und Haushalt
+cuchillo;Messer;1;307;Küche und Haushalt
+cucharilla;Teelöffel;1;308;Küche und Haushalt
+olla;Topf;1;309;Küche und Haushalt
+sartén;Pfanne;1;310;Küche und Haushalt
+tapa;Deckel;1;311;Küche und Haushalt
+hervidor;Wasserkocher;1;312;Küche und Haushalt
+paño de cocina;Küchentuch;1;313;Küche und Haushalt
+esponja;Schwamm;1;314;Küche und Haushalt
+detergente;Reinigungsmittel;1;315;Küche und Haushalt
+jabón;Seife;1;316;Küche und Haushalt
+escoba;Besen;1;317;Küche und Haushalt
+recogedor;Kehrschaufel;1;318;Küche und Haushalt
+cubo;Eimer;1;319;Küche und Haushalt
+trapo;Lappen;1;320;Küche und Haushalt
+toalla;Handtuch;1;321;Küche und Haushalt
+ropa de cama;Bettwäsche;1;322;Küche und Haushalt
+almohada;Kissen;1;323;Küche und Haushalt
+manta;Decke;1;324;Küche und Haushalt
+edredón;Bettdecke;1;325;Küche und Haushalt
+cortina;Vorhang;1;326;Küche und Haushalt
+alfombra;Teppich;1;327;Küche und Haushalt
+espejo;Spiegel;1;328;Küche und Haushalt
+cesta;Korb;1;329;Küche und Haushalt
+bolsa;"Tüte; Tasche";1;330;Küche und Haushalt
+caja;Schachtel;1;331;Küche und Haushalt
+herramienta;Werkzeug;1;332;Küche und Haushalt
+martillo;Hammer;1;333;Küche und Haushalt
+destornillador;Schraubenzieher;1;334;Küche und Haushalt
+alicates;Zange;1;335;Küche und Haushalt
+escalera de mano;Leiter;1;336;Küche und Haushalt
+pila;Batterie;1;337;Küche und Haushalt
+cargador;Ladegerät;1;338;Küche und Haushalt
+cable;Kabel;1;339;Küche und Haushalt
+alargador;Verlängerungskabel;1;340;Küche und Haushalt
+bombilla;Glühbirne;1;341;Küche und Haushalt
+aguja;Nadel;1;342;Küche und Haushalt
+hilo;Faden;1;343;Küche und Haushalt
+tijeras;Schere;1;344;Küche und Haushalt
+pegamento;Klebstoff;1;345;Küche und Haushalt
+papel;Papier;1;346;Küche und Haushalt
+bolígrafo;Kugelschreiber;1;347;Küche und Haushalt
+cuaderno;Heft;1;348;Küche und Haushalt
+comida;"Essen; Mahlzeit";1;349;Lebensmittel und Mahlzeiten
+bebida;Getränk;1;350;Lebensmittel und Mahlzeiten
+desayuno;Frühstück;1;351;Lebensmittel und Mahlzeiten
+almuerzo;Mittagessen;1;352;Lebensmittel und Mahlzeiten
+cena;Abendessen;1;353;Lebensmittel und Mahlzeiten
+merienda;Nachmittagsimbiss;1;354;Lebensmittel und Mahlzeiten
+pan;Brot;1;355;Lebensmittel und Mahlzeiten
+panecillo;Brötchen;1;356;Lebensmittel und Mahlzeiten
+mantequilla;Butter;1;357;Lebensmittel und Mahlzeiten
+queso;Käse;1;358;Lebensmittel und Mahlzeiten
+leche;Milch;1;359;Lebensmittel und Mahlzeiten
+yogur;Joghurt;1;360;Lebensmittel und Mahlzeiten
+nata;Sahne (Spanien);1;361;Lebensmittel und Mahlzeiten
+huevo;Ei;1;362;Lebensmittel und Mahlzeiten
+carne;Fleisch;1;363;Lebensmittel und Mahlzeiten
+ternera;"Rindfleisch; Kalbfleisch";1;364;Lebensmittel und Mahlzeiten
+cerdo;"Schweinefleisch; Schwein";1;365;Lebensmittel und Mahlzeiten
+pollo;Hähnchen;1;366;Lebensmittel und Mahlzeiten
+pavo;Pute;1;367;Lebensmittel und Mahlzeiten
+pescado;Fisch;1;368;Lebensmittel und Mahlzeiten
+marisco;Meeresfrüchte;1;369;Lebensmittel und Mahlzeiten
+jamón;Schinken;1;370;Lebensmittel und Mahlzeiten
+salchicha;Wurst;1;371;Lebensmittel und Mahlzeiten
+tocino;Speck;1;372;Lebensmittel und Mahlzeiten
+arroz;Reis;1;373;Lebensmittel und Mahlzeiten
+pasta;Nudeln;1;374;Lebensmittel und Mahlzeiten
+harina;Mehl;1;375;Lebensmittel und Mahlzeiten
+azúcar;Zucker;1;376;Lebensmittel und Mahlzeiten
+sal;Salz;1;377;Lebensmittel und Mahlzeiten
+pimienta;Pfeffer;1;378;Lebensmittel und Mahlzeiten
+aceite;Öl;1;379;Lebensmittel und Mahlzeiten
+vinagre;Essig;1;380;Lebensmittel und Mahlzeiten
+miel;Honig;1;381;Lebensmittel und Mahlzeiten
+mermelada;Marmelade;1;382;Lebensmittel und Mahlzeiten
+sopa;Suppe;1;383;Lebensmittel und Mahlzeiten
+ensalada;Salat;1;384;Lebensmittel und Mahlzeiten
+bocadillo;belegtes Baguette (Spanien);1;385;Lebensmittel und Mahlzeiten
+sándwich;Sandwich;1;386;Lebensmittel und Mahlzeiten
+pizza;Pizza;1;387;Lebensmittel und Mahlzeiten
+salsa;Soße;1;388;Lebensmittel und Mahlzeiten
+patata;Kartoffel (Spanien);1;389;Lebensmittel und Mahlzeiten
+tomate;Tomate;1;390;Lebensmittel und Mahlzeiten
+pepino;Gurke;1;391;Lebensmittel und Mahlzeiten
+pimiento;Paprika;1;392;Lebensmittel und Mahlzeiten
+cebolla;Zwiebel;1;393;Lebensmittel und Mahlzeiten
+ajo;Knoblauch;1;394;Lebensmittel und Mahlzeiten
+zanahoria;Karotte;1;395;Lebensmittel und Mahlzeiten
+col;Kohl;1;396;Lebensmittel und Mahlzeiten
+judías;Bohnen;1;397;Lebensmittel und Mahlzeiten
+guisantes;Erbsen;1;398;Lebensmittel und Mahlzeiten
+manzana;Apfel;1;399;Obst, Gemüse und Geschmack
+pera;Birne;1;400;Obst, Gemüse und Geschmack
+plátano;Banane;1;401;Obst, Gemüse und Geschmack
+naranja;Orange;1;402;Obst, Gemüse und Geschmack
+limón;Zitrone;1;403;Obst, Gemüse und Geschmack
+mandarina;Mandarine;1;404;Obst, Gemüse und Geschmack
+melocotón;Pfirsich (Spanien);1;405;Obst, Gemüse und Geschmack
+albaricoque;Aprikose;1;406;Obst, Gemüse und Geschmack
+ciruela;Pflaume;1;407;Obst, Gemüse und Geschmack
+cereza;Kirsche;1;408;Obst, Gemüse und Geschmack
+fresa;Erdbeere;1;409;Obst, Gemüse und Geschmack
+frambuesa;Himbeere;1;410;Obst, Gemüse und Geschmack
+arándano;Blaubeere;1;411;Obst, Gemüse und Geschmack
+uva;Weintraube;1;412;Obst, Gemüse und Geschmack
+sandía;Wassermelone;1;413;Obst, Gemüse und Geschmack
+melón;Melone;1;414;Obst, Gemüse und Geschmack
+piña;Ananas;1;415;Obst, Gemüse und Geschmack
+higo;Feige;1;416;Obst, Gemüse und Geschmack
+aceituna;Olive;1;417;Obst, Gemüse und Geschmack
+seta;Pilz;1;418;Obst, Gemüse und Geschmack
+calabacín;Zucchini;1;419;Obst, Gemüse und Geschmack
+berenjena;Aubergine;1;420;Obst, Gemüse und Geschmack
+coliflor;Blumenkohl;1;421;Obst, Gemüse und Geschmack
+brócoli;Brokkoli;1;422;Obst, Gemüse und Geschmack
+espinaca;Spinat;1;423;Obst, Gemüse und Geschmack
+lechuga;Kopfsalat;1;424;Obst, Gemüse und Geschmack
+remolacha;Rote Bete;1;425;Obst, Gemüse und Geschmack
+apio;Sellerie;1;426;Obst, Gemüse und Geschmack
+perejil;Petersilie;1;427;Obst, Gemüse und Geschmack
+eneldo;Dill;1;428;Obst, Gemüse und Geschmack
+albahaca;Basilikum;1;429;Obst, Gemüse und Geschmack
+maíz;Mais;1;430;Obst, Gemüse und Geschmack
+frutos secos;Nüsse;1;431;Obst, Gemüse und Geschmack
+almendra;Mandel;1;432;Obst, Gemüse und Geschmack
+nuez;Walnuss;1;433;Obst, Gemüse und Geschmack
+avellana;Haselnuss;1;434;Obst, Gemüse und Geschmack
+chocolate;Schokolade;1;435;Obst, Gemüse und Geschmack
+pastel;Kuchen;1;436;Obst, Gemüse und Geschmack
+helado;Eis;1;437;Obst, Gemüse und Geschmack
+galleta;Keks;1;438;Obst, Gemüse und Geschmack
+sabor;Geschmack;1;439;Obst, Gemüse und Geschmack
+dulce;süß;1;440;Obst, Gemüse und Geschmack
+ácido;sauer;1;441;Obst, Gemüse und Geschmack
+amargo;bitter;1;442;Obst, Gemüse und Geschmack
+salado;salzig;1;443;Obst, Gemüse und Geschmack
+picante;scharf;1;444;Obst, Gemüse und Geschmack
+fresco;frisch;1;445;Obst, Gemüse und Geschmack
+estropeado;verdorben;1;446;Obst, Gemüse und Geschmack
+delicioso;köstlich;1;447;Obst, Gemüse und Geschmack
+agua;Wasser;1;448;Getränke und Restaurant
+agua mineral;Mineralwasser;1;449;Getränke und Restaurant
+agua con gas;Sprudelwasser;1;450;Getränke und Restaurant
+agua sin gas;stilles Wasser;1;451;Getränke und Restaurant
+café;Kaffee;1;452;Getränke und Restaurant
+té;Tee;1;453;Getränke und Restaurant
+té negro;Schwarztee;1;454;Getränke und Restaurant
+zumo;Saft (Spanien);1;455;Getränke und Restaurant
+jugo;Saft (Lateinamerika);1;456;Getränke und Restaurant
+zumo de naranja;Orangensaft;1;457;Getränke und Restaurant
+limonada;Limonade;1;458;Getränke und Restaurant
+cerveza;Bier;1;459;Getränke und Restaurant
+vino;Wein;1;460;Getränke und Restaurant
+vino tinto;Rotwein;1;461;Getränke und Restaurant
+vino blanco;Weißwein;1;462;Getränke und Restaurant
+cava;Schaumwein aus Spanien;1;463;Getränke und Restaurant
+menú;"Speisekarte; Menü";1;464;Getränke und Restaurant
+camarero;Kellner;1;465;Getränke und Restaurant
+camarera;Kellnerin;1;466;Getränke und Restaurant
+cuenta;Rechnung;1;467;Getränke und Restaurant
+propina;Trinkgeld;1;468;Getränke und Restaurant
+reserva;Reservierung;1;469;Getränke und Restaurant
+mesa para dos;Tisch für zwei;1;470;Getränke und Restaurant
+entrante;Vorspeise;1;471;Getränke und Restaurant
+plato principal;Hauptgericht;1;472;Getränke und Restaurant
+guarnición;Beilage;1;473;Getränke und Restaurant
+postre;Dessert;1;474;Getränke und Restaurant
+ración;Portion;1;475;Getränke und Restaurant
+especialidad;Spezialität;1;476;Getränke und Restaurant
+vegetariano;vegetarisch;1;477;Getränke und Restaurant
+vegano;vegan;1;478;Getränke und Restaurant
+sin gluten;glutenfrei;1;479;Getränke und Restaurant
+sin lactosa;laktosefrei;1;480;Getränke und Restaurant
+alergia;Allergie;1;481;Getränke und Restaurant
+hambriento;hungrig;1;482;Getränke und Restaurant
+sediento;durstig;1;483;Getränke und Restaurant
+cocinar;kochen;1;484;Getränke und Restaurant
+hornear;backen;1;485;Getränke und Restaurant
+freír;"braten; frittieren";1;486;Getränke und Restaurant
+pedir;"bestellen; bitten";1;487;Getränke und Restaurant
+pagar;bezahlen;1;488;Getränke und Restaurant
+probar;probieren;1;489;Getränke und Restaurant
+cortar;schneiden;1;490;Getränke und Restaurant
+mezclar;mischen;1;491;Getränke und Restaurant
+añadir;hinzufügen;1;492;Getränke und Restaurant
+servir;servieren;1;493;Getränke und Restaurant
+recién hecho;frisch zubereitet;1;494;Getränke und Restaurant
+para llevar;zum Mitnehmen;1;495;Getränke und Restaurant
+la carta;Speisekarte;1;496;Getränke und Restaurant
+el menú del día;Tagesmenü;1;497;Getränke und Restaurant
+ciudad;Stadt;1;498;Stadt und Orientierung
+pueblo;"Dorf; Kleinstadt";1;499;Stadt und Orientierung
+calle;Straße;1;500;Stadt und Orientierung
+plaza;Platz;1;501;Stadt und Orientierung
+centro;Zentrum;1;502;Stadt und Orientierung
+barrio;Stadtviertel;1;503;Stadt und Orientierung
+puente;Brücke;1;504;Stadt und Orientierung
+cruce;Kreuzung;1;505;Stadt und Orientierung
+semáforo;Ampel;1;506;Stadt und Orientierung
+acera;Gehweg;1;507;Stadt und Orientierung
+paso de peatones;Zebrastreifen;1;508;Stadt und Orientierung
+parque;Park;1;509;Stadt und Orientierung
+parque infantil;Spielplatz;1;510;Stadt und Orientierung
+mercado;Markt;1;511;Stadt und Orientierung
+tienda;Geschäft;1;512;Stadt und Orientierung
+supermercado;Supermarkt;1;513;Stadt und Orientierung
+panadería;Bäckerei;1;514;Stadt und Orientierung
+carnicería;Metzgerei;1;515;Stadt und Orientierung
+farmacia;Apotheke;1;516;Stadt und Orientierung
+hospital;Krankenhaus;1;517;Stadt und Orientierung
+escuela;Schule;1;518;Stadt und Orientierung
+guardería;Kindergarten;1;519;Stadt und Orientierung
+universidad;Universität;1;520;Stadt und Orientierung
+biblioteca;Bibliothek;1;521;Stadt und Orientierung
+museo;Museum;1;522;Stadt und Orientierung
+cine;Kino;1;523;Stadt und Orientierung
+teatro;Theater;1;524;Stadt und Orientierung
+iglesia;Kirche;1;525;Stadt und Orientierung
+correos;Post;1;526;Stadt und Orientierung
+banco;Bank;1;527;Stadt und Orientierung
+cajero automático;Geldautomat;1;528;Stadt und Orientierung
+comisaría;Polizeiwache;1;529;Stadt und Orientierung
+parque de bomberos;Feuerwache;1;530;Stadt und Orientierung
+ayuntamiento;Rathaus;1;531;Stadt und Orientierung
+hotel;Hotel;1;532;Stadt und Orientierung
+gasolinera;Tankstelle;1;533;Stadt und Orientierung
+aparcamiento;Parkplatz (Spanien);1;534;Stadt und Orientierung
+estacionamiento;Parkplatz (Lateinamerika);1;535;Stadt und Orientierung
+baño público;öffentliche Toilette;1;536;Stadt und Orientierung
+entrada;Eingang;1;537;Stadt und Orientierung
+salida;Ausgang;1;538;Stadt und Orientierung
+izquierda;links;1;539;Stadt und Orientierung
+derecha;rechts;1;540;Stadt und Orientierung
+todo recto;geradeaus;1;541;Stadt und Orientierung
+cerca;nah;1;542;Stadt und Orientierung
+lejos;weit;1;543;Stadt und Orientierung
+delante de;vor;1;544;Stadt und Orientierung
+detrás de;hinter;1;545;Stadt und Orientierung
+al lado de;neben;1;546;Stadt und Orientierung
+viaje;Reise;1;547;Verkehr und Reisen
+viajero;Reisender;1;548;Verkehr und Reisen
+pasaporte;Reisepass;1;549;Verkehr und Reisen
+documento de identidad;Personalausweis;1;550;Verkehr und Reisen
+carné de conducir;Führerschein (Spanien);1;551;Verkehr und Reisen
+licencia de conducir;Führerschein (Lateinamerika);1;552;Verkehr und Reisen
+billete;"Fahrkarte; Ticket (Spanien)";1;553;Verkehr und Reisen
+boleto;Ticket (Lateinamerika);1;554;Verkehr und Reisen
+billete de ida;einfache Fahrkarte;1;555;Verkehr und Reisen
+billete de ida y vuelta;Hin- und Rückfahrkarte;1;556;Verkehr und Reisen
+autobús;Bus;1;557;Verkehr und Reisen
+estación de autobuses;Busbahnhof;1;558;Verkehr und Reisen
+tren;Zug;1;559;Verkehr und Reisen
+estación de tren;Bahnhof;1;560;Verkehr und Reisen
+metro;U-Bahn;1;561;Verkehr und Reisen
+tranvía;Straßenbahn;1;562;Verkehr und Reisen
+taxi;Taxi;1;563;Verkehr und Reisen
+aeropuerto;Flughafen;1;564;Verkehr und Reisen
+avión;Flugzeug;1;565;Verkehr und Reisen
+vuelo;Flug;1;566;Verkehr und Reisen
+embarque;Boarding;1;567;Verkehr und Reisen
+equipaje;Gepäck;1;568;Verkehr und Reisen
+maleta;Koffer;1;569;Verkehr und Reisen
+mochila;Rucksack;1;570;Verkehr und Reisen
+equipaje de mano;Handgepäck;1;571;Verkehr und Reisen
+asiento;Sitzplatz;1;572;Verkehr und Reisen
+ventanilla;"Fensterplatz; Schalter";1;573;Verkehr und Reisen
+conductor;Fahrer;1;574;Verkehr und Reisen
+revisor;Schaffner;1;575;Verkehr und Reisen
+parada;Haltestelle;1;576;Verkehr und Reisen
+llegada;Ankunft;1;577;Verkehr und Reisen
+retraso;Verspätung;1;578;Verkehr und Reisen
+cancelado;annulliert;1;579;Verkehr und Reisen
+transbordo;Umsteigen;1;580;Verkehr und Reisen
+carretera;Landstraße;1;581;Verkehr und Reisen
+autopista;Autobahn;1;582;Verkehr und Reisen
+tráfico;Verkehr;1;583;Verkehr und Reisen
+atasco;Stau;1;584;Verkehr und Reisen
+coche;Auto (Spanien);1;585;Verkehr und Reisen
+carro;Auto (Lateinamerika);1;586;Verkehr und Reisen
+camión;Lkw;1;587;Verkehr und Reisen
+bicicleta;Fahrrad;1;588;Verkehr und Reisen
+moto;Motorrad;1;589;Verkehr und Reisen
+combustible;Kraftstoff;1;590;Verkehr und Reisen
+gasolina;Benzin;1;591;Verkehr und Reisen
+diésel;Diesel;1;592;Verkehr und Reisen
+punto de recarga;Ladestation;1;593;Verkehr und Reisen
+alquilar un coche;ein Auto mieten;1;594;Verkehr und Reisen
+recepción;Rezeption;1;595;Hotel, Urlaub und Freizeit
+reservar;reservieren;1;596;Hotel, Urlaub und Freizeit
+registro;Anmeldung;1;597;Hotel, Urlaub und Freizeit
+salida del hotel;Check-out;1;598;Hotel, Urlaub und Freizeit
+habitación con vistas;Zimmer mit Aussicht;1;599;Hotel, Urlaub und Freizeit
+habitación individual;Einzelzimmer;1;600;Hotel, Urlaub und Freizeit
+habitación doble;Doppelzimmer;1;601;Hotel, Urlaub und Freizeit
+llave de la habitación;Zimmerschlüssel;1;602;Hotel, Urlaub und Freizeit
+desayuno incluido;Frühstück inbegriffen;1;603;Hotel, Urlaub und Freizeit
+piscina;Schwimmbad;1;604;Hotel, Urlaub und Freizeit
+playa;Strand;1;605;Hotel, Urlaub und Freizeit
+mar;Meer;1;606;Hotel, Urlaub und Freizeit
+isla;Insel;1;607;Hotel, Urlaub und Freizeit
+costa;Küste;1;608;Hotel, Urlaub und Freizeit
+puerto;Hafen;1;609;Hotel, Urlaub und Freizeit
+barco;Schiff;1;610;Hotel, Urlaub und Freizeit
+ferry;Fähre;1;611;Hotel, Urlaub und Freizeit
+excursión;Ausflug;1;612;Hotel, Urlaub und Freizeit
+guía turístico;Reiseführer;1;613;Hotel, Urlaub und Freizeit
+turista;Tourist;1;614;Hotel, Urlaub und Freizeit
+visita turística;Besichtigung;1;615;Hotel, Urlaub und Freizeit
+recuerdo;Souvenir;1;616;Hotel, Urlaub und Freizeit
+postal;Postkarte;1;617;Hotel, Urlaub und Freizeit
+mapa de la ciudad;Stadtplan;1;618;Hotel, Urlaub und Freizeit
+plan de viaje;Reiseplan;1;619;Hotel, Urlaub und Freizeit
+camping;Campingplatz;1;620;Hotel, Urlaub und Freizeit
+tienda de campaña;Zelt;1;621;Hotel, Urlaub und Freizeit
+caravana;Wohnwagen;1;622;Hotel, Urlaub und Freizeit
+autocaravana;Wohnmobil;1;623;Hotel, Urlaub und Freizeit
+hacer senderismo;wandern;1;624;Hotel, Urlaub und Freizeit
+nadar;schwimmen;1;625;Hotel, Urlaub und Freizeit
+bucear;tauchen;1;626;Hotel, Urlaub und Freizeit
+tomar el sol;sich sonnen;1;627;Hotel, Urlaub und Freizeit
+pasear;spazieren gehen;1;628;Hotel, Urlaub und Freizeit
+fotografiar;fotografieren;1;629;Hotel, Urlaub und Freizeit
+descansar;sich erholen;1;630;Hotel, Urlaub und Freizeit
+plaza libre;freier Platz;1;631;Hotel, Urlaub und Freizeit
+vista;Aussicht;1;632;Hotel, Urlaub und Freizeit
+tienda de recuerdos;Souvenirladen;1;633;Hotel, Urlaub und Freizeit
+seguro de viaje;Reiseversicherung;1;634;Hotel, Urlaub und Freizeit
+equipaje perdido;verlorenes Gepäck;1;635;Hotel, Urlaub und Freizeit
+emergencia;Notfall;1;636;Hotel, Urlaub und Freizeit
+vacaciones en la playa;Strandurlaub;1;637;Hotel, Urlaub und Freizeit
+alojamiento;Unterkunft;1;638;Hotel, Urlaub und Freizeit
+reserva confirmada;bestätigte Reservierung;1;639;Hotel, Urlaub und Freizeit
+temporada alta;Hochsaison;1;640;Hotel, Urlaub und Freizeit
+temporada baja;Nebensaison;1;641;Hotel, Urlaub und Freizeit
+excursión guiada;geführter Ausflug;1;642;Hotel, Urlaub und Freizeit
+punto de encuentro;Treffpunkt;1;643;Hotel, Urlaub und Freizeit
+ropa;Kleidung;1;644;Kleidung und Einkaufen
+camiseta;T-Shirt;1;645;Kleidung und Einkaufen
+camisa;Hemd;1;646;Kleidung und Einkaufen
+blusa;Bluse;1;647;Kleidung und Einkaufen
+pantalones;Hose;1;648;Kleidung und Einkaufen
+vaqueros;Jeans (Spanien);1;649;Kleidung und Einkaufen
+jeans;Jeans;1;650;Kleidung und Einkaufen
+pantalones cortos;kurze Hose;1;651;Kleidung und Einkaufen
+falda;Rock;1;652;Kleidung und Einkaufen
+vestido;Kleid;1;653;Kleidung und Einkaufen
+chaqueta;Jacke;1;654;Kleidung und Einkaufen
+abrigo;Mantel;1;655;Kleidung und Einkaufen
+jersey;Pullover (Spanien);1;656;Kleidung und Einkaufen
+suéter;Pullover;1;657;Kleidung und Einkaufen
+traje;Anzug;1;658;Kleidung und Einkaufen
+pijama;Schlafanzug;1;659;Kleidung und Einkaufen
+ropa interior;Unterwäsche;1;660;Kleidung und Einkaufen
+calcetines;Socken;1;661;Kleidung und Einkaufen
+zapatos;Schuhe;1;662;Kleidung und Einkaufen
+zapatillas deportivas;Turnschuhe;1;663;Kleidung und Einkaufen
+botas;Stiefel;1;664;Kleidung und Einkaufen
+sandalias;Sandalen;1;665;Kleidung und Einkaufen
+sombrero;Hut;1;666;Kleidung und Einkaufen
+gorra;Kappe;1;667;Kleidung und Einkaufen
+bufanda;Schal;1;668;Kleidung und Einkaufen
+guantes;Handschuhe;1;669;Kleidung und Einkaufen
+cinturón;Gürtel;1;670;Kleidung und Einkaufen
+bolso;Handtasche;1;671;Kleidung und Einkaufen
+cartera;"Geldbörse; Brieftasche";1;672;Kleidung und Einkaufen
+gafas;Brille;1;673;Kleidung und Einkaufen
+gafas de sol;Sonnenbrille;1;674;Kleidung und Einkaufen
+reloj;Uhr;1;675;Kleidung und Einkaufen
+anillo;Ring;1;676;Kleidung und Einkaufen
+collar;Halskette;1;677;Kleidung und Einkaufen
+talla;Kleidergröße;1;678;Kleidung und Einkaufen
+color;Farbe;1;679;Kleidung und Einkaufen
+precio;Preis;1;680;Kleidung und Einkaufen
+descuento;Rabatt;1;681;Kleidung und Einkaufen
+rebajas;Schlussverkauf;1;682;Kleidung und Einkaufen
+efectivo;Bargeld;1;683;Kleidung und Einkaufen
+tarjeta;Karte;1;684;Kleidung und Einkaufen
+vendedor;Verkäufer;1;685;Kleidung und Einkaufen
+probarse;anprobieren;1;686;Kleidung und Einkaufen
+comprar;kaufen;1;687;Kleidung und Einkaufen
+vender;verkaufen;1;688;Kleidung und Einkaufen
+caro;teuer;1;689;Kleidung und Einkaufen
+barato;billig;1;690;Kleidung und Einkaufen
+asequible;erschwinglich;1;691;Kleidung und Einkaufen
+devolución;Rückgabe;1;692;Kleidung und Einkaufen
+dinero;Geld;1;693;Geld und Dienstleistungen
+euro;Euro;1;694;Geld und Dienstleistungen
+céntimo;Cent;1;695;Geld und Dienstleistungen
+moneda;Münze;1;696;Geld und Dienstleistungen
+billete de banco;Geldschein;1;697;Geld und Dienstleistungen
+cuenta bancaria;Bankkonto;1;698;Geld und Dienstleistungen
+tarjeta de crédito;Kreditkarte;1;699;Geld und Dienstleistungen
+tarjeta de débito;Debitkarte;1;700;Geld und Dienstleistungen
+PIN;PIN;1;701;Geld und Dienstleistungen
+pago;Zahlung;1;702;Geld und Dienstleistungen
+ingreso;"Einzahlung; Einkommen";1;703;Geld und Dienstleistungen
+retirada de efectivo;Bargeldabhebung;1;704;Geld und Dienstleistungen
+sacar dinero;Geld abheben;1;705;Geld und Dienstleistungen
+casa de cambio;Wechselstube;1;706;Geld und Dienstleistungen
+tipo de cambio;Wechselkurs;1;707;Geld und Dienstleistungen
+comisión;"Gebühr; Provision";1;708;Geld und Dienstleistungen
+deuda;Schuld;1;709;Geld und Dienstleistungen
+préstamo;"Kredit; Darlehen";1;710;Geld und Dienstleistungen
+ahorros;Ersparnisse;1;711;Geld und Dienstleistungen
+sueldo;Gehalt;1;712;Geld und Dienstleistungen
+pensión;"Rente; Pension";1;713;Geld und Dienstleistungen
+impuesto;Steuer;1;714;Geld und Dienstleistungen
+seguro;Versicherung;1;715;Geld und Dienstleistungen
+contrato;Vertrag;1;716;Geld und Dienstleistungen
+firma;"Unterschrift; Firma";1;717;Geld und Dienstleistungen
+formulario;Formular;1;718;Geld und Dienstleistungen
+documento;Dokument;1;719;Geld und Dienstleistungen
+copia;Kopie;1;720;Geld und Dienstleistungen
+original;Original;1;721;Geld und Dienstleistungen
+paquete;Paket;1;722;Geld und Dienstleistungen
+sello;"Briefmarke; Siegel";1;723;Geld und Dienstleistungen
+carta;Brief;1;724;Geld und Dienstleistungen
+correo electrónico;E-Mail;1;725;Geld und Dienstleistungen
+llamada telefónica;Telefonanruf;1;726;Geld und Dienstleistungen
+servicio;Dienstleistung;1;727;Geld und Dienstleistungen
+reparación;Reparatur;1;728;Geld und Dienstleistungen
+técnico;Techniker;1;729;Geld und Dienstleistungen
+peluquero;Friseur;1;730;Geld und Dienstleistungen
+tintorería;Reinigung;1;731;Geld und Dienstleistungen
+pedir cita;einen Termin vereinbaren;1;732;Geld und Dienstleistungen
+horario de apertura;Öffnungszeiten;1;733;Geld und Dienstleistungen
+hacer cola;in der Schlange stehen;1;734;Geld und Dienstleistungen
+confirmación;Bestätigung;1;735;Geld und Dienstleistungen
+queja;Beschwerde;1;736;Geld und Dienstleistungen
+ayuda;Hilfe;1;737;Geld und Dienstleistungen
+factura;Rechnung;1;738;Geld und Dienstleistungen
+recibo;Quittung;1;739;Geld und Dienstleistungen
+garantía;Garantie;1;740;Geld und Dienstleistungen
+trabajo;"Arbeit; Job";1;741;Beruf und Arbeitsplatz
+puesto de trabajo;Arbeitsplatz;1;742;Beruf und Arbeitsplatz
+oficina;Büro;1;743;Beruf und Arbeitsplatz
+empresa;"Firma; Unternehmen";1;744;Beruf und Arbeitsplatz
+compañero;Kollege;1;745;Beruf und Arbeitsplatz
+compañera;Kollegin;1;746;Beruf und Arbeitsplatz
+jefe;Chef;1;747;Beruf und Arbeitsplatz
+jefa;Chefin;1;748;Beruf und Arbeitsplatz
+empleado;Mitarbeiter;1;749;Beruf und Arbeitsplatz
+empleada;Mitarbeiterin;1;750;Beruf und Arbeitsplatz
+empleador;Arbeitgeber;1;751;Beruf und Arbeitsplatz
+empleo;Beschäftigung;1;752;Beruf und Arbeitsplatz
+desempleo;Arbeitslosigkeit;1;753;Beruf und Arbeitsplatz
+salario;"Gehalt; Lohn";1;754;Beruf und Arbeitsplatz
+horario laboral;Arbeitszeit;1;755;Beruf und Arbeitsplatz
+turno;Schicht;1;756;Beruf und Arbeitsplatz
+reunión;Besprechung;1;757;Beruf und Arbeitsplatz
+acuerdo;Vereinbarung;1;758;Beruf und Arbeitsplatz
+proyecto;Projekt;1;759;Beruf und Arbeitsplatz
+tarea;Aufgabe;1;760;Beruf und Arbeitsplatz
+plazo;Frist;1;761;Beruf und Arbeitsplatz
+plan;Plan;1;762;Beruf und Arbeitsplatz
+informe;Bericht;1;763;Beruf und Arbeitsplatz
+presentación;Präsentation;1;764;Beruf und Arbeitsplatz
+teléfono;Telefon;1;765;Beruf und Arbeitsplatz
+ordenador;Computer (Spanien);1;766;Beruf und Arbeitsplatz
+computadora;Computer (Lateinamerika);1;767;Beruf und Arbeitsplatz
+teclado;Tastatur;1;768;Beruf und Arbeitsplatz
+pantalla;Bildschirm;1;769;Beruf und Arbeitsplatz
+impresora;Drucker;1;770;Beruf und Arbeitsplatz
+archivo;Datei;1;771;Beruf und Arbeitsplatz
+carpeta;Ordner;1;772;Beruf und Arbeitsplatz
+contraseña;Passwort;1;773;Beruf und Arbeitsplatz
+nombre de usuario;Benutzername;1;774;Beruf und Arbeitsplatz
+internet;Internet;1;775;Beruf und Arbeitsplatz
+red;Netzwerk;1;776;Beruf und Arbeitsplatz
+enviar;senden;1;777;Beruf und Arbeitsplatz
+recibir;erhalten;1;778;Beruf und Arbeitsplatz
+imprimir;ausdrucken;1;779;Beruf und Arbeitsplatz
+copiar;kopieren;1;780;Beruf und Arbeitsplatz
+guardar;speichern;1;781;Beruf und Arbeitsplatz
+borrar;löschen;1;782;Beruf und Arbeitsplatz
+llamar;anrufen;1;783;Beruf und Arbeitsplatz
+acordar;vereinbaren;1;784;Beruf und Arbeitsplatz
+explicar;erklären;1;785;Beruf und Arbeitsplatz
+pregunta;Frage;1;786;Beruf und Arbeitsplatz
+respuesta;Antwort;1;787;Beruf und Arbeitsplatz
+experiencia;Erfahrung;1;788;Beruf und Arbeitsplatz
+currículum;Lebenslauf;1;789;Beruf und Arbeitsplatz
+cliente;Kunde;1;790;Beruf und Arbeitsplatz
+alumno;Schüler;1;791;Schule und Lernen
+alumna;Schülerin;1;792;Schule und Lernen
+estudiante;"Lernende/r; Student/in";1;793;Schule und Lernen
+profesor;Lehrer;1;794;Schule und Lernen
+profesora;Lehrerin;1;795;Schule und Lernen
+maestro;Lehrer;1;796;Schule und Lernen
+clase;"Klasse; Unterricht";1;797;Schule und Lernen
+aula;Klassenzimmer;1;798;Schule und Lernen
+lección;Lektion;1;799;Schule und Lernen
+asignatura;Schulfach;1;800;Schule und Lernen
+examen;Prüfung;1;801;Schule und Lernen
+prueba;Test;1;802;Schule und Lernen
+nota;Note;1;803;Schule und Lernen
+deberes;Hausaufgaben;1;804;Schule und Lernen
+libro de texto;Lehrbuch;1;805;Schule und Lernen
+libro;Buch;1;806;Schule und Lernen
+diccionario;Wörterbuch;1;807;Schule und Lernen
+lápiz;Bleistift;1;808;Schule und Lernen
+goma de borrar;Radiergummi;1;809;Schule und Lernen
+regla;"Lineal; Regel";1;810;Schule und Lernen
+palabra;Wort;1;811;Schule und Lernen
+frase;"Satz; Redewendung";1;812;Schule und Lernen
+texto;Text;1;813;Schule und Lernen
+gramática;Grammatik;1;814;Schule und Lernen
+pronunciación;Aussprache;1;815;Schule und Lernen
+traducción;Übersetzung;1;816;Schule und Lernen
+significado;Bedeutung;1;817;Schule und Lernen
+estudiar;"lernen; studieren";1;818;Schule und Lernen
+enseñar;"unterrichten; zeigen";1;819;Schule und Lernen
+leer;lesen;1;820;Schule und Lernen
+escribir;schreiben;1;821;Schule und Lernen
+hablar;sprechen;1;822;Schule und Lernen
+escuchar;zuhören;1;823;Schule und Lernen
+entender;verstehen;1;824;Schule und Lernen
+repetir;wiederholen;1;825;Schule und Lernen
+practicar;üben;1;826;Schule und Lernen
+aprobar un examen;eine Prüfung bestehen;1;827;Schule und Lernen
+suspender un examen;eine Prüfung nicht bestehen;1;828;Schule und Lernen
+conocimiento;Wissen;1;829;Schule und Lernen
+habilidad;Fähigkeit;1;830;Schule und Lernen
+curso;Kurs;1;831;Schule und Lernen
+idioma;Sprache;1;832;Schule und Lernen
+lengua materna;Muttersprache;1;833;Schule und Lernen
+idioma extranjero;Fremdsprache;1;834;Schule und Lernen
+salud;Gesundheit;1;835;Gesundheit und Körper
+enfermedad;Krankheit;1;836;Gesundheit und Körper
+dolor;Schmerz;1;837;Gesundheit und Körper
+cabeza;Kopf;1;838;Gesundheit und Körper
+cara;Gesicht;1;839;Gesundheit und Körper
+ojo;Auge;1;840;Gesundheit und Körper
+oreja;Ohr;1;841;Gesundheit und Körper
+nariz;Nase;1;842;Gesundheit und Körper
+boca;Mund;1;843;Gesundheit und Körper
+diente;Zahn;1;844;Gesundheit und Körper
+lengua;"Zunge; Sprache";1;845;Gesundheit und Körper
+cuello;"Hals; Nacken";1;846;Gesundheit und Körper
+hombro;Schulter;1;847;Gesundheit und Körper
+brazo;Arm;1;848;Gesundheit und Körper
+codo;Ellbogen;1;849;Gesundheit und Körper
+mano;Hand;1;850;Gesundheit und Körper
+dedo;"Finger; Zeh";1;851;Gesundheit und Körper
+espalda;Rücken;1;852;Gesundheit und Körper
+barriga;Bauch;1;853;Gesundheit und Körper
+estómago;Magen;1;854;Gesundheit und Körper
+corazón;Herz;1;855;Gesundheit und Körper
+pulmón;Lunge;1;856;Gesundheit und Körper
+pierna;Bein;1;857;Gesundheit und Körper
+rodilla;Knie;1;858;Gesundheit und Körper
+pie;Fuß;1;859;Gesundheit und Körper
+piel;Haut;1;860;Gesundheit und Körper
+hueso;Knochen;1;861;Gesundheit und Körper
+sangre;Blut;1;862;Gesundheit und Körper
+músculo;Muskel;1;863;Gesundheit und Körper
+médico;Arzt;1;864;Gesundheit und Körper
+médica;Ärztin;1;865;Gesundheit und Körper
+enfermero;Krankenpfleger;1;866;Gesundheit und Körper
+enfermera;Krankenschwester;1;867;Gesundheit und Körper
+consulta;"Arztpraxis; Sprechstunde";1;868;Gesundheit und Körper
+medicamento;Medikament;1;869;Gesundheit und Körper
+receta;Rezept;1;870;Gesundheit und Körper
+fiebre;Fieber;1;871;Gesundheit und Körper
+tos;Husten;1;872;Gesundheit und Körper
+resfriado;Erkältung;1;873;Gesundheit und Körper
+gripe;Grippe;1;874;Gesundheit und Körper
+dolor de cabeza;Kopfschmerzen;1;875;Gesundheit und Körper
+dolor de muelas;Zahnschmerzen;1;876;Gesundheit und Körper
+náuseas;Übelkeit;1;877;Gesundheit und Körper
+mareo;Schwindel;1;878;Gesundheit und Körper
+herida;Wunde;1;879;Gesundheit und Körper
+lesión;Verletzung;1;880;Gesundheit und Körper
+urgencias;Notaufnahme;1;881;Gesundheit und Körper
+doler;wehtun;1;882;Gesundheit und Körper
+sentimiento;Gefühl;1;883;Gefühle und Kommunikation
+amor;Liebe;1;884;Gefühle und Kommunikation
+felicidad;Glück;1;885;Gefühle und Kommunikation
+alegría;Freude;1;886;Gefühle und Kommunikation
+tristeza;Traurigkeit;1;887;Gefühle und Kommunikation
+miedo;Angst;1;888;Gefühle und Kommunikation
+preocupación;Sorge;1;889;Gefühle und Kommunikation
+esperanza;Hoffnung;1;890;Gefühle und Kommunikation
+sorpresa;Überraschung;1;891;Gefühle und Kommunikation
+enfado;Ärger;1;892;Gefühle und Kommunikation
+paz;Frieden;1;893;Gefühle und Kommunikation
+confianza;Vertrauen;1;894;Gefühle und Kommunikation
+respeto;Respekt;1;895;Gefühle und Kommunikation
+vergüenza;Scham;1;896;Gefühle und Kommunikation
+orgullo;Stolz;1;897;Gefühle und Kommunikation
+aburrimiento;Langeweile;1;898;Gefühle und Kommunikation
+estrés;Stress;1;899;Gefühle und Kommunikation
+problema;Problem;1;900;Gefühle und Kommunikation
+solución;Lösung;1;901;Gefühle und Kommunikation
+idea;Idee;1;902;Gefühle und Kommunikation
+opinión;Meinung;1;903;Gefühle und Kommunikation
+conversación;Gespräch;1;904;Gefühle und Kommunikation
+conversar;sich unterhalten;1;905;Gefühle und Kommunikation
+contar;erzählen;1;906;Gefühle und Kommunikation
+preguntar;fragen;1;907;Gefühle und Kommunikation
+responder;antworten;1;908;Gefühle und Kommunikation
+decir;sagen;1;909;Gefühle und Kommunikation
+mencionar;erwähnen;1;910;Gefühle und Kommunikation
+oír;hören;1;911;Gefühle und Kommunikation
+ver;sehen;1;912;Gefühle und Kommunikation
+mostrar;zeigen;1;913;Gefühle und Kommunikation
+mensaje;Nachricht;1;914;Gefühle und Kommunikation
+llamada;Anruf;1;915;Gefühle und Kommunikation
+voz;Stimme;1;916;Gefühle und Kommunikation
+verdad;Wahrheit;1;917;Gefühle und Kommunikation
+mentira;Lüge;1;918;Gefühle und Kommunikation
+broma;Scherz;1;919;Gefühle und Kommunikation
+risa;Lachen;1;920;Gefühle und Kommunikation
+llorar;weinen;1;921;Gefühle und Kommunikation
+reírse;lachen;1;922;Gefühle und Kommunikation
+esperar;"hoffen; warten";1;923;Gefühle und Kommunikation
+creer;glauben;1;924;Gefühle und Kommunikation
+estar de acuerdo;zustimmen;1;925;Gefühle und Kommunikation
+no estar de acuerdo;nicht zustimmen;1;926;Gefühle und Kommunikation
+discutir;"diskutieren; streiten";1;927;Gefühle und Kommunikation
+expresar;ausdrücken;1;928;Gefühle und Kommunikation
+recordar;sich erinnern;1;929;Gefühle und Kommunikation
+olvidar;vergessen;1;930;Gefühle und Kommunikation
+prometer;versprechen;1;931;Gefühle und Kommunikation
+decidir;entscheiden;1;932;Gefühle und Kommunikation
+ser;sein (Eigenschaft/Identität);1;933;Wichtige Verben
+estar;sein (Zustand/Ort);1;934;Wichtige Verben
+tener;haben;1;935;Wichtige Verben
+hacer;"machen; tun";1;936;Wichtige Verben
+ir;"gehen; fahren";1;937;Wichtige Verben
+venir;kommen;1;938;Wichtige Verben
+llegar;ankommen;1;939;Wichtige Verben
+salir;"hinausgehen; ausgehen";1;940;Wichtige Verben
+vivir;"leben; wohnen";1;941;Wichtige Verben
+vivir en;wohnen in;1;942;Wichtige Verben
+querer;"wollen; lieben";1;943;Wichtige Verben
+gustar;gefallen;1;944;Wichtige Verben
+desear;wünschen;1;945;Wichtige Verben
+necesitar;brauchen;1;946;Wichtige Verben
+deber;"sollen; müssen";1;947;Wichtige Verben
+poder;"können; dürfen";1;948;Wichtige Verben
+saber;"wissen; können";1;949;Wichtige Verben
+conocer;kennen;1;950;Wichtige Verben
+pensar;denken;1;951;Wichtige Verben
+mirar;anschauen;1;952;Wichtige Verben
+contestar;antworten;1;953;Wichtige Verben
+dar;geben;1;954;Wichtige Verben
+tomar;"nehmen; trinken";1;955;Wichtige Verben
+traer;bringen;1;956;Wichtige Verben
+llevar;"tragen; mitnehmen";1;957;Wichtige Verben
+poner;"stellen; legen";1;958;Wichtige Verben
+dejar;"lassen; zurücklassen";1;959;Wichtige Verben
+encontrar;finden;1;960;Wichtige Verben
+buscar;suchen;1;961;Wichtige Verben
+perder;verlieren;1;962;Wichtige Verben
+abrir;öffnen;1;963;Wichtige Verben
+cerrar;schließen;1;964;Wichtige Verben
+empezar;beginnen;1;965;Wichtige Verben
+terminar;beenden;1;966;Wichtige Verben
+ayudar;helfen;1;967;Wichtige Verben
+usar;benutzen;1;968;Wichtige Verben
+elegir;auswählen;1;969;Wichtige Verben
+levantarse;aufstehen;1;970;Bewegung und Alltagshandlungen
+despertarse;aufwachen;1;971;Bewegung und Alltagshandlungen
+dormir;schlafen;1;972;Bewegung und Alltagshandlungen
+quedarse dormido;einschlafen;1;973;Bewegung und Alltagshandlungen
+lavarse;sich waschen;1;974;Bewegung und Alltagshandlungen
+ducharse;duschen;1;975;Bewegung und Alltagshandlungen
+bañarse;baden;1;976;Bewegung und Alltagshandlungen
+vestirse;sich anziehen;1;977;Bewegung und Alltagshandlungen
+desvestirse;sich ausziehen;1;978;Bewegung und Alltagshandlungen
+afeitarse;sich rasieren;1;979;Bewegung und Alltagshandlungen
+peinarse;sich kämmen;1;980;Bewegung und Alltagshandlungen
+comer;essen;1;981;Bewegung und Alltagshandlungen
+beber;trinken;1;982;Bewegung und Alltagshandlungen
+lavar;waschen;1;983;Bewegung und Alltagshandlungen
+limpiar;putzen;1;984;Bewegung und Alltagshandlungen
+ordenar;"aufräumen; ordnen";1;985;Bewegung und Alltagshandlungen
+preparar;vorbereiten;1;986;Bewegung und Alltagshandlungen
+conducir;fahren;1;987;Bewegung und Alltagshandlungen
+caminar;gehen;1;988;Bewegung und Alltagshandlungen
+correr;laufen;1;989;Bewegung und Alltagshandlungen
+saltar;springen;1;990;Bewegung und Alltagshandlungen
+sentarse;sich setzen;1;991;Bewegung und Alltagshandlungen
+estar sentado;sitzen;1;992;Bewegung und Alltagshandlungen
+estar de pie;stehen;1;993;Bewegung und Alltagshandlungen
+tumbarse;sich hinlegen;1;994;Bewegung und Alltagshandlungen
+subir;"hinaufgehen; steigen";1;995;Bewegung und Alltagshandlungen
+bajar;"hinuntergehen; senken";1;996;Bewegung und Alltagshandlungen
+entrar;hineingehen;1;997;Bewegung und Alltagshandlungen
+volver;zurückkehren;1;998;Bewegung und Alltagshandlungen
+girar;"abbiegen; drehen";1;999;Bewegung und Alltagshandlungen
+parar;anhalten;1;1000;Bewegung und Alltagshandlungen
+entrenar;trainieren;1;1001;Bewegung und Alltagshandlungen
+jugar;spielen;1;1002;Bewegung und Alltagshandlungen
+bailar;tanzen;1;1003;Bewegung und Alltagshandlungen
+cantar;singen;1;1004;Bewegung und Alltagshandlungen
+dibujar;zeichnen;1;1005;Bewegung und Alltagshandlungen
+pintar;malen;1;1006;Bewegung und Alltagshandlungen
+arreglar;"reparieren; richten";1;1007;Bewegung und Alltagshandlungen
+construir;bauen;1;1008;Bewegung und Alltagshandlungen
+organizar;organisieren;1;1009;Bewegung und Alltagshandlungen
+quedar;"sich verabreden; bleiben";1;1010;Bewegung und Alltagshandlungen
+acostarse;zu Bett gehen;1;1011;Bewegung und Alltagshandlungen
+duchar;duschen (jemanden);1;1012;Bewegung und Alltagshandlungen
+grande;groß;1;1013;Adjektive und Eigenschaften
+pequeño;klein;1;1014;Adjektive und Eigenschaften
+largo;lang;1;1015;Adjektive und Eigenschaften
+corto;kurz;1;1016;Adjektive und Eigenschaften
+ancho;breit;1;1017;Adjektive und Eigenschaften
+estrecho;eng;1;1018;Adjektive und Eigenschaften
+pesado;schwer;1;1019;Adjektive und Eigenschaften
+ligero;leicht;1;1020;Adjektive und Eigenschaften
+templado;lauwarm;1;1021;Adjektive und Eigenschaften
+caliente;"heiß; warm";1;1022;Adjektive und Eigenschaften
+frío;kalt;1;1023;Adjektive und Eigenschaften
+mojado;nass;1;1024;Adjektive und Eigenschaften
+seco;trocken;1;1025;Adjektive und Eigenschaften
+limpio;sauber;1;1026;Adjektive und Eigenschaften
+sucio;schmutzig;1;1027;Adjektive und Eigenschaften
+nuevo;neu;1;1028;Adjektive und Eigenschaften
+antiguo;"alt; antik";1;1029;Adjektive und Eigenschaften
+moderno;modern;1;1030;Adjektive und Eigenschaften
+gratis;kostenlos;1;1031;Adjektive und Eigenschaften
+lleno;voll;1;1032;Adjektive und Eigenschaften
+vacío;leer;1;1033;Adjektive und Eigenschaften
+líquido;flüssig;1;1034;Adjektive und Eigenschaften
+sólido;fest;1;1035;Adjektive und Eigenschaften
+blando;weich;1;1036;Adjektive und Eigenschaften
+duro;hart;1;1037;Adjektive und Eigenschaften
+veloz;schnell;1;1038;Adjektive und Eigenschaften
+lento;langsam;1;1039;Adjektive und Eigenschaften
+fácil;einfach;1;1040;Adjektive und Eigenschaften
+difícil;schwierig;1;1041;Adjektive und Eigenschaften
+complicado;kompliziert;1;1042;Adjektive und Eigenschaften
+puntual;pünktlich;1;1043;Adjektive und Eigenschaften
+equivocado;falsch;1;1044;Adjektive und Eigenschaften
+peligroso;gefährlich;1;1045;Adjektive und Eigenschaften
+útil;nützlich;1;1046;Adjektive und Eigenschaften
+inútil;nutzlos;1;1047;Adjektive und Eigenschaften
+necesario;notwendig;1;1048;Adjektive und Eigenschaften
+parecido;ähnlich;1;1049;Adjektive und Eigenschaften
+diferente;verschieden;1;1050;Adjektive und Eigenschaften
+disponible;verfügbar;1;1051;Adjektive und Eigenschaften
+llamativo;auffällig;1;1052;Adjektive und Eigenschaften
+suficiente;ausreichend;1;1053;Adjektive und Eigenschaften
+sol;Sonne;1;1054;Wetter und Natur
+luna;Mond;1;1055;Wetter und Natur
+estrella;Stern;1;1056;Wetter und Natur
+cielo;Himmel;1;1057;Wetter und Natur
+nube;Wolke;1;1058;Wetter und Natur
+lluvia;Regen;1;1059;Wetter und Natur
+nieve;Schnee;1;1060;Wetter und Natur
+hielo;Eis;1;1061;Wetter und Natur
+viento;Wind;1;1062;Wetter und Natur
+tormenta;Sturm;1;1063;Wetter und Natur
+trueno;Donner;1;1064;Wetter und Natur
+relámpago;Blitz;1;1065;Wetter und Natur
+niebla;Nebel;1;1066;Wetter und Natur
+helada;Frost;1;1067;Wetter und Natur
+calor;Hitze;1;1068;Wetter und Natur
+temperatura;Temperatur;1;1069;Wetter und Natur
+pronóstico;Vorhersage;1;1070;Wetter und Natur
+soleado;sonnig;1;1071;Wetter und Natur
+nublado;bewölkt;1;1072;Wetter und Natur
+lluvioso;regnerisch;1;1073;Wetter und Natur
+ventoso;windig;1;1074;Wetter und Natur
+sequía;Dürre;1;1075;Wetter und Natur
+inundación;Überschwemmung;1;1076;Wetter und Natur
+río;Fluss;1;1077;Wetter und Natur
+lago;See;1;1078;Wetter und Natur
+arroyo;Bach;1;1079;Wetter und Natur
+montaña;Berg;1;1080;Wetter und Natur
+colina;Hügel;1;1081;Wetter und Natur
+valle;Tal;1;1082;Wetter und Natur
+bosque;Wald;1;1083;Wetter und Natur
+árbol;Baum;1;1084;Wetter und Natur
+flor;Blume;1;1085;Wetter und Natur
+hierba;Gras;1;1086;Wetter und Natur
+hoja;Blatt;1;1087;Wetter und Natur
+piedra;Stein;1;1088;Wetter und Natur
+tierra;"Erde; Land";1;1089;Wetter und Natur
+arena;Sand;1;1090;Wetter und Natur
+animal;Tier;1;1091;Wetter und Natur
+perro;Hund;1;1092;Wetter und Natur
+gato;Katze;1;1093;Wetter und Natur
+pájaro;Vogel;1;1094;Wetter und Natur
+caballo;Pferd;1;1095;Wetter und Natur
+campo;"Land; Feld";1;1096;Wetter und Natur
+paisaje;Landschaft;1;1097;Wetter und Natur
+naturaleza;Natur;1;1098;Wetter und Natur
+medio ambiente;Umwelt;1;1099;Wetter und Natur
+reciclaje;Recycling;1;1100;Wetter und Natur
+energía;Energie;1;1101;Wetter und Natur
+cachorro;Welpe;1;1102;Tiere
+gatito;Kätzchen;1;1103;Tiere
+yegua;Stute;1;1104;Tiere
+burro;Esel;1;1105;Tiere
+vaca;Kuh;1;1106;Tiere
+ternero;Kalb;1;1107;Tiere
+toro;Stier;1;1108;Tiere
+oveja;Schaf;1;1109;Tiere
+cabra;Ziege;1;1110;Tiere
+gallina;Huhn;1;1111;Tiere
+gallo;Hahn;1;1112;Tiere
+pato;Ente;1;1113;Tiere
+ganso;Gans;1;1114;Tiere
+conejo;Kaninchen;1;1115;Tiere
+ratón;Maus;1;1116;Tiere
+rata;Ratte;1;1117;Tiere
+ardilla;Eichhörnchen;1;1118;Tiere
+erizo;Igel;1;1119;Tiere
+zorro;Fuchs;1;1120;Tiere
+lobo;Wolf;1;1121;Tiere
+oso;Bär;1;1122;Tiere
+ciervo;Hirsch;1;1123;Tiere
+jabalí;Wildschwein;1;1124;Tiere
+león;Löwe;1;1125;Tiere
+tigre;Tiger;1;1126;Tiere
+elefante;Elefant;1;1127;Tiere
+mono;Affe;1;1128;Tiere
+jirafa;Giraffe;1;1129;Tiere
+serpiente;Schlange;1;1130;Tiere
+lagarto;Eidechse;1;1131;Tiere
+tortuga;Schildkröte;1;1132;Tiere
+rana;Frosch;1;1133;Tiere
+pez;Fisch;1;1134;Tiere
+delfín;Delfin;1;1135;Tiere
+ballena;Wal;1;1136;Tiere
+tiburón;Hai;1;1137;Tiere
+cangrejo;Krebs;1;1138;Tiere
+abeja;Biene;1;1139;Tiere
+mariposa;Schmetterling;1;1140;Tiere
+mosca;Fliege;1;1141;Tiere
+mosquito;Mücke;1;1142;Tiere
+hormiga;Ameise;1;1143;Tiere
+araña;Spinne;1;1144;Tiere
+águila;Adler;1;1145;Tiere
+deporte;Sport;1;1146;Sport und Freizeit
+fútbol;Fußball;1;1147;Sport und Freizeit
+baloncesto;Basketball;1;1148;Sport und Freizeit
+balonmano;Handball;1;1149;Sport und Freizeit
+voleibol;Volleyball;1;1150;Sport und Freizeit
+tenis;Tennis;1;1151;Sport und Freizeit
+natación;Schwimmen;1;1152;Sport und Freizeit
+carrera;"Lauf; Rennen";1;1153;Sport und Freizeit
+ciclismo;Radfahren;1;1154;Sport und Freizeit
+senderismo;Wandern;1;1155;Sport und Freizeit
+esquí;Skifahren;1;1156;Sport und Freizeit
+vela;Segeln;1;1157;Sport und Freizeit
+pesca;Angeln;1;1158;Sport und Freizeit
+paseo;Spaziergang;1;1159;Sport und Freizeit
+juego;Spiel;1;1160;Sport und Freizeit
+equipo;"Mannschaft; Team";1;1161;Sport und Freizeit
+jugador;Spieler;1;1162;Sport und Freizeit
+entrenador;Trainer;1;1163;Sport und Freizeit
+partido;"Spiel; Match";1;1164;Sport und Freizeit
+victoria;Sieg;1;1165;Sport und Freizeit
+derrota;Niederlage;1;1166;Sport und Freizeit
+resultado;Ergebnis;1;1167;Sport und Freizeit
+pelota;Ball;1;1168;Sport und Freizeit
+campo de juego;Spielfeld;1;1169;Sport und Freizeit
+gimnasio;Fitnessstudio;1;1170;Sport und Freizeit
+ejercicio;Übung;1;1171;Sport und Freizeit
+entrenamiento;Training;1;1172;Sport und Freizeit
+competición;Wettbewerb;1;1173;Sport und Freizeit
+medalla;Medaille;1;1174;Sport und Freizeit
+ganador;Gewinner;1;1175;Sport und Freizeit
+pasatiempo;Hobby;1;1176;Sport und Freizeit
+música;Musik;1;1177;Sport und Freizeit
+canción;Lied;1;1178;Sport und Freizeit
+película;Film;1;1179;Sport und Freizeit
+serie;Serie;1;1180;Sport und Freizeit
+fotografía;Fotografie;1;1181;Sport und Freizeit
+jardinería;Gärtnern;1;1182;Sport und Freizeit
+mascota;Haustier;1;1183;Sport und Freizeit
+baile;Tanz;1;1184;Sport und Freizeit
+concierto;Konzert;1;1185;Sport und Freizeit
+festival;Festival;1;1186;Sport und Freizeit
+tiempo libre;Freizeit;1;1187;Sport und Freizeit
+diversión;"Spaß; Unterhaltung";1;1188;Sport und Freizeit
+celebración;Feier;1;1189;Sport und Freizeit
+fiesta de cumpleaños;Geburtstagsfeier;1;1190;Sport und Freizeit
+invitar;einladen;1;1191;Sport und Freizeit
+participar;teilnehmen;1;1192;Sport und Freizeit
+quedar con amigos;sich mit Freunden treffen;1;1193;Sport und Freizeit
+tecnología;Technologie;1;1194;Technik und Medien
+móvil;Handy (Spanien);1;1195;Technik und Medien
+celular;Handy (Lateinamerika);1;1196;Technik und Medien
+batería;"Akku; Batterie";1;1197;Technik und Medien
+ordenador portátil;Laptop (Spanien);1;1198;Technik und Medien
+portátil;Laptop;1;1199;Technik und Medien
+tableta;Tablet;1;1200;Technik und Medien
+¡Hola!;Hallo!;2;1;Redewendungen
+¡Buenos días!;Guten Morgen! / Guten Tag!;2;2;Redewendungen
+¡Buenas tardes!;Guten Tag! / Guten Abend!;2;3;Redewendungen
+¡Buenas noches!;Guten Abend! / Gute Nacht!;2;4;Redewendungen
+¡Adiós!;Auf Wiedersehen!;2;5;Redewendungen
+¡Hasta luego!;Bis später!;2;6;Redewendungen
+¡Hasta mañana!;Bis morgen!;2;7;Redewendungen
+¡Hasta pronto!;Bis bald!;2;8;Redewendungen
+¿Cómo está usted?;Wie geht es Ihnen?;2;9;Redewendungen
+¿Cómo estás?;Wie geht es dir?;2;10;Redewendungen
+Estoy bien, gracias.;Mir geht es gut, danke.;2;11;Redewendungen
+¿Y usted?;Und Ihnen?;2;12;Redewendungen
+¿Y tú?;Und dir?;2;13;Redewendungen
+Mucho gusto.;Freut mich.;2;14;Redewendungen
+¿Cómo se llama?;Wie heißen Sie?;2;15;Redewendungen
+¿Cómo te llamas?;Wie heißt du?;2;16;Redewendungen
+Me llamo…;Ich heiße …;2;17;Redewendungen
+¿De dónde es usted?;Woher kommen Sie?;2;18;Redewendungen
+¿De dónde eres?;Woher kommst du?;2;19;Redewendungen
+Soy de Alemania.;Ich komme aus Deutschland.;2;20;Redewendungen
+¿Habla alemán?;Sprechen Sie Deutsch?;2;21;Redewendungen
+¿Habla inglés?;Sprechen Sie Englisch?;2;22;Redewendungen
+Solo hablo un poco de español.;Ich spreche nur ein wenig Spanisch.;2;23;Redewendungen
+No entiendo.;Ich verstehe nicht.;2;24;Redewendungen
+Entiendo.;Ich verstehe.;2;25;Redewendungen
+¿Puede repetirlo, por favor?;Können Sie das bitte wiederholen?;2;26;Redewendungen
+Hable más despacio, por favor.;Sprechen Sie bitte langsamer.;2;27;Redewendungen
+¿Qué significa eso?;Was bedeutet das?;2;28;Redewendungen
+¿Cómo se dice en español?;Wie sagt man das auf Spanisch?;2;29;Redewendungen
+¿Puede ayudarme?;Können Sie mir helfen?;2;30;Redewendungen
+Muchas gracias.;Vielen Dank.;2;31;Redewendungen
+De nada.;Gern geschehen.;2;32;Redewendungen
+Perdone.;Entschuldigen Sie.;2;33;Redewendungen
+Lo siento mucho.;Es tut mir sehr leid.;2;34;Redewendungen
+No hay problema.;Kein Problem.;2;35;Redewendungen
+Todo está bien.;Alles ist in Ordnung.;2;36;Redewendungen
+No importa.;Macht nichts.;2;37;Redewendungen
+¡Buena suerte!;Viel Glück!;2;38;Redewendungen
+¡Felicidades!;Herzlichen Glückwunsch!;2;39;Redewendungen
+¡Salud!;Prost! / Gesundheit!;2;40;Redewendungen
+¡Que lo pase bien!;Viel Vergnügen!;2;41;Redewendungen
+¡Buen viaje!;Gute Reise!;2;42;Redewendungen
+¡Feliz cumpleaños!;Alles Gute zum Geburtstag!;2;43;Redewendungen
+¡Feliz Navidad!;Frohe Weihnachten!;2;44;Redewendungen
+¡Feliz Año Nuevo!;Frohes neues Jahr!;2;45;Redewendungen
+Nos vemos mañana.;Wir sehen uns morgen.;2;46;Redewendungen
+Estamos en contacto.;Wir bleiben in Kontakt.;2;47;Redewendungen
+Que tenga un buen día.;Ich wünsche Ihnen einen schönen Tag.;2;48;Redewendungen
+Ha sido un placer.;Es war mir ein Vergnügen.;2;49;Redewendungen
+¡Bienvenido!;Willkommen!;2;50;Redewendungen
+¿Dónde está el centro?;Wo ist das Zentrum?;2;51;Redewendungen
+¿Cómo llego a la estación?;Wie komme ich zum Bahnhof?;2;52;Redewendungen
+¿Está lejos de aquí?;Ist es weit von hier?;2;53;Redewendungen
+¿Está cerca?;Ist es in der Nähe?;2;54;Redewendungen
+Siga todo recto.;Gehen Sie geradeaus.;2;55;Redewendungen
+Gire a la izquierda.;Biegen Sie links ab.;2;56;Redewendungen
+Gire a la derecha.;Biegen Sie rechts ab.;2;57;Redewendungen
+Está en la esquina.;Es ist an der Ecke.;2;58;Redewendungen
+El banco está enfrente.;Die Bank ist gegenüber.;2;59;Redewendungen
+¿Dónde está la farmacia más cercana?;Wo ist die nächste Apotheke?;2;60;Redewendungen
+¿Dónde hay un baño público?;Wo gibt es eine öffentliche Toilette?;2;61;Redewendungen
+Me he perdido.;Ich habe mich verlaufen.;2;62;Redewendungen
+¿Puede mostrármelo en el mapa?;Können Sie es mir auf der Karte zeigen?;2;63;Redewendungen
+¿A qué distancia está?;Wie weit ist es entfernt?;2;64;Redewendungen
+Necesito un taxi.;Ich brauche ein Taxi.;2;65;Redewendungen
+Llame a un taxi, por favor.;Rufen Sie bitte ein Taxi.;2;66;Redewendungen
+¿Dónde puedo comprar un billete?;Wo kann ich eine Fahrkarte kaufen?;2;67;Redewendungen
+Un billete a Madrid, por favor.;Eine Fahrkarte nach Madrid, bitte.;2;68;Redewendungen
+¿A qué hora sale el autobús?;Wann fährt der Bus ab?;2;69;Redewendungen
+¿De qué andén sale el tren?;Von welchem Gleis fährt der Zug ab?;2;70;Redewendungen
+¿El tren lleva retraso?;Hat der Zug Verspätung?;2;71;Redewendungen
+¿Dónde tengo que cambiar de tren?;Wo muss ich umsteigen?;2;72;Redewendungen
+Pare aquí, por favor.;Halten Sie bitte hier an.;2;73;Redewendungen
+¿Cuánto dura el viaje?;Wie lange dauert die Fahrt?;2;74;Redewendungen
+¿Está libre este asiento?;Ist dieser Sitzplatz frei?;2;75;Redewendungen
+Esta es mi parada.;Das ist meine Haltestelle.;2;76;Redewendungen
+¿Dónde está la salida?;Wo ist der Ausgang?;2;77;Redewendungen
+¿Dónde está la entrada?;Wo ist der Eingang?;2;78;Redewendungen
+¿Puede ayudarme con el equipaje?;Können Sie mir mit dem Gepäck helfen?;2;79;Redewendungen
+¿Dónde puedo aparcar?;Wo kann ich parken?;2;80;Redewendungen
+¿Tienen una mesa libre?;Haben Sie einen freien Tisch?;2;81;Redewendungen
+Tengo una reserva.;Ich habe eine Reservierung.;2;82;Redewendungen
+Una mesa para dos, por favor.;Einen Tisch für zwei, bitte.;2;83;Redewendungen
+¿Nos trae la carta, por favor?;Bringen Sie uns bitte die Speisekarte?;2;84;Redewendungen
+¿Qué recomienda?;Was empfehlen Sie?;2;85;Redewendungen
+¿Qué lleva este plato?;Was ist in diesem Gericht enthalten?;2;86;Redewendungen
+Quisiera pedir.;Ich möchte bestellen.;2;87;Redewendungen
+Tomaré la ensalada.;Ich nehme den Salat.;2;88;Redewendungen
+Sin cebolla, por favor.;Ohne Zwiebeln, bitte.;2;89;Redewendungen
+Sin carne, por favor.;Ohne Fleisch, bitte.;2;90;Redewendungen
+¿Tiene platos vegetarianos?;Haben Sie vegetarische Gerichte?;2;91;Redewendungen
+¿Tiene platos veganos?;Haben Sie vegane Gerichte?;2;92;Redewendungen
+Soy alérgico a los frutos secos.;Ich bin allergisch gegen Nüsse. (m);2;93;Redewendungen
+Soy alérgica a los frutos secos.;Ich bin allergisch gegen Nüsse. (w);2;94;Redewendungen
+¿Es picante?;Ist es scharf?;2;95;Redewendungen
+Agua sin gas, por favor.;Stilles Wasser, bitte.;2;96;Redewendungen
+Un café, por favor.;Einen Kaffee, bitte.;2;97;Redewendungen
+Otra cerveza, por favor.;Noch ein Bier, bitte.;2;98;Redewendungen
+La cuenta, por favor.;Die Rechnung, bitte.;2;99;Redewendungen
+¿Podemos pagar por separado?;Können wir getrennt bezahlen?;2;100;Redewendungen
+¿Puedo pagar con tarjeta?;Kann ich mit Karte bezahlen?;2;101;Redewendungen
+Quédese con el cambio.;Stimmt so.;2;102;Redewendungen
+Estaba delicioso.;Es war köstlich.;2;103;Redewendungen
+La comida está muy rica.;Das Essen ist sehr lecker.;2;104;Redewendungen
+Esto no es lo que he pedido.;Das ist nicht das, was ich bestellt habe.;2;105;Redewendungen
+¿Puede ponerlo para llevar?;Können Sie es zum Mitnehmen einpacken?;2;106;Redewendungen
+¿Tiene una mesa en la terraza?;Haben Sie einen Tisch auf der Terrasse?;2;107;Redewendungen
+¿Cuál es el menú del día?;Was ist das Tagesmenü?;2;108;Redewendungen
+Quiero reservar una mesa para esta noche.;Ich möchte einen Tisch für heute Abend reservieren.;2;109;Redewendungen
+¿Cuánto tenemos que esperar?;Wie lange müssen wir warten?;2;110;Redewendungen
+Tengo una reserva a nombre de…;Ich habe eine Reservierung auf den Namen …;2;111;Redewendungen
+¿Tiene una habitación libre?;Haben Sie ein freies Zimmer?;2;112;Redewendungen
+¿Cuánto cuesta la noche?;Was kostet die Übernachtung?;2;113;Redewendungen
+¿Está incluido el desayuno?;Ist das Frühstück inbegriffen?;2;114;Redewendungen
+¿A qué hora se sirve el desayuno?;Um wie viel Uhr gibt es Frühstück?;2;115;Redewendungen
+¿A qué hora es la salida?;Wann ist Check-out?;2;116;Redewendungen
+¿Puedo ver la habitación?;Kann ich das Zimmer sehen?;2;117;Redewendungen
+Necesito una habitación con cama doble.;Ich brauche ein Zimmer mit Doppelbett.;2;118;Redewendungen
+Necesito otra toalla.;Ich brauche ein weiteres Handtuch.;2;119;Redewendungen
+El aire acondicionado no funciona.;Die Klimaanlage funktioniert nicht.;2;120;Redewendungen
+No hay agua caliente.;Es gibt kein warmes Wasser.;2;121;Redewendungen
+El wifi no funciona.;Das WLAN funktioniert nicht.;2;122;Redewendungen
+¿Puede arreglarlo?;Können Sie das reparieren?;2;123;Redewendungen
+¿Podemos dejar aquí el equipaje?;Können wir das Gepäck hier lassen?;2;124;Redewendungen
+¿Dónde está el aparcamiento?;Wo ist der Parkplatz?;2;125;Redewendungen
+¿El aparcamiento está incluido?;Ist das Parken inbegriffen?;2;126;Redewendungen
+Quiero prolongar mi estancia.;Ich möchte meinen Aufenthalt verlängern.;2;127;Redewendungen
+Quiero pagar la cuenta.;Ich möchte die Rechnung bezahlen.;2;128;Redewendungen
+¿Puede llamarnos un taxi?;Können Sie uns ein Taxi rufen?;2;129;Redewendungen
+Nos hemos sentido muy a gusto.;Wir haben uns sehr wohlgefühlt.;2;130;Redewendungen
+¿Cuánto cuesta esto?;Wie viel kostet das?;2;131;Redewendungen
+¿Cuánto cuesta en total?;Wie viel kostet das insgesamt?;2;132;Redewendungen
+Es demasiado caro.;Das ist zu teuer.;2;133;Redewendungen
+¿Tiene algo más barato?;Haben Sie etwas Günstigeres?;2;134;Redewendungen
+¿Puedo verlo?;Kann ich es mir ansehen?;2;135;Redewendungen
+¿Puedo probármelo?;Kann ich es anprobieren?;2;136;Redewendungen
+¿Tiene una talla más grande?;Haben Sie eine größere Größe?;2;137;Redewendungen
+¿Tiene una talla más pequeña?;Haben Sie eine kleinere Größe?;2;138;Redewendungen
+¿Dónde está el probador?;Wo ist die Umkleidekabine?;2;139;Redewendungen
+Solo estoy mirando, gracias.;Ich schaue mich nur um, danke.;2;140;Redewendungen
+Me llevo esto.;Ich nehme das.;2;141;Redewendungen
+No necesito bolsa.;Ich brauche keine Tüte.;2;142;Redewendungen
+¿Me da el recibo?;Geben Sie mir den Kassenbon?;2;143;Redewendungen
+¿Puedo devolver este producto?;Kann ich dieses Produkt zurückgeben?;2;144;Redewendungen
+¿Aceptan tarjetas?;Akzeptieren Sie Karten?;2;145;Redewendungen
+¿Dónde hay un cajero automático?;Wo gibt es einen Geldautomaten?;2;146;Redewendungen
+Quiero sacar dinero.;Ich möchte Geld abheben.;2;147;Redewendungen
+¿Dónde puedo cambiar dinero?;Wo kann ich Geld wechseln?;2;148;Redewendungen
+¿Cuál es el tipo de cambio?;Wie ist der Wechselkurs?;2;149;Redewendungen
+¿Está incluido el impuesto?;Ist die Steuer inbegriffen?;2;150;Redewendungen
+Necesito un médico.;Ich brauche einen Arzt.;2;151;Redewendungen
+Necesito una médica.;Ich brauche eine Ärztin.;2;152;Redewendungen
+¿Dónde está el hospital más cercano?;Wo ist das nächste Krankenhaus?;2;153;Redewendungen
+¡Llame a una ambulancia!;Rufen Sie einen Rettungswagen!;2;154;Redewendungen
+¡Necesito ayuda!;Ich brauche Hilfe!;2;155;Redewendungen
+¡Llame a la policía!;Rufen Sie die Polizei!;2;156;Redewendungen
+He perdido mi pasaporte.;Ich habe meinen Reisepass verloren.;2;157;Redewendungen
+No me encuentro bien.;Ich fühle mich nicht gut.;2;158;Redewendungen
+Tengo fiebre.;Ich habe Fieber.;2;159;Redewendungen
+Me duele la cabeza.;Ich habe Kopfschmerzen.;2;160;Redewendungen
+Me duele el estómago.;Ich habe Bauchschmerzen.;2;161;Redewendungen
+Me duele una muela.;Ich habe Zahnschmerzen.;2;162;Redewendungen
+Tengo una alergia.;Ich habe eine Allergie.;2;163;Redewendungen
+Soy alérgico a la penicilina.;Ich bin allergisch gegen Penicillin. (m);2;164;Redewendungen
+Soy alérgica a la penicilina.;Ich bin allergisch gegen Penicillin. (w);2;165;Redewendungen
+Necesito un analgésico.;Ich brauche ein Schmerzmittel.;2;166;Redewendungen
+¿Dónde está la farmacia?;Wo ist die Apotheke?;2;167;Redewendungen
+¿Tiene algo para la tos?;Haben Sie etwas gegen Husten?;2;168;Redewendungen
+Por favor, llame a alguien.;Bitte rufen Sie jemanden zu Hilfe.;2;169;Redewendungen
+Es una emergencia.;Es ist ein Notfall.;2;170;Redewendungen
+¿Qué hora es?;Wie spät ist es?;2;171;Redewendungen
+Llego unos minutos tarde.;Ich verspäte mich um ein paar Minuten.;2;172;Redewendungen
+Llego enseguida.;Ich bin gleich da.;2;173;Redewendungen
+¿Podemos vernos mañana?;Können wir uns morgen treffen?;2;174;Redewendungen
+¿A qué hora?;Um wie viel Uhr?;2;175;Redewendungen
+¿Dónde quedamos?;Wo treffen wir uns?;2;176;Redewendungen
+Me viene bien.;Das passt mir.;2;177;Redewendungen
+Lo siento, no puedo.;Leider kann ich nicht.;2;178;Redewendungen
+Tengo que cancelar la cita.;Ich muss den Termin absagen.;2;179;Redewendungen
+¿Podemos cambiar la hora?;Können wir den Termin verschieben?;2;180;Redewendungen
+Le llamaré más tarde.;Ich rufe Sie später an.;2;181;Redewendungen
+Envíeme un mensaje, por favor.;Schicken Sie mir bitte eine Nachricht.;2;182;Redewendungen
+No he recibido el mensaje.;Ich habe die Nachricht nicht erhalten.;2;183;Redewendungen
+¿Puede enviarme la dirección?;Können Sie mir die Adresse schicken?;2;184;Redewendungen
+Espero su respuesta.;Ich warte auf Ihre Antwort.;2;185;Redewendungen
+Me pondré en contacto con usted.;Ich werde mich bei Ihnen melden.;2;186;Redewendungen
+De acuerdo.;"Abgemacht; einverstanden.";2;187;Redewendungen
+Tengo que pensarlo.;Ich muss darüber nachdenken.;2;188;Redewendungen
+Estoy de acuerdo.;Ich bin einverstanden.;2;189;Redewendungen
+No estoy de acuerdo.;Ich bin nicht einverstanden.;2;190;Redewendungen
+No estoy seguro.;Ich bin nicht sicher (m).;2;191;Redewendungen
+No estoy segura.;Ich bin nicht sicher (w).;2;192;Redewendungen
+Creo que es una buena idea.;Ich denke, das ist eine gute Idee.;2;193;Redewendungen
+No lo sé.;Ich weiß es nicht.;2;194;Redewendungen
+No tengo ni idea.;Ich habe keine Ahnung.;2;195;Redewendungen
+No hay prisa.;Keine Eile.;2;196;Redewendungen
+Un momento, por favor.;Einen Moment bitte.;2;197;Redewendungen
+¿Puede esperar?;Können Sie warten?;2;198;Redewendungen
+Hoy no tengo tiempo.;Heute habe ich keine Zeit.;2;199;Redewendungen
+Nos vemos a las ocho.;Wir sehen uns um acht.;2;200;Redewendungen
+¿Le gusta España?;Gefällt Ihnen Spanien?;2;201;Redewendungen
+Me gusta mucho España.;Spanien gefällt mir sehr.;2;202;Redewendungen
+¿Lleva mucho tiempo aquí?;Sind Sie schon lange hier?;2;203;Redewendungen
+Es la primera vez que estoy aquí.;Ich bin zum ersten Mal hier.;2;204;Redewendungen
+¿Cuánto tiempo se queda?;Wie lange bleiben Sie?;2;205;Redewendungen
+Me quedo una semana.;Ich bleibe eine Woche.;2;206;Redewendungen
+¿A qué se dedica?;Was machen Sie beruflich?;2;207;Redewendungen
+Trabajo en una oficina.;Ich arbeite in einem Büro.;2;208;Redewendungen
+Estoy jubilado.;Ich bin im Ruhestand (m).;2;209;Redewendungen
+Estoy jubilada.;Ich bin im Ruhestand (w).;2;210;Redewendungen
+Tengo dos hijos.;Ich habe zwei Kinder.;2;211;Redewendungen
+¿Tiene familia?;Haben Sie Familie?;2;212;Redewendungen
+¿Qué le gusta hacer en su tiempo libre?;Was machen Sie gern in Ihrer Freizeit?;2;213;Redewendungen
+Me gusta pasear junto al mar.;Ich gehe gern am Meer spazieren.;2;214;Redewendungen
+Me gusta la comida española.;Ich mag spanisches Essen.;2;215;Redewendungen
+¿Cuál es su comida favorita?;Was ist Ihr Lieblingsessen?;2;216;Redewendungen
+Hace buen tiempo hoy, ¿verdad?;Heute ist schönes Wetter, nicht wahr?;2;217;Redewendungen
+Hoy hace mucho calor.;Heute ist es sehr heiß.;2;218;Redewendungen
+Parece que va a llover.;Es sieht nach Regen aus.;2;219;Redewendungen
+Aquí es muy bonito.;Hier ist es sehr schön.;2;220;Redewendungen
+¿Dónde está la playa más cercana?;Wo ist der nächste Strand?;2;221;Redewendungen
+¿Está limpio el mar?;Ist das Meer sauber?;2;222;Redewendungen
+¿Es seguro nadar aquí?;Ist es sicher, hier zu schwimmen?;2;223;Redewendungen
+¿Cuánto cuesta alquilar una tumbona?;Wie viel kostet eine Liege?;2;224;Redewendungen
+¿Dónde puedo alquilar una bicicleta?;Wo kann ich ein Fahrrad mieten?;2;225;Redewendungen
+¿A qué hora sale el ferry?;Wann fährt die Fähre ab?;2;226;Redewendungen
+¿Dónde puedo comprar entradas?;Wo kann ich Eintrittskarten kaufen?;2;227;Redewendungen
+¿A qué hora empieza el espectáculo?;Um wie viel Uhr beginnt die Vorstellung?;2;228;Redewendungen
+¿Hay un concierto esta noche?;Gibt es heute Abend ein Konzert?;2;229;Redewendungen
+¿Puede hacernos una foto?;Können Sie ein Foto von uns machen?;2;230;Redewendungen
+¡Qué vistas tan bonitas!;Was für eine schöne Aussicht!;2;231;Redewendungen
+Quiero reservar una excursión.;Ich möchte einen Ausflug buchen.;2;232;Redewendungen
+¿Cuánto dura la excursión?;Wie lange dauert der Ausflug?;2;233;Redewendungen
+¿Qué debo llevar?;Was soll ich mitnehmen?;2;234;Redewendungen
+¿Dónde está el sendero?;Wo ist der Wanderweg?;2;235;Redewendungen
+Cuidado, resbala.;Vorsicht, es ist rutschig.;2;236;Redewendungen
+No olvide la crema solar.;Vergessen Sie die Sonnencreme nicht.;2;237;Redewendungen
+Necesito sombra.;Ich brauche Schatten.;2;238;Redewendungen
+Vamos a nadar.;Wir gehen schwimmen.;2;239;Redewendungen
+Quiero descansar un poco.;Ich möchte mich etwas ausruhen.;2;240;Redewendungen
+¿Dónde trabaja?;Wo arbeiten Sie?;2;241;Redewendungen
+Trabajo desde casa.;Ich arbeite von zu Hause.;2;242;Redewendungen
+Tengo una reunión.;Ich habe eine Besprechung.;2;243;Redewendungen
+¿A qué hora empieza la reunión?;Wann beginnt die Besprechung?;2;244;Redewendungen
+¿Puede repetirlo?;Können Sie das wiederholen?;2;245;Redewendungen
+No he entendido la pregunta.;Ich habe die Frage nicht verstanden.;2;246;Redewendungen
+Le enviaré el documento.;Ich werde Ihnen das Dokument schicken.;2;247;Redewendungen
+Necesito una copia del contrato.;Ich brauche eine Kopie des Vertrags.;2;248;Redewendungen
+¿Dónde tengo que firmar?;Wo muss ich unterschreiben?;2;249;Redewendungen
+Rellene este formulario, por favor.;Füllen Sie bitte dieses Formular aus.;2;250;Redewendungen
+Esa no es mi tarea.;Das ist nicht meine Aufgabe.;2;251;Redewendungen
+¿Cuál es el plazo?;Wie lautet die Frist?;2;252;Redewendungen
+El trabajo está terminado.;Die Arbeit ist erledigt.;2;253;Redewendungen
+Todavía no está listo.;Es ist noch nicht fertig.;2;254;Redewendungen
+Tengo una pregunta.;Ich habe eine Frage.;2;255;Redewendungen
+Gracias por la colaboración.;Danke für die Zusammenarbeit.;2;256;Redewendungen
+Me alegro de conocerle.;Schön, Sie kennenzulernen.;2;257;Redewendungen
+Le contactaré por correo electrónico.;Ich werde Sie per E-Mail kontaktieren.;2;258;Redewendungen
+Quiero concertar una cita.;Ich möchte einen Termin vereinbaren.;2;259;Redewendungen
+Tengo un problema.;Ich habe ein Problem.;2;260;Redewendungen
+No funciona.;Es funktioniert nicht.;2;261;Redewendungen
+Se ha roto.;Es ist kaputtgegangen.;2;262;Redewendungen
+¿Dónde puedo encontrar ayuda?;Wo kann ich Hilfe finden?;2;263;Redewendungen
+¿Puede explicármelo?;Können Sie mir das erklären?;2;264;Redewendungen
+Lo intentaré otra vez.;Ich werde es noch einmal versuchen.;2;265;Redewendungen
+¿Hay otra solución?;Gibt es eine andere Lösung?;2;266;Redewendungen
+Es urgente.;Es ist dringend.;2;267;Redewendungen
+No es urgente.;Es ist nicht dringend.;2;268;Redewendungen
+Lo resolveremos.;Wir werden das lösen.;2;269;Redewendungen
+Quiero agua.;Ich möchte Wasser.;2;270;Redewendungen
+Quiero un café.;Ich möchte einen Kaffee.;2;271;Redewendungen
+Necesito un billete.;Ich brauche eine Fahrkarte.;2;272;Redewendungen
+Necesito la factura.;Ich brauche die Rechnung.;2;273;Redewendungen
+¿Puede enseñármelo?;Können Sie es mir zeigen?;2;274;Redewendungen
+¿Puede escribirlo?;Können Sie es aufschreiben?;2;275;Redewendungen
+¿Puede hablar inglés?;Können Sie Englisch sprechen?;2;276;Redewendungen
+¿Puede llamar al hotel?;Können Sie das Hotel anrufen?;2;277;Redewendungen
+¿Dónde puedo cargar el móvil?;Wo kann ich mein Handy aufladen?;2;278;Redewendungen
+¿Cuándo abre la tienda?;Wann öffnet das Geschäft?;2;279;Redewendungen
+¿Cuándo cierra la tienda?;Wann schließt das Geschäft?;2;280;Redewendungen
+¿Puedo sentarme aquí?;Kann ich mich hier hinsetzen?;2;281;Redewendungen
+¿Me trae un vaso de agua?;Bringen Sie mir ein Glas Wasser?;2;282;Redewendungen
+¿Cuánto tengo que pagar?;Wie viel muss ich bezahlen?;2;283;Redewendungen
+No tengo efectivo.;Ich habe kein Bargeld.;2;284;Redewendungen
+Mi tarjeta no funciona.;Meine Karte funktioniert nicht.;2;285;Redewendungen
+¿Puede darme una confirmación?;Können Sie mir eine Bestätigung geben?;2;286;Redewendungen
+Quiero cancelar la reserva.;Ich möchte die Reservierung stornieren.;2;287;Redewendungen
+Quiero confirmar la reserva.;Ich möchte die Reservierung bestätigen.;2;288;Redewendungen
+Hoy estoy ocupado.;Heute bin ich beschäftigt (m).;2;289;Redewendungen
+Hoy estoy ocupada.;Heute bin ich beschäftigt (w).;2;290;Redewendungen
+¿Podemos hablar?;Können wir sprechen?;2;291;Redewendungen
+Suena bien.;Das klingt gut.;2;292;Redewendungen
+Suena interesante.;Das klingt interessant.;2;293;Redewendungen
+Me gusta.;Es gefällt mir.;2;294;Redewendungen
+No me gusta.;Es gefällt mir nicht.;2;295;Redewendungen
+Está bien.;Das ist in Ordnung.;2;296;Redewendungen
+No estoy seguro de entenderlo.;Ich bin nicht sicher, ob ich es verstehe (m).;2;297;Redewendungen
+No estoy segura de entenderlo.;Ich bin nicht sicher, ob ich es verstehe (w).;2;298;Redewendungen
+Solo un poco.;Nur ein wenig.;2;299;Redewendungen
+Todavía no he decidido.;Ich habe mich noch nicht entschieden.;2;300;Redewendungen
